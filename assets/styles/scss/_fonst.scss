@@ -1,0 +1,24 @@
+$gramatika-regular: '../../fonts/gramatika_regular.ttf';
+$gramatika-medium: '../../fonts/gramatika_medium.ttf';
+$gramatika-bold: '../../fonts/gramatika_bold.ttf';
+
+@font-face {
+    font-family: 'Gramatika';
+    src: url($gramatika-regular) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gramatika medium';
+    src: url($gramatika-medium) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: 'Gramatika bold';
+    src: url($gramatika-bold) format('truetype');
+    font-style: normal;
+    font-display: swap;
+}

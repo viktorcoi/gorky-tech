@@ -1,0 +1,91 @@
+header {
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    padding: 0 56px;
+    border-bottom: 2px solid var(--border-header);
+    height: max(8.625em, 82px);
+    gap: 56px;
+    &.open-menu {
+        background-color: var(--backgound-header-menu);
+        border-bottom: 2px solid var(--border-header-menu);
+        .header {
+            &__btn-menu {
+                background-color: var(--btn-menu-color-menu);
+                background-image: var(--btn-menu-menu);
+            }
+            &__logo-img {
+                background-image: var(--img-logo-menu);
+            }
+            &__logo-title {
+                color: var(--color-logo-title-menu);
+            }
+        }
+    }
+}
+
+.header {
+    &__btn-menu {
+        transition: .3s;
+        height: max(3rem, 36px);
+        width: max(4.875rem, 48px);
+        background-color: var(--btn-menu-color);
+        border-radius: max(31.25rem, 378px);
+        background-position: center;
+        background-size: max(2rem, 24px);
+        background-repeat: no-repeat;
+        background-image: var(--btn-menu);
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    &__logo {
+        display: flex;
+        gap: 32px;
+        margin-bottom: max(1.125em, 10px);
+    }
+    &__logo-img {
+        background-size: cover;
+        width: max(12em, 116px);
+        height: max(4em, 38px);
+        background-image: var(--img-logo);
+    }
+    &__logo-title {
+        margin-top: .69rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        color: var(--color-logo-title);
+    }
+    &__theme {
+        position: relative;
+        padding: 0 max(.25em, 3.5px);
+        width: max(4.81em, 65px);
+        height: max(2.5em, 34px);
+        border-radius: max(3.125em, 42.5px);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        background-color: var(--background-swither);
+        display: flex;
+        input[type='checkbox'] {
+            position: absolute;
+            &:checked ~.header__theme-switcher {
+                margin-left: calc(100% - max(2em, 27px));
+            }
+        }
+       
+    }
+    &__theme-switcher {
+        transition: .3s;
+        margin: auto 0;
+        width: max(2em, 27px);
+        height: max(2em, 27px);
+        background-color: #FFFFFF;
+        border-radius: 100%;
+    }
+    
+}

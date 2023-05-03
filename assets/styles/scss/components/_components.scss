@@ -1,0 +1,79 @@
+.search-in-page {
+    background-color:  var(--background-input-search);
+    border: 1px solid var(--border-input-search);
+    border-radius: 14px;
+    padding: 16.5px 20px 18.5px 57px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-text-main);
+    min-width: 640px;
+    background-position: 20px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-image: var(--img-input-search);
+    &:focus {
+        background-color:  var(--background-input-search-focus);
+        border: 1px solid var(--border-input-search-focus);
+    }
+    &::placeholder {
+        color: var(--color-text-main);
+        opacity: .5;
+    }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 28px 32px;
+    border-radius: 24px;
+    border: 2px solid var(--border-tags);
+    column-gap: 6px;
+    row-gap: 10px;
+    margin: 56px 0 48px 0;
+    &__tag {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 18px 12px 36px;
+        border-radius: 50px;
+        background-color: var(--background-tag);
+        color: var(--text-color-tag);
+        background-repeat: no-repeat;
+        background-position: 16px center;
+        background-size: 13px;
+        background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M2.142 13H3.87L4.41 9.976H7.452L6.912 13H8.622L9.162 9.976H11.466L11.718 8.338H9.45L10.044 4.954H12.222L12.456 3.334H10.332L10.854 0.399999H9.144L8.622 3.334H5.58L6.102 0.399999H4.374L3.852 3.334H1.656L1.422 4.954H3.564L2.97 8.338H0.9L0.666 9.976H2.682L2.142 13ZM4.698 8.338L5.292 4.954H8.334L7.74 8.338H4.698Z' fill='white'/%3E%3C/svg%3E%0A");
+        @media (min-width: 1025px) {
+            &:hover {
+                background-color: var(--background-tag-hover);
+            }
+        }
+    }
+}
+
+.navigation-prew-next {
+    display: flex;
+    gap: 18px;
+    &__prew, &__next {
+        width: 81px;
+        height: 41px;
+        background-position: center;
+        background-size: 81px 41px;
+        background-repeat: no-repeat;
+    }
+    &__prew {
+        background-image: var(--btn-prew);
+        @media (min-width: 1025px) {
+            &:hover {
+                background-image: var(--btn-prew-hover);
+            }
+        }
+    }
+    &__next {
+        background-image: var(--btn-next);
+        @media (min-width: 1025px) {
+            &:hover {
+                background-image: var(--btn-next-hover);
+            }
+        }
+    }
+}

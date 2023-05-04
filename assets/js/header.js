@@ -14,7 +14,13 @@ document.addEventListener('DOMContentLoaded', ()  => {
         header.classList.contains(className) ?
         document.querySelector('body').classList.add('block-scroll') :
         document.querySelector('body').classList.remove('block-scroll');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const changeHeader = () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollTop > 0 ?
+        header.classList.add('header-fixed') :
+        header.classList.remove('header-fixed');
     }
 
     document.querySelector('#btn-open-menu').addEventListener('click', () => {
@@ -69,4 +75,10 @@ document.addEventListener('DOMContentLoaded', ()  => {
             header.classList.remove('open-search')
         }
     })
+
+    window.addEventListener("scroll", function() {
+        changeHeader();
+    });
+
+    changeHeader();
 });

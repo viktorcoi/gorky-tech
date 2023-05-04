@@ -62,11 +62,126 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     padding: 0 56px;
     border-bottom: 2px solid var(--header-border);
     height: 138px;
+    &.header-fixed {
+        height: 90px;
+        background-color: var(--header-bg-menu);
+        box-shadow: 0px 358px 143px rgba(24, 23, 34, 0.02), 0px 202px 121px rgba(24, 23, 34, 0.07), 0px 90px 90px rgba(24, 23, 34, 0.12), 0px 22px 49px rgba(24, 23, 34, 0.14), 0px 0px 0px rgba(24, 23, 34, 0.14);
+        @media (max-width: 1640px) {
+            height: 72px; 
+        }
+        .header {
+            &__menu, &__overlay, &__search {
+                top: 90px;
+                @media (max-width: 1640px) {
+                    top: 72px; 
+                }
+            }
+            &__logo {
+                gap: 20px;
+                margin-bottom: 12px;
+                @media (max-width: 1640px) {
+                    gap: 16px; 
+                    margin-bottom: 6px;
+                }
+            }
+            &__logo-img {
+                width: 136px;
+                height: 45px;
+                background-size: 136px 45px;
+                @media (max-width: 1640px) {
+                    width: 123px;
+                    height: 41px;
+                    background-size: 123px 41px;
+                }
+            }
+            &__logo-title {
+                margin-top: 8px;
+                font-size: 13px;
+                @media (max-width: 1640px) {
+                    opacity: 0;
+                }
+            }
+            @media (min-width: 1641px) {
+                &__theme {
+                    padding: 0 3px;
+                    width: 70px;
+                    height: 36px;
+                    input[type='checkbox'] {
+                        display: none;
+                        &:checked ~.header__theme-switcher {
+                            margin-left: calc(100% - 30px);
+                        }
+                    }
+                }
+                &__theme-switcher {
+                    width: 30px;
+                    height: 30px;
+                    &--dark, &--light {
+                        width: 18px;
+                        height: 18px;
+                        background-size: 18px;
+                    }
+                    &--dark {
+                        left: 9px;
+                    }
+                    &--light {
+                        right: 9px;
+                    }
+                }
+                &__links-logo {
+                    width: 40px;
+                    height: 40px;
+                }
+                &__links-site, &__links-social {
+                    height: 40px;
+                }
+                &__links-site {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 38px 3px 15px;
+                    font-size: 15px;
+                    background-position: calc(100% - 15px);
+                    background-size: 17px;
+                }
+                &__links-social {
+                    width: 40px;
+                    background-size: 24px;
+                }
+                &__btn-search {
+                    width: 20px;
+                    height: 20px;
+                    background-size: 20px;
+                }
+                &__language-header {
+                    width: 75px;
+                    padding: 0 16px;
+                    height: 40px;
+                    &::after {
+                        width: 16px;
+                        height: 16px;
+                    }
+                    > p {
+                        font-size: 16px;
+                    }
+                }
+                &__language-options {
+                    gap: 4px;
+                    p {
+                        font-size: 16px;
+                        padding: 7px 0 9px 0;
+                    }
+                }
+            }
+        }
+    }
     @media (max-width: 1640px) {
         height: 104px;
         padding: 0 40px;
@@ -119,7 +234,7 @@ header {
     &__overlay {
         z-index: 1;
         top: 138px; right: 0; left: 0; bottom: 0;
-        position: absolute;
+        position: fixed;
         background: var(--header-bg-overlay);
         pointer-events: none;
         visibility: hidden;
@@ -160,11 +275,13 @@ header {
         }
     }
     &__logo-img {
-        background-size: cover;
+        background-size: 192px 64px;
         width: 192px;
         height: 64px;
+        background-repeat: no-repeat;
         background-image: var(--header-img-logo);
         @media (max-width: 1640px) {
+            background-size: 136px 45px;
             width: 136px;
             height: 45px;
         }
@@ -415,13 +532,14 @@ header {
             transition: .3s;
             width: 18px;
             height: 18px;
-            background-size: cover;
+            background-size: 18px;
             background-repeat: no-repeat;
             background-position: center;
             background-image: var(--header-img-arrow-language);
             @media (max-width: 1640px) {
                 width: 15px;
                 height: 15px;
+                background-size: 15px;
             }
         }
         > p {
@@ -534,6 +652,13 @@ header {
             top: 104px;
             padding: 23px 40px 43px 20px;
         }
+        @media (max-width: 1640px) {
+            padding: 40px 40px 43px 40px;
+        }
+        @media (max-width: 1024px) {
+            overflow: auto;
+            max-height: calc(100vh - 104px);
+        }
     }
     &__menu-wrapper {
         display: flex;
@@ -544,6 +669,9 @@ header {
             display: grid;
             grid-template-columns: 1fr 600px;
             gap: 30px;
+        }
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
     &__menu-left, &__menu-right {
@@ -587,6 +715,9 @@ header {
         }
         @media (max-width: 1200px) {
             padding: 19px 20px 19px 20px;
+        }
+        @media (max-width: 1024px) {
+            padding: 19px 0 19px 0;
         }
     }
     &__menu-link {

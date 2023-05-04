@@ -78,11 +78,12 @@
         width: 81px;
         height: 41px;
         background-position: center;
-        background-size: contain;
+        background-size: 81px 41px;
         background-repeat: no-repeat;
         @media (max-width: 1640px) {
             width: 64px;
             height: 32px;
+            background-size: 64px 32px;
         }
     }
     &__prew {

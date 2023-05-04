@@ -33,13 +33,14 @@ footer {
     &__logo {
         width: 160px;
         height: 62px;
-        background-size: contain;
+        background-size: 160px 62px;
         background-position: center;
         background-repeat: no-repeat;
         background-image: var(--footer-img-logo);
         @media (max-width: 1640px) {
             width: 116px;
             height: 45px;
+            background-size: 116px 45px;
         }
     }
     &__content {

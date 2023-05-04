@@ -19,6 +19,10 @@ footer {
         height: 114px;
         padding: 0 40px;
     }
+    @media (max-width: 680px) {
+        height: 168px;
+        padding: 0 20px;
+    }
 }
 
 .footer {
@@ -29,6 +33,10 @@ footer {
     gap: 48px;
     @media (max-width: 1640px) {
         gap: 32px; 
+    }
+    @media (max-width: 680px) {
+        display: grid;
+        gap: 18px; 
     }
     &__logo {
         width: 160px;
@@ -46,6 +54,9 @@ footer {
     &__content {
         display: grid;
         gap: 4px;
+        @media (max-width: 680px) {
+            gap: 12px;
+        }
     }
     &__name {
         font-size: 20px;
@@ -62,6 +73,10 @@ footer {
         @media (max-width: 1640px) {
             gap: 16px;
         }
+        @media (max-width: 680px) {
+            display: grid;
+            gap: 6px;
+        }
         a {
             padding-bottom: 4px;
             font-size: 18px;
@@ -76,6 +91,12 @@ footer {
             @media (max-width: 1640px) {
                 font-size: 15px;
             }
+            @media (max-width: 800px) {
+                font-size: 14px;
+            }
+            @media (max-width: 680px) {
+                padding-bottom: unset;
+            }
         }
     }
     &__line {
@@ -86,6 +107,9 @@ footer {
         border: unset;
         @media (max-width: 1640px) {
             height: 14px;
+        }
+        @media (max-width: 680px) {
+            display: none;
         }
     }
 }

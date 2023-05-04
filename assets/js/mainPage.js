@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     let slider = tns({
         container: '.main-slider',
-        slideBy: 'page',
         nav: false,
         prevButton: '#main-slider-prew',
         nextButton: '#main-slider-next',
@@ -19,10 +18,16 @@ document.addEventListener('DOMContentLoaded', ()  => {
                 fixedWidth: 664,
                 gutter: 18,
             },
-            768: {
+            681: {
                 edgePadding: 40,
                 fixedWidth: 620,
                 gutter: 12,
+            },
+            0: {
+                edgePadding: 20,
+                fixedWidth: 268,
+                gutter: 10,
+                mouseDrag: true,
             }
         }
     });

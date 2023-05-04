@@ -8,14 +8,26 @@
     @media (max-width: 1640px) {
         margin: 64px 0 80px 0;
     }
+    @media (max-width: 850px) {
+        margin: 56px 0 60px 0;
+    }
+    @media (max-width: 640px) {
+        margin: 50px 0 0 0;
+    }
     .navigation-prew-next {
         width: min(1540px, 100%);
         margin: auto;
+        @media (max-width: 680px) {
+            display: none;
+        }
     }
     #tns1-iw {
         margin-bottom: 36px;
         @media (max-width: 1640px) {
             margin-bottom: 32px;
+        }
+        @media (max-width: 1680px) {
+            margin-bottom: 50px;
         }
     }
 }
@@ -42,6 +54,12 @@
             padding: 9px 24px 9px 9px;
             gap: 24px;
             border-radius: 24px;
+        }
+        @media (max-width: 680px) {
+            padding: 8px 8px 20px 8px;
+            gap: 16px;
+            border-radius: 24px;
+            flex-direction: column;
         }
     }
     &__slide {
@@ -79,13 +97,34 @@
             height: 196px;
             border-radius: 18px;
         }
+        @media (max-width: 850px) {
+            width: 252px;
+            height: 184px;
+            border-radius: 16px;
+        }
+    }
+    &__slide-text {
+        @media (max-width: 680px) {
+            padding: 0 12px;
+        }
     }
     &__slide-title {
         color: var(--text-main-color-light);
         font-weight: 500;
         font-size: 26px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         @media (max-width: 1640px) {
             font-size: 20px;
+        }
+        @media (max-width: 850px) {
+            font-size: 19px;
+        }
+        @media (max-width: 640px) {
+            font-size: 18px;
         }
     }
     &__slide-desc {
@@ -94,8 +133,20 @@
         opacity: .8;
         font-weight: 400;
         margin: 12px 0 24px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         @media (max-width: 1640px) {
+            margin: 10px 0 15px 0;
             font-size: 14px;
+        }
+        @media (max-width: 850px) {
+            margin: 8px 0 15px 0;
+        }
+        @media (max-width: 640px) {
+            margin: 8px 0 12px 0;
         }
     }
     &__slide-detailed {
@@ -141,6 +192,14 @@
             font-size: 42px;
             margin-bottom: 56px;
         }
+        @media (max-width: 850px) {
+            font-size: 36px;
+            margin-bottom: 42px;
+        }
+        @media (max-width: 640px) {
+            margin-bottom: 24px;
+            font-size: 26px;
+        }
     }
     &__list {
         display: grid;
@@ -154,6 +213,12 @@
         }
         @media (max-width: 1150px) {
             grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 800px) {
+            gap: 16px;
+        }
+        @media (max-width: 640px) {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
     &__block {
@@ -169,6 +234,10 @@
         @media (max-width: 1270px) {
             padding: 24px 24px 32px 24px;
             border-radius: 22px;
+        }
+        @media (max-width: 800px) {
+            padding: 20px 20px 26px 20px;
+            border-radius: 18px;
         }
         &.it-analytics {
             .areas-activity__block-title {
@@ -231,9 +300,20 @@
             line-height: 42px;
         }
         @media (max-width: 1270px) {
+            padding-left: 54px;
             font-size: 25px;
             background-size: 40px;
             line-height: 40px;
+        }
+        @media (max-width: 800px) {
+            padding-left: 48px;
+            font-size: 22px;
+            background-size: 36px;
+            line-height: 36px;
+            max-width: calc(100% - 1px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
         }
     }
     &__block-text {
@@ -248,6 +328,11 @@
         @media (max-width: 1270px) {
             gap: 16px;
             margin-top: 26px;
+            padding-left: 6px;
+        }
+        @media (max-width: 800px) {
+            gap: 14px;
+            margin-top: 20px;
         }
         p {
             color: var(--text-main-color-light);
@@ -258,6 +343,9 @@
             }
             @media (max-width: 1270px) {
                 font-size: 15px;
+            }
+            @media (max-width: 800px) {
+                font-size: 14px;
             }
         }
     }

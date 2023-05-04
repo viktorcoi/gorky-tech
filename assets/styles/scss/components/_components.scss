@@ -26,6 +26,9 @@
         background-size: 16px;
         min-width: 478px;
     }
+    @media (max-width: 640px) {
+        min-width: 100%;
+    }
 }
 
 .tags {
@@ -43,6 +46,11 @@
         row-gap: 8px;
         padding: 24px;
         border-radius: 18px;
+    }
+    @media (max-width: 1640px) {
+        margin: 36px 0 24px 0;
+        border: unset;
+        padding: unset;
     }
     &__tag {
         cursor: pointer;

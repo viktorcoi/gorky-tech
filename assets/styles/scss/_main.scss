@@ -25,6 +25,12 @@ h1, h2, h3, p, a, span {
     @media (max-width: 1640px) {
         padding: 60px 40px 80px 40px;
     }
+    @media (max-width: 1270px) {
+        padding: 60px 40px 60px 40px;
+    }
+    @media (max-width: 680px) {
+        padding: 36px 20px 50px 20px;
+    }
 }
 
 h1 {
@@ -35,6 +41,13 @@ h1 {
     @media (max-width: 1640px) {
         font-size: 52px;
         margin-bottom: 32px;
+    }
+    @media (max-width: 850px) {
+        font-size: 46px; 
+    }
+    @media (max-width: 640px) {
+        font-size: 30px; 
+        margin-bottom: 24px;
     }
 }
 

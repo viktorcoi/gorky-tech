@@ -23,7 +23,21 @@ document.addEventListener('DOMContentLoaded', ()  => {
         header.classList.remove('header-fixed');
     }
 
+    const updateContentHeight = () => {
+        const windowHeight = window.innerHeight;
+        const browserMenuHeight = document.documentElement.clientHeight - windowHeight;
+        if (window.innerWidth <= 1024) {
+            if (header.classList.contains('header-fixed'))
+            document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 72px))`;
+            else 
+            document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 104px))`;
+        } else {
+            document.querySelector('.header__menu').style.height = ``;
+        }
+    }
+
     document.querySelector('#btn-open-menu').addEventListener('click', () => {
+        updateContentHeight();
         openDropHeader('open-menu');
     })
 
@@ -79,6 +93,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
     window.addEventListener("scroll", function() {
         changeHeader();
     });
-
+    
     changeHeader();
+    updateContentHeight();
 });

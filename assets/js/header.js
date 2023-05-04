@@ -26,13 +26,19 @@ document.addEventListener('DOMContentLoaded', ()  => {
     const updateContentHeight = () => {
         const windowHeight = window.innerHeight;
         const browserMenuHeight = document.documentElement.clientHeight - windowHeight;
+        if (window.innerWidth > 1024) 
+        document.querySelector('.header__menu').style.height = ``;
         if (window.innerWidth <= 1024) {
             if (header.classList.contains('header-fixed'))
             document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 72px))`;
             else 
             document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 104px))`;
-        } else {
-            document.querySelector('.header__menu').style.height = ``;
+        }
+        if (window.innerWidth <= 492) {
+            if (header.classList.contains('header-fixed'))
+            document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 58px))`;
+            else 
+            document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 82px))`;
         }
     }
 

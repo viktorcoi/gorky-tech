@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     const listHeaderDrops = ['open-search', 'open-menu'];
 
-    const closeDropHeader = (className) => {
+    const openDropHeader = (className) => {
         listHeaderDrops.forEach(item => {
             if (!header.classList.contains(className))
             header.classList.remove(item)
@@ -18,11 +18,16 @@ document.addEventListener('DOMContentLoaded', ()  => {
     }
 
     document.querySelector('#btn-open-menu').addEventListener('click', () => {
-        closeDropHeader('open-menu');
+        openDropHeader('open-menu');
     })
 
     document.querySelector('#header-btn-search').addEventListener('click', () => {
-        closeDropHeader('open-search');
+        openDropHeader('open-search');
+    })
+
+    document.querySelector('#header-search-close').addEventListener('click', () => {
+        document.querySelector('body').classList.remove('block-scroll');
+        header.classList.remove('open-search')
     })
 
     document.querySelector('#switch-theme-dark').addEventListener('click', () => {
@@ -54,7 +59,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
         if (headerOverlay) {
             document.querySelector('body').classList.remove('block-scroll');
             header.classList.remove('open-menu')
-            header.classList.remove('open-search')
         }
     })
 

@@ -32,6 +32,10 @@ h1 {
     color: var(--text-main-color-light);
     font-weight: 500;
     margin-bottom: 42px;
+    @media (max-width: 1640px) {
+        font-size: 52px;
+        margin-bottom: 32px;
+    }
 }
 
 body {

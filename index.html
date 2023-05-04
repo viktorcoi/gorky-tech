@@ -39,7 +39,7 @@
                             <a href="#" class="header__links-social social-vk"></a>
                         </div>
                     </div>
-                    <button class="header__btn-search"></button>
+                    <button id="header-btn-search" class="header__btn-search"></button>
                     <div id="language-selector" class="header__language">
                         <div id="language-selector-head" class="header__language-header">
                             <p>RU</p>
@@ -68,7 +68,7 @@
                     <a href="#" class="header__menu-link">О компании</a>
                     <a href="#" class="header__menu-link">Наши партнеры</a>
                     <div class="header__contacts">
-                        <p class="header__contacts_title">КОНТАКТЫ:</p>
+                        <p class="header__contacts-title">КОНТАКТЫ:</p>
                         <div class="header__contacts-person">
                             <p>+7 (831) 414-05-52</p>
                             <p>info@gorky.ai</p>
@@ -81,9 +81,25 @@
                 </div>
             </div>
         </div>
+        <div class="header__search">
+            <div class="header__search-wrapper">
+                <input class="header__search-input" placeholder="Поиск"/>
+                <div class="header__search-result">
+                    <p class="tags__tag">Открыть ИТ-бизнес</p>
+                    <a href="#" class="tags__tag">Узнать про меры поддержки</a>
+                    <a href="#" class="tags__tag">Получить консультацию</a>
+                    <a href="#" class="tags__tag">Получить грант</a>
+                    <a href="#" class="tags__tag">Посмотреть отчет</a>
+                    <p class="tags__tag">Найти клиентов в компанию</p>
+                    <a href="#" class="tags__tag">ИТ-образование</a>
+                    <p class="tags__tag">Открыть ИТ-бизнес</p>
+                </div>
+            </div>
+        </div>
+        <div id="header-overlay" class="header__overlay"></div>
     </header>
     <main>
-        <div class="container main-page">
+        <div class="container">
             <div class="main-page">
                 <h1>Развивай технологии<br/>в Нижегородской области</h1>
                 <section class="main__tags">
@@ -116,7 +132,7 @@
                         <div class="main-slider__slide-wrapper">
                             <a class="main-slider__slide">
                                 <div class="main-slider__slide-content">
-                                    <img src="https://cdna.artstation.com/p/assets/images/images/015/563/422/large/helio-lima-relampago-mcqueen.jpg" class="main-slider__slide-img"/>
+                                    <img class="main-slider__slide-img" src="https://cdna.artstation.com/p/assets/images/images/015/563/422/large/helio-lima-relampago-mcqueen.jpg"/>
                                     <div class="main-slider__slide-text">
                                         <h2 class="main-slider__slide-title">40 тысяч человек посетили стенд Нижегородской области на «TIBO»</h2>
                                         <p class="main-slider__slide-desc">
@@ -133,7 +149,7 @@
                         <div class="main-slider__slide-wrapper">
                             <a class="main-slider__slide">
                                 <div class="main-slider__slide-content">
-                                    <img src="https://cdna.artstation.com/p/assets/images/images/015/563/422/large/helio-lima-relampago-mcqueen.jpg" class="main-slider__slide-img"/>
+                                    <img class="main-slider__slide-img" src="https://maximumwallhd.com/wp-content/uploads/2015/08/fonds-ecran-cars-15.jpg"/>
                                     <div class="main-slider__slide-text">
                                         <h2 class="main-slider__slide-title">Тренд-сессия прошла в рамках Международного фестиваля «ТехноСтрелка»</h2>
                                         <p class="main-slider__slide-desc">
@@ -149,7 +165,7 @@
                         <div class="main-slider__slide-wrapper">
                             <a class="main-slider__slide">
                                 <div class="main-slider__slide-content">
-                                    <img src="https://cdna.artstation.com/p/assets/images/images/015/563/422/large/helio-lima-relampago-mcqueen.jpg" class="main-slider__slide-img"/>
+                                    <img class="main-slider__slide-img" src="https://sportishka.com/uploads/posts/2022-11/1667494512_33-sportishka-com-p-tachki-dok-khadson-pinterest-33.jpg"/>
                                     <div class="main-slider__slide-text">
                                         <h2 class="main-slider__slide-title">40 тысяч человек посетили стенд Нижегородской области на «TIBO»</h2>
                                         <p class="main-slider__slide-desc">
@@ -165,7 +181,7 @@
                         <div class="main-slider__slide-wrapper">
                             <a class="main-slider__slide">
                                 <div class="main-slider__slide-content">
-                                    <img src="https://cdna.artstation.com/p/assets/images/images/015/563/422/large/helio-lima-relampago-mcqueen.jpg" class="main-slider__slide-img"/>
+                                    <img class="main-slider__slide-img" src="https://mobimg.b-cdn.net/v3/fetch/d9/d9117172252d93314ff26fbc65a62ece.jpeg"/>
                                     <div class="main-slider__slide-text">
                                         <h2 class="main-slider__slide-title">40 тысяч человек посетили стенд Нижегородской области на «TIBO»</h2>
                                         <p class="main-slider__slide-desc">
@@ -249,6 +265,19 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer__logo"></div>
+            <div class="footer__content">
+                <p class="footer__name">© Горький Тех</p>
+                <div class="footer__links">
+                    <a href="#">Пользовательское соглашение</a>
+                    <hr class="footer__line"/>
+                    <a href="#">Политика обработки данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </body>

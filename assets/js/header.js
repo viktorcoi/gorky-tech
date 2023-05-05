@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     const updateContentHeight = () => {
         const windowHeight = window.innerHeight;
-        // alert(windowHeight)
         if (window.innerWidth > 1024) 
         document.querySelector('.header__menu').style.height = ``;
         if (window.innerWidth <= 1024) {

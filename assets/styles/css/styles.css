@@ -2006,6 +2006,10 @@ footer {
   }
 }
 
+.main__tags .tags__tag {
+  display: none;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

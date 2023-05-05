@@ -18,27 +18,29 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     const changeHeader = () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        scrollTop > 0 ?
-        header.classList.add('header-fixed') :
-        header.classList.remove('header-fixed');
+        if (scrollTop > 0) {
+            header.classList.add('header-fixed');
+        } else {
+            header.classList.remove('header-fixed');
+        }    
     }
 
     const updateContentHeight = () => {
         const windowHeight = window.innerHeight;
-        const browserMenuHeight = document.documentElement.clientHeight - windowHeight;
+        // alert(windowHeight)
         if (window.innerWidth > 1024) 
         document.querySelector('.header__menu').style.height = ``;
         if (window.innerWidth <= 1024) {
             if (header.classList.contains('header-fixed'))
-            document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 72px))`;
+            document.querySelector('.header__menu').style.height = `calc(${windowHeight}px - 72px)`;
             else 
-            document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 104px))`;
+            document.querySelector('.header__menu').style.height = `calc(${windowHeight}px - 104px)`;
         }
         if (window.innerWidth <= 492) {
             if (header.classList.contains('header-fixed'))
-            document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 58px))`;
+            document.querySelector('.header__menu').style.height = `calc(${windowHeight}px - 58px)`;
             else 
-            document.querySelector('.header__menu').style.height = `calc(100vh - (${browserMenuHeight}px + 82px))`;
+            document.querySelector('.header__menu').style.height = `calc(${windowHeight}px - 82px)`;
         }
     }
 

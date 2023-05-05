@@ -395,6 +395,11 @@ svg {
     border-radius: 24px;
   }
 }
+@media (max-width: 1024px) {
+  .main-slider__slide-content {
+    opacity: 1;
+  }
+}
 @media (max-width: 680px) {
   .main-slider__slide-content {
     padding: 8px 8px 20px 8px;

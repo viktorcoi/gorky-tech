@@ -56,6 +56,21 @@ body {
     background-color: var(--background);
     overflow-x: hidden;
     &[data-theme="dark"] {
+        .shadow-back {
+            > div {
+                z-index: -2;
+                border-radius: 100%;
+                position: fixed;
+            }
+            &__purple {
+                background: #DA40B6;
+                filter: blur(200px);
+            }
+            &__blue {
+                background: #014DA5;
+                filter: blur(250px);
+            }
+        }
         --background: #12132B;
 
         --input-bg-search: rgba(255, 255, 255, 0.06);

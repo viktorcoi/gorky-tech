@@ -324,37 +324,6 @@ svg {
   font-style: normal;
   font-display: swap;
 }
-body[data-theme=dark] .shadow-back > div:nth-child(1) {
-  width: 25vw;
-  height: 25vw;
-  top: -10vw;
-  right: 5vw;
-}
-body[data-theme=dark] .shadow-back > div:nth-child(2) {
-  width: 30vw;
-  height: 30vw;
-  top: 20vw;
-  left: -20vw;
-}
-body[data-theme=dark] .shadow-back > div:nth-child(3) {
-  width: 30vw;
-  height: 30vw;
-  bottom: -22vw;
-  left: 30vw;
-}
-body[data-theme=dark] .shadow-back > div:nth-child(4) {
-  width: 15vw;
-  height: 15vw;
-  top: 20vw;
-  left: 30vw;
-}
-body[data-theme=dark] .shadow-back > div:nth-child(5) {
-  width: 15vw;
-  height: 15vw;
-  bottom: 0;
-  right: -2vw;
-}
-
 .main-page {
   width: min(1540px, 100%);
   margin: 0 auto;
@@ -2329,6 +2298,36 @@ body[data-theme=dark] .shadow-back > div {
   z-index: -2;
   border-radius: 100%;
   position: fixed;
+}
+body[data-theme=dark] .shadow-back > div:nth-child(1) {
+  width: 25vw;
+  height: 25vw;
+  top: -10vw;
+  right: 5vw;
+}
+body[data-theme=dark] .shadow-back > div:nth-child(2) {
+  width: 30vw;
+  height: 30vw;
+  top: 20vw;
+  left: -20vw;
+}
+body[data-theme=dark] .shadow-back > div:nth-child(3) {
+  width: 30vw;
+  height: 30vw;
+  bottom: -22vw;
+  left: 30vw;
+}
+body[data-theme=dark] .shadow-back > div:nth-child(4) {
+  width: 15vw;
+  height: 15vw;
+  top: 20vw;
+  left: 30vw;
+}
+body[data-theme=dark] .shadow-back > div:nth-child(5) {
+  width: 15vw;
+  height: 15vw;
+  bottom: 0;
+  right: -2vw;
 }
 body[data-theme=dark] .shadow-back__purple {
   background: #DA40B6;

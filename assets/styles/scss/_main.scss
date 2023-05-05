@@ -62,32 +62,32 @@ body {
                 border-radius: 100%;
                 position: fixed;
                 &:nth-child(1) {
-                    width: 25vw;
-                    height: 25vw;
+                    width: max(25vw, 400px);
+                    height: max(25vw, 400px);
                     top: -10vw;
                     right: 5vw;
                 }
                 &:nth-child(2) {
-                    width: 30vw;
-                    height: 30vw;
+                    width: max(30vw, 425px);
+                    height: max(30vw, 425px);
                     top: 20vw;
                     left: -20vw;
                 }
                 &:nth-child(3) {
-                    width: 30vw;
-                    height: 30vw;
+                    width: max(30vw, 425px);
+                    height: max(30vw, 425px);
                     bottom: -22vw;
                     left: 30vw;
                 }
                 &:nth-child(4) {
-                    width: 15vw;
-                    height: 15vw;
+                    width: max(15vw, 204px);
+                    height: max(15vw, 204px);
                     top: 20vw;
                     left: 30vw;
                 }
                 &:nth-child(5) {
-                    width: 15vw;
-                    height: 15vw;
+                    width: max(15vw, 204px);
+                    height: max(15vw, 204px);
                     bottom: 0;
                     right: -2vw;
                 }

@@ -32,4 +32,19 @@ document.addEventListener('DOMContentLoaded', ()  => {
         }
     });
 
+    let listSlides = document.querySelectorAll('.main-slider__slide');
+
+    listSlides.forEach(item => {
+        item.onmouseover = function (e) {
+            listSlides.forEach(slide => {
+                if (item !== slide)
+                slide.classList.add('not-hover');
+            })
+        };
+        item.onmouseout = function () {
+            listSlides.forEach((slide, slideId) => {
+                slide.classList.remove('not-hover');
+            })
+        };
+    })
 });

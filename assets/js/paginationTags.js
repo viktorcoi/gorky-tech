@@ -5,28 +5,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.querySelector('#search-main-tags');
     const tags = Array.from(mainTags.children);
     const pageSizeOptions = {
-      small: 7,
-      medium: 10,
-      large: 15,
+        small: 7,
+        medium: 10,
+        large: 15,
     };
     let pageSize = pageSizeOptions.large;
     let pageCount = Math.ceil(tags.length / pageSize);
     let currentPage = 1;
     let filteredTags = tags;
   
+    const filterTags = () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        filteredTags = tags.filter(tag => tag.textContent.toLowerCase().includes(searchTerm));
+        currentPage = 1;
+        pageCount = Math.ceil(filteredTags.length / pageSize);
+        showTags();
+    };
+  
     const showTags = () => {
         const startIndex = (currentPage - 1) * pageSize;
         const endIndex = startIndex + pageSize;
-      
-        tags.forEach(tag => {
+        tags.forEach((tag, index) => {
             if (filteredTags.includes(tag)) {
-                if (filteredTags.indexOf(tag) >= startIndex && filteredTags.indexOf(tag) < endIndex) {
-                tag.style.display = 'block';
+                if (startIndex <= filteredTags.indexOf(tag) && filteredTags.indexOf(tag) < endIndex) {
+                    tag.style.display = 'block';
+                    tag.classList.add('animate__animated', 'animate__fadeIn');
                 } else {
-                tag.style.display = 'none';
+                    tag.style.display = 'none';
+                    tag.classList.remove('animate__animated', 'animate__fadeIn');
                 }
             } else {
                 tag.style.display = 'none';
+                tag.classList.remove('animate__animated', 'animate__fadeIn');
             }
         });
     };
@@ -46,15 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         showTags();
     };
   
-    const updateFilteredTags = () => {
-        const searchTerm = searchInput.value.toLowerCase();
-        filteredTags = tags.filter(tag => tag.textContent.toLowerCase().includes(searchTerm));
-        currentPage = 1;
-        updatePagination();
-    };
-  
     searchInput.addEventListener('input', () => {
-        updateFilteredTags();
+        filterTags();
     });
   
     prevButton.addEventListener('click', () => {
@@ -74,6 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         showTags();
     });
+
+    window.addEventListener("resize", updatePagination);
   
     updatePagination();
-  });
+});

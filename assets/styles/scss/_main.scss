@@ -1,5 +1,8 @@
+:root {
+    --trans: .3s;
+}
+
 * {
-    // transition: .3s;
     font-family: 'Gramatika', sans-serif;
     overflow-wrap: inherit;
 }
@@ -14,6 +17,10 @@ button, a {
 
 html {
     scroll-behavior: smooth;
+}
+
+button, a {
+    transition: var(--trans);
 }
 
 h1, h2, h3, p, a, span {

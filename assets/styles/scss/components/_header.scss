@@ -75,6 +75,7 @@ header {
     padding: 0 56px;
     border-bottom: 2px solid var(--header-border);
     height: 138px;
+    transition: var(--trans);
     &.header-fixed {
         height: 90px;
         background-color: var(--header-bg-menu);
@@ -167,6 +168,7 @@ header {
         gap: 6px; 
     }
     &__overlay {
+        transition: var(--trans);
         z-index: 1;
         top: 138px; right: 0; left: 0; bottom: 0;
         position: fixed;
@@ -241,6 +243,7 @@ header {
         }
     }
     &__logo-title {
+        transition: var(--trans);
         font-size: 16px;
         font-weight: 400;
         letter-spacing: -0.03em;
@@ -267,6 +270,7 @@ header {
         }
     }
     &__theme {
+        transition: var(--trans);
         position: relative;
         padding: 0 4px;
         width: 77px;
@@ -298,6 +302,7 @@ header {
         }
     }
     &__theme-switcher {
+        transition: var(--trans);
         margin: auto 0;
         width: 32px;
         height: 32px;
@@ -308,6 +313,7 @@ header {
             height: 27px;
         }
         &--dark, &--light {
+            transition: var(--trans);
             cursor: pointer;
             position: absolute;
             width: 20px;
@@ -489,7 +495,7 @@ header {
         }
         &::after {
             content: '';
-            transition: .3s;
+            transition: var(--trans);
             width: 18px;
             height: 18px;
             background-size: 18px;
@@ -512,6 +518,7 @@ header {
         }
     }
     &__language-options {
+        transition: var(--trans);
         top: 50px;
         position: absolute;
         z-index: 3;
@@ -534,16 +541,15 @@ header {
         &::after {
             content: '';
             position: absolute;
-            transition: .3s;
             top: -4px; right: 14px;
             width: 10px;
             height: 10px;
             background-color: var(--header-bg-language-options);
             border-radius: 2px;
             transform: rotate(45deg);
-          
         }
         p {
+            transition: var(--trans);
             cursor: pointer;
             position: relative;
             z-index: 2;
@@ -565,9 +571,9 @@ header {
         }
     }
     &__menu {
+        transition: var(--trans);
         position: absolute;
         left: 0; right: 0; top: 138px;
-        background-color: green;
         background-color: var(--header-bg-menu);
         padding: 40px 242px 53px 144px;
         transform: translateX(-100vw);
@@ -817,12 +823,17 @@ header {
             align-items: unset;
             margin: 12px 0 20px 0;
         }
-        > p {
-            font-weight: 500;
-            font-size: 32px;
-            color: var(--text-main-color-light);
-            @media (max-width: 1640px) {
-                font-size: 24px;
+    }
+    &__person-link {
+        font-weight: 500;
+        font-size: 32px;
+        color: var(--text-main-color-light);
+        @media (max-width: 1640px) {
+            font-size: 24px;
+        }
+        @media (min-width: 1025px) {
+            &:hover {
+                opacity: 0.64;
             }
         }
     }
@@ -850,6 +861,7 @@ header {
         }
     }
     &__search {
+        transition: var(--trans);
         position: absolute;
         top: 138px; left: 0; right: 0; 
         width: min(860px, 100%);

@@ -1,4 +1,5 @@
 .search-in-page {
+    transition: var(--trans);
     background-color:  var(--input-bg-search);
     border: 1px solid var(--input-border-search);
     border-radius: 14px;
@@ -57,9 +58,7 @@
         padding: unset;
     }
     &__tag {
-
-        // transition: opacity 0.5s ease-in-out;
-
+        transition: var(--trans);
         cursor: pointer;
         display: block;
         font-size: 18px;

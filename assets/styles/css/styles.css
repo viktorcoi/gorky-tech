@@ -2103,7 +2103,6 @@ footer {
 }
 
 * {
-  transition: 0.3s;
   font-family: "Gramatika", sans-serif;
   overflow-wrap: inherit;
 }

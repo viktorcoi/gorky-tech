@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
     }
 
     const changeHeader = () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollTop = document.documentElement.scrollTop;
         if (scrollTop > 0) {
             header.classList.add('header-fixed');
         } else {

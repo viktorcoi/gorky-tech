@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
     })
 
     window.addEventListener("scroll", function() {
-        changeHeader();
+        // changeHeader();
     });
     
     changeHeader();

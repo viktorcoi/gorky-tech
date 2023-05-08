@@ -1,3 +1,5 @@
+import { paginationTags } from './paginationTags.js';
+
 document.addEventListener('DOMContentLoaded', ()  => {
 
     let slider = tns({
@@ -47,4 +49,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
             })
         };
     })
+
+    paginationTags('#main-tags', '#main-tags-page-prew', '#main-tags-page-next', '#search-main-tags');
+    
 });

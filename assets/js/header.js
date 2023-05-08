@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     const header = document.querySelector('header')
     const languageSelector = document.querySelector('#language-selector');
-
     const listHeaderDrops = ['open-search', 'open-menu'];
 
     const openDropHeader = (className) => {
@@ -55,16 +54,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
     document.querySelector('#header-search-close').addEventListener('click', () => {
         document.querySelector('body').classList.remove('block-scroll');
         header.classList.remove('open-search')
-    })
-
-    document.querySelector('#switch-theme-dark').addEventListener('click', () => {
-        document.querySelector('#switcher-theme').checked = false;
-        document.querySelector('body').setAttribute('data-theme', 'dark');
-    })
-
-    document.querySelector('#switch-theme-light').addEventListener('click', () => {
-        document.querySelector('#switcher-theme').checked = true;
-        document.querySelector('body').setAttribute('data-theme', 'light');
     })
 
     languageSelector.querySelector('#language-selector-head').addEventListener('click', function() {

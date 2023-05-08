@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const mainTags = document.querySelector('#main-tags');
-    const prevButton = document.querySelector('#main-tags-page-prew');
-    const nextButton = document.querySelector('#main-tags-page-next');
-    const searchInput = document.querySelector('#search-main-tags');
+const paginationTags = (section, btnPrew, btnNext, input) => {
+    const mainTags = document.querySelector(section);
+    const prevButton = document.querySelector(btnPrew);
+    const nextButton = document.querySelector(btnNext);
+    const searchInput = document.querySelector(input);
     const tags = Array.from(mainTags.children);
     const pageSizeOptions = {
         small: 7,
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let pageCount = Math.ceil(tags.length / pageSize);
     let currentPage = 1;
     let filteredTags = tags;
-  
+    
     const filterTags = () => {
         const searchTerm = searchInput.value.toLowerCase();
         filteredTags = tags.filter(tag => tag.textContent.toLowerCase().includes(searchTerm));
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pageCount = Math.ceil(filteredTags.length / pageSize);
         showTags();
     };
-  
+    
     const showTags = () => {
         const startIndex = (currentPage - 1) * pageSize;
         const endIndex = startIndex + pageSize;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
-  
+    
     const updatePagination = () => {
         if (window.innerWidth <= 492) {
             pageSize = pageSizeOptions.small;
@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         showTags();
     };
-  
+    
     searchInput.addEventListener('input', () => {
         filterTags();
     });
-  
+    
     prevButton.addEventListener('click', () => {
         if (currentPage > 1) {
             currentPage--;
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         showTags();
     });
-  
+    
     nextButton.addEventListener('click', () => {
         if (currentPage < pageCount) {
             currentPage++;
@@ -79,6 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener("resize", updatePagination);
-  
+    
     updatePagination();
-});
+}
+
+export { paginationTags };

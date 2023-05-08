@@ -1,3 +1,47 @@
+body {
+    &[data-theme="dark"] {
+        --main-slide-opacity: .5;
+        --main-slide-bg: rgba(255, 255, 255, 0.16);
+        --main-slide-bg-hover: rgba(255, 255, 255, 1);
+        --main-slide-box-shadow: unset;
+        --main-slide-box-shadow-hover: 0px 5px 55px rgba(62, 31, 31, 0.01), 0px 38px 38px rgba(31, 41, 62, 0.02), 0px 9px 21px rgba(31, 41, 62, 0.02), 0px 0px 0px rgba(31, 41, 62, 0.02);
+        --main-slide-text-color-hover: rgba(26, 27, 29, 1);
+        --main-slide-text-color-detailed: rgba(73, 105, 219, 1);
+        --main-slide-text-color-detailed-hover: rgba(19, 67, 239, 1);
+        --main-slide-border-detailed: rgba(255, 255, 255, 0.08);
+        --main-slide-border-detailed-hover: rgba(24, 24, 24, 0.08);
+        --main-slide-detailed-arrow: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.22217 12L10.2222 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.22217 4L10.2222 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        --main-slide-detailed-arrow-hover: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.22217 12L10.2222 8' stroke='%231343EF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.22217 4L10.2222 8' stroke='%231343EF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+
+        --areas-activity-bg: rgba(255, 255, 255, 0.08);
+        --areas-activity-bg-hover: rgba(255, 255, 255, 1);
+        --areas-activity-title-hover: rgba(33, 82, 242, 1);
+        --areas-activity-text-hover: rgba(24, 24, 24, 1);
+        --areas-activity-border: rgba(255, 255, 255, 0.08);
+    }
+    &[data-theme="light"] {
+        --main-slide-opacity: 1;
+        --main-slide-bg: rgba(255, 255, 255, 1);
+        --main-slide-bg-hover: linear-gradient(291.09deg, #014DA5 -28.23%, rgba(1, 77, 165, 0) 63.08%), linear-gradient(162.56deg, #DA40B6 -130.95%, rgba(218, 64, 182, 0) 88.05%), #12132A;
+        --main-slide-box-shadow: 0px 5px 55px rgba(31, 41, 62, 0.01), 0px 38px 38px rgba(31, 41, 62, 0.02), 0px 9px 21px rgba(31, 41, 62, 0.02), 0px 0px 0px rgba(31, 41, 62, 0.02);
+        --main-slide-box-shadow-hover: 0px 5px 55px rgba(31, 41, 62, 0.01), 0px 38px 38px rgba(31, 41, 62, 0.02), 0px 9px 21px rgba(31, 41, 62, 0.02), 0px 0px 0px rgba(31, 41, 62, 0.02);
+        --main-slide-text-color-hover: rgba(255, 255, 255, 1);
+        --main-slide-text-color-detailed: rgba(73, 105, 219, 1);
+        --main-slide-text-color-detailed-hover: rgba(73, 105, 219, 1);
+        --main-slide-border-detailed: rgba(24, 24, 24, 0.08);
+        --main-slide-border-detailed-hover: rgba(24, 24, 24, 0.08);
+        --main-slide-detailed-arrow: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.22266 12L10.2227 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.22266 4L10.2227 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        --main-slide-detailed-arrow-hover: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.22266 12L10.2227 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.22266 4L10.2227 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+
+        // --areas-activity-bg: rgba(255, 255, 255, 0.08);
+        // --areas-activity-bg-hover: rgba(255, 255, 255, 1);
+        // --areas-activity-title-hover: rgba(33, 82, 242, 1);
+        // --areas-activity-text-hover: rgba(24, 24, 24, 1);
+        // --areas-activity-border: rgba(255, 255, 255, 0.08);
+    }
+}
+
+
 .main-page {
     width: min(1540px, 100%);
     margin: 0 auto;
@@ -226,7 +270,6 @@
         padding: 36px 36px 50px 36px;
         background-color: var(--areas-activity-bg);
         border: 1.5px solid var(--areas-activity-border);
-        backdrop-filter: blur(6px);
         border-radius: 32px;
         @media (max-width: 1640px) {
             padding: 28px 28px 40px 28px;

@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     const changeHeader = () => {
         const scrollTop = document.documentElement.scrollTop;
-        if (scrollTop > 0) {
+        if (scrollTop > header.offsetHeight / 1.7) {
             header.classList.add('header-fixed');
         } else {
             header.classList.remove('header-fixed');
-        }    
+        }  
     }
 
     const updateContentHeight = () => {

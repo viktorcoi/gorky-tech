@@ -28,15 +28,18 @@ h1, h2, h3, p, a, span {
 }
 
 .container {
-    padding: 72px 56px 120px 56px;
+    padding: 210px 56px 120px 56px;
     @media (max-width: 1640px) {
-        padding: 60px 40px 80px 40px;
+        padding: 164px 40px 80px 40px;
     }
     @media (max-width: 1270px) {
-        padding: 60px 40px 60px 40px;
+        padding: 164px 40px 60px 40px;
     }
     @media (max-width: 680px) {
-        padding: 36px 20px 50px 20px;
+        padding: 140px 20px 50px 20px;
+    }
+    @media (max-width: 492px) {
+        padding: 118px 20px 50px 20px;
     }
 }
 
@@ -69,20 +72,20 @@ body {
                 border-radius: 100%;
                 position: fixed;
                 &:nth-child(1) {
-                    width: max(25vw, 400px);
-                    height: max(25vw, 400px);
+                    width: max(25vw, 320px);
+                    height: max(25vw, 320px);
                     top: -10vw;
                     right: 5vw;
                 }
                 &:nth-child(2) {
-                    width: max(30vw, 425px);
-                    height: max(30vw, 425px);
+                    width: max(30vw, 350px);
+                    height: max(30vw, 350px);
                     top: 20vw;
                     left: -20vw;
                 }
                 &:nth-child(3) {
-                    width: max(30vw, 425px);
-                    height: max(30vw, 425px);
+                    width: max(30vw, 350px);
+                    height: max(30vw, 350px);
                     bottom: -22vw;
                     left: 30vw;
                 }

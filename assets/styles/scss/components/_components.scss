@@ -18,12 +18,15 @@ body {
         --btn-img-next: url("data:image/svg+xml,%3Csvg width='83' height='43' viewBox='0 0 83 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath d='M39.8999 13L48.8999 22L39.8999 31' stroke='white' stroke-width='2' stroke-linecap='square'/%3E%3Cpath d='M16 1H11C5.47715 1 1 5.47715 1 11V32C1 37.5228 5.47715 42 11 42H16' stroke='white' stroke-width='1.5'/%3E%3Cpath d='M67 1H72C77.5228 1 82 5.47715 82 11V32C82 37.5228 77.5228 42 72 42H67' stroke='white' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E%0A");
         --btn-img-next-hover: url("data:image/svg+xml,%3Csvg width='83' height='43' viewBox='0 0 83 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M39.8999 13L48.8999 22L39.8999 31' stroke='white' stroke-width='2' stroke-linecap='square'/%3E%3Cpath d='M16 1H11C5.47715 1 1 5.47715 1 11V32C1 37.5228 5.47715 42 11 42H16' stroke='white' stroke-width='1.5'/%3E%3Cpath d='M67 1H72C77.5228 1 82 5.47715 82 11V32C82 37.5228 77.5228 42 72 42H67' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A"); 
     
-        --bg-btn-download: #2152F2;
+        --bg-btn-blue: #2152F2;
         --img-btn-download: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath d='M16.6667 14.6673V16.334C16.6667 16.776 16.4912 17.1999 16.1786 17.5125C15.866 17.8251 15.4421 18.0007 15.0001 18.0007H5.00008C4.55805 18.0007 4.13413 17.8251 3.82157 17.5125C3.50901 17.1999 3.33342 16.776 3.33342 16.334V14.6673M14.1667 9.66732L10.0001 13.834M10.0001 13.834L5.83342 9.66732M10.0001 13.834L10.0001 3.83398' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
-        --bg-btn-download-hover: #2152F2;
+        --bg-btn-blue-hover: #2152F2;
 
-        --bg-btn-use-form: rgba(255, 255, 255, 0.08);;
-        --bg-btn-use-form-hover: rgba(255, 255, 255, 0.08);;
+        --bg-btn-use-form: rgba(255, 255, 255, 0.08);
+        --bg-btn-use-form-hover: rgba(255, 255, 255, 0.08);
+
+        --border-popup: rgba(255, 255, 255, 0.12);
+        --bg-popup: #1D203A;
     }
     &[data-theme="light"] {
         --input-bg-search: rgba(239, 242, 246, 1);
@@ -170,20 +173,37 @@ body {
     font-size: 18px;
     color: var(--text-main-color-light);
     border-radius: 14px;
+    @media (max-width: 1640px) {
+        border-radius: 12px;
+        font-size: 16px;
+    }
+    @media (max-width: 640px) {
+        font-size: 15px;
+    }
 }
 
 .btn-download {
     display: block;
     padding: 24px 42px 25px 72px;
-    background-color: var(--bg-btn-download);
+    background-color: var(--bg-btn-blue);
     background-image: var(--img-btn-download);
     background-position: 42px center;
     background-size: 20px;
     background-repeat: no-repeat;
     @media (min-width: 1025px) {
         &:hover {
-            background-color: var(--bg-btn-download-hover);
+            background-color: var(--bg-btn-blue-hover);
         }
+    }
+    @media (max-width: 1640px) {
+        padding: 20px 32px 21px 58px;
+        background-position: 32px center;
+        background-size: 18px;
+    }
+    @media (max-width: 640px) {
+        padding: 15px 24px 17px 46px;
+        background-position: 24px center;
+        background-size: 16px;
     }
 }
 
@@ -195,4 +215,11 @@ body {
             background-color: var(--bg-btn-use-form);
         }
     }
+    @media (max-width: 1640px) {
+        padding: 20px 32px 21px 32px;
+    }
+    @media (max-width: 640px) {
+        padding: 15px 24px 17px 24px;
+    }
 }
+

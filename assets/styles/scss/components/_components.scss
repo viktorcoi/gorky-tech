@@ -250,6 +250,10 @@ body {
         color: var(--text-main-color-light);
         font-size: 36px;
         margin-bottom: 36px;
+        @media (max-width: 1280px) {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
     }
     &__cross {
         top: 18px; right: 18px;
@@ -260,6 +264,11 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-image: var(--img-popup-cross);
+        @media (max-width: 1280px) {
+            width: 28px;
+            height: 28px;
+            background-size: 28px;
+        }
     }
     &.ask-question {
         width: min(688px, 90%);
@@ -305,6 +314,10 @@ body {
         padding: 18px 20px 19px 20px;
         &::placeholder {
             opacity: .5;
+        }
+        @media (max-width: 1280px) {
+            font-size: 16px;
+            padding: 16px 18px 17px 18px;
         }
     }
     &__btn {

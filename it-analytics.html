@@ -446,12 +446,24 @@
                         <h2 class="popup__title">Задать вопрос аналитикам</h2>
                         <form class="popup-form">
                             <div class="popup-form__two-input">
-                                <input class="popup-form__input" placeholder="Имя"/>
-                                <input class="popup-form__input" placeholder="Телефон или e-mail"/>
+                                <div class="popup-form__for-input">
+                                    <input id="ask-question-name" class="popup-form__input" placeholder="Имя"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="ask-question-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
                             </div>
-                            <input class="popup-form__input" placeholder="Компания"/>
-                            <textarea class="popup-form__input ask-question__textarea" placeholder="Вопрос"></textarea>
-                            <button class="popup-form__btn ask-question__btn">Отправить</button>       
+                            <div class="popup-form__for-input">
+                                <input id="ask-question-company" class="popup-form__input" placeholder="Компания"/>
+                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                            </div>
+                            <div class="popup-form__for-input">
+                                <textarea id="ask-question-quest" class="popup-form__input ask-question__textarea" placeholder="Вопрос"></textarea>
+                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                            </div>
+                            <button id="send-ask-question" class="popup-form__btn ask-question__btn">Отправить</button>       
                             <p class="ask-question__desc">
                                 <span>
                                     Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
@@ -492,5 +504,6 @@
     </div>
     <script type="module" src="./assets/js/main.js"></script>
     <script type="module" src="./assets/js/analyticsPage.js"></script>
+    <script src="https://unpkg.com/imask"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@ body {
         --header-text-logo-color: rgba(255, 255, 255, .5);
 
         
-        --header-img-logo: url(../../img/logo.svg);
+        --header-img-logo: url('/assets/img/logo.svg');
         
         
         
@@ -50,7 +50,7 @@ body {
         --header-img-btn-menu: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 10H27' stroke='%23181818' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3Cpath d='M5 16.2222H27' stroke='%23181818' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3Cpath d='M5 22.4445H27' stroke='%23181818' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3C/svg%3E%0A");
         --header-img-btn-menu-show: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 24L24 8M8 8L24 24' stroke='%23181818' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3C/svg%3E%0A");
         --header-text-logo-color: rgba(24, 24, 24, 1);
-        --header-img-logo: url(../../img/logo-light.svg);
+        --header-img-logo: url('/assets/img/logo-light.svg');
         --header-bg-block: rgba(228, 235, 241, 1);
         --header-bg-block-hover: #DEE4EB;
 

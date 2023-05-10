@@ -273,6 +273,7 @@ body {
         @media (max-width: 640px) {
             font-size: 24px;
             margin-bottom: 20px;
+            padding-right: 24px;
         }
     }
     &__cross {
@@ -318,12 +319,15 @@ body {
                 color: var(--text-main-color-light);
                 font-size: 14px;
                 font-weight: 400;
+                padding-bottom: 2px;
                 span {
                     opacity: .5;
+                    line-height: 140%;
                 }
                 a {
                     opacity: .8;
                     border-bottom: 2px solid var(--border-popup-mail);
+                    line-height: 140%;
                 }
                 @media (max-width: 640px) {
                     margin-top: 16px;
@@ -360,6 +364,13 @@ body {
         padding: 18px 20px 19px 20px;
         &::placeholder {
             opacity: .5;
+        }
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            transition: background-color 5000s ease-in-out 0s;
+            -webkit-text-fill-color: var(--text-main-color-light);
         }
         @media (max-width: 1280px) {
             border-radius: 12px;

@@ -441,8 +441,8 @@
                     </div>
                 </section>
                 <div id="analytics-page-popups" class="bg-popup">
-                    <div class="popup ask-question">
-                        <button class="popup__cross"></button>
+                    <div id="popup-ask-question" class="popup ask-question">
+                        <button id="ask-question-close" class="popup__cross"></button>
                         <h2 class="popup__title">Задать вопрос аналитикам</h2>
                         <form class="popup-form">
                             <div class="popup-form__two-input">
@@ -451,16 +451,16 @@
                             </div>
                             <input class="popup-form__input" placeholder="Компания"/>
                             <textarea class="popup-form__input ask-question__textarea" placeholder="Вопрос"></textarea>
-                            <button class="popup-form__btn ask-question__btn">Отправить</button>
+                            <button class="popup-form__btn ask-question__btn">Отправить</button>       
+                            <p class="ask-question__desc">
+                                <span>
+                                    Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
+                                    вопроса. Приложить материалы (изображения, видео) вы можете, 
+                                    отправив нам письмо по эл. почте на адрес:
+                                </span>
+                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
+                            </p>     
                         </form>
-                        <p class="ask-question__desc">
-                            <span>
-                                Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
-                                вопроса. Приложить материалы (изображения, видео) вы можете, 
-                                отправив нам письмо по эл. почте на адрес:
-                            </span>
-                            <a href="mailto:info@gorky.ai">info@gorky.ai</a>
-                        </p>
                     </div>
                 </div>
             </div>

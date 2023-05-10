@@ -21,23 +21,23 @@ body {
     }
     &[data-theme="light"] {
         --main-slide-opacity: 1;
-        --main-slide-bg: rgba(255, 255, 255, 1);
-        --main-slide-bg-hover: linear-gradient(291.09deg, #014DA5 -28.23%, rgba(1, 77, 165, 0) 63.08%), linear-gradient(162.56deg, #DA40B6 -130.95%, rgba(218, 64, 182, 0) 88.05%), #12132A;
-        --main-slide-box-shadow: 0px 5px 55px rgba(31, 41, 62, 0.01), 0px 38px 38px rgba(31, 41, 62, 0.02), 0px 9px 21px rgba(31, 41, 62, 0.02), 0px 0px 0px rgba(31, 41, 62, 0.02);
+        --main-slide-bg-hover: rgba(255, 255, 255, 1);
+        --main-slide-bg: linear-gradient(291.09deg, #014DA5 -28.23%, rgba(1, 77, 165, 0) 63.08%), linear-gradient(162.56deg, #DA40B6 -130.95%, rgba(218, 64, 182, 0) 88.05%), #12132A;
         --main-slide-box-shadow-hover: 0px 5px 55px rgba(31, 41, 62, 0.01), 0px 38px 38px rgba(31, 41, 62, 0.02), 0px 9px 21px rgba(31, 41, 62, 0.02), 0px 0px 0px rgba(31, 41, 62, 0.02);
-        --main-slide-text-color-hover: rgba(255, 255, 255, 1);
-        --main-slide-text-color-detailed: rgba(73, 105, 219, 1);
-        --main-slide-text-color-detailed-hover: rgba(73, 105, 219, 1);
-        --main-slide-border-detailed: rgba(24, 24, 24, 0.08);
+        --main-slide-box-shadow: 0px 5px 55px rgba(31, 41, 62, 0.01), 0px 38px 38px rgba(31, 41, 62, 0.02), 0px 9px 21px rgba(31, 41, 62, 0.02), 0px 0px 0px rgba(31, 41, 62, 0.02);
+        --main-slide-text-color-hover: #181818;
+        --main-slide-text-color-detailed-hover: #2152F2;
+        --main-slide-text-color-detailed: #FFFFFF;
         --main-slide-border-detailed-hover: rgba(24, 24, 24, 0.08);
-        --main-slide-detailed-arrow: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.22266 12L10.2227 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.22266 4L10.2227 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-        --main-slide-detailed-arrow-hover: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.22266 12L10.2227 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.22266 4L10.2227 8' stroke='%234969DB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        --main-slide-border-detailed: rgba(255, 255, 255, 0.18);
+        --main-slide-detailed-arrow: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.22266 12L10.2227 8' stroke='white' stroke-opacity='0.18' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.22266 4L10.2227 8' stroke='white' stroke-opacity='0.18' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        --main-slide-detailed-arrow-hover: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.22266 12L10.2227 8' stroke='%232152F2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.22266 4L10.2227 8' stroke='%232152F2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 
-        // --areas-activity-bg: rgba(255, 255, 255, 0.08);
-        // --areas-activity-bg-hover: rgba(255, 255, 255, 1);
-        // --areas-activity-title-hover: rgba(33, 82, 242, 1);
-        // --areas-activity-text-hover: rgba(24, 24, 24, 1);
-        // --areas-activity-border: rgba(255, 255, 255, 0.08);
+        --areas-activity-bg: #FFFFFF;
+        --areas-activity-bg-hover: linear-gradient(241.54deg, #014DA5 -54.06%, rgba(1, 77, 165, 0) 105.46%), linear-gradient(62.71deg, #DA40B6 -87.35%, rgba(218, 64, 182, 0) 100%), #12132A;
+        --areas-activity-title-hover: #FFFFFF;
+        --areas-activity-text-hover: #FFFFFF;
+        --areas-activity-border: rgba(255, 255, 255, 0.08);
     }
 }
 
@@ -227,6 +227,33 @@ body {
     }
 }
 
+body[data-theme="light"] {
+    .main-slider {
+        &__slide {
+            @media (min-width: 1025px) {
+                &:hover {
+                    .main-slider {
+                        &__slide-content {
+                            background: var(--main-slide-bg);
+                            box-shadow: var(--main-slide-box-shadow);
+                        }
+                        &__slide-title, &__slide-desc {
+                            color: var(--text-main-color-dark);
+                        }
+                        &__slide-detailed {
+                            color: var(--main-slide-text-color-detailed);
+                            border-bottom: 2px solid var(--main-slide-border-detailed);
+                            &::after {
+                                background-image: var(--main-slide-detailed-arrow);
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
 .areas-activity {
     &__title {
         font-weight: 500;
@@ -268,7 +295,7 @@ body {
     }
     &__block {
         padding: 36px 36px 50px 36px;
-        background-color: var(--areas-activity-bg);
+        background: var(--areas-activity-bg);
         border: 1.5px solid var(--areas-activity-border);
         border-radius: 32px;
         @media (max-width: 1640px) {
@@ -315,7 +342,7 @@ body {
         }
         @media (min-width: 1025px) {
             &:hover {
-                background-color: var(--areas-activity-bg-hover);
+                background: var(--areas-activity-bg-hover);
                 .areas-activity {
                     &__block-title {
                         color: var(--areas-activity-title-hover);
@@ -337,6 +364,7 @@ body {
         background-repeat: no-repeat;
         background-position: left center;
         line-height: 56px;
+        transition: var(--trans);
         @media (max-width: 1640px) {
             font-size: 28px;
             padding-left: 56px;
@@ -382,6 +410,7 @@ body {
             color: var(--text-main-color-light);
             font-weight: 500;
             font-size: 20px;
+            transition: var(--trans);
             @media (max-width: 1640px) {
                 font-size: 16px;
             }

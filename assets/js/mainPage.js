@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', ()  => {
     let listSlides = document.querySelectorAll('.main-slider__slide');
 
     listSlides.forEach(item => {
-        item.onmouseover = function (e) {
+        item.onmouseover = function () {
             listSlides.forEach(slide => {
-                if (item !== slide)
+                if (item !== slide && document.querySelector('body').dataset.theme === 'dark')
                 slide.classList.add('not-hover');
             })
         };
@@ -53,5 +53,5 @@ document.addEventListener('DOMContentLoaded', ()  => {
     })
 
     paginationTags('#main-tags', '#main-tags-page-prew', '#main-tags-page-next', '#search-main-tags');
-    
+
 });

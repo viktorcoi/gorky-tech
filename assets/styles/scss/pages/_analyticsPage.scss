@@ -467,12 +467,21 @@ body {
         }
     }
     &__graph {
+        transition: .8s;
         width: 750px;
         height: 410px;
         background-position: center;
         background-size: 100% auto;
         background-repeat: no-repeat;
         position: relative;
+        @media (min-width: 1025px) {
+            transform: translateX(30%);
+            opacity: 0;
+            &.animation-show {
+                transform: translateX(0) !important;
+                opacity: 1;
+            }
+        }
         @media (max-width: 1640px) {
             width: 604px;
             height: 330px;

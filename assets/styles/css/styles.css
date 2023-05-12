@@ -1914,6 +1914,9 @@ body[data-theme=dark] {
 body[data-theme=dark] {
   --bg-sales-info-block: rgba(255, 255, 255, 0.08);
   --border-sales-info-block: rgba(255, 255, 255, 0.08);
+  --bg-sales-info-block-hover:rgba(255, 255, 255, 1);
+  --border-sales-info-block-hover: rgba(255, 255, 255, 1);
+  --text-sales-info-block-title: rgba(33, 82, 242, 1);
 }
 .sales-page {
   width: min(1540px, 100%);
@@ -2016,6 +2019,7 @@ body[data-theme=dark] {
 }
 .sales-info__block {
   display: flex;
+  transition: var(--trans);
   flex-direction: column;
   gap: 32px;
   padding: 36px 36px 46px 36px;
@@ -2023,6 +2027,21 @@ body[data-theme=dark] {
   border: 1px solid var(--border-sales-info-block);
   border-radius: 32px;
   min-height: 338.5px;
+}
+@media (min-width: 1025px) {
+  .sales-info__block:not(:nth-child(4), :nth-child(5)) {
+    cursor: pointer;
+  }
+  .sales-info__block:not(:nth-child(4), :nth-child(5)):hover {
+    background-color: var(--bg-sales-info-block-hover);
+    border: 1px solid var(--border-sales-info-block-hover);
+  }
+  .sales-info__block:not(:nth-child(4), :nth-child(5)):hover .sales-info__block-title {
+    color: var(--text-sales-info-block-title);
+  }
+  .sales-info__block:not(:nth-child(4), :nth-child(5)):hover .sales-info__block-second-title, .sales-info__block:not(:nth-child(4), :nth-child(5)):hover .sales-info__block-desc {
+    color: var(--text-main-color-dark);
+  }
 }
 @media (max-width: 1640px) {
   .sales-info__block {
@@ -2060,6 +2079,7 @@ body[data-theme=dark] {
   font-weight: 500;
   font-size: 36px;
   color: var(--text-main-color-light);
+  transition: var(--trans);
 }
 @media (max-width: 1640px) {
   .sales-info__block-title {
@@ -2095,6 +2115,7 @@ body[data-theme=dark] {
   font-weight: 500;
   color: var(--text-main-color-light);
   font-size: 20px;
+  transition: var(--trans);
 }
 @media (max-width: 1640px) {
   .sales-info__block-second-title {
@@ -2108,6 +2129,7 @@ body[data-theme=dark] {
 }
 .sales-info__block-desc {
   color: var(--text-main-color-light);
+  transition: var(--trans);
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;

@@ -28,18 +28,33 @@ h1, h2, h3, p, a, span {
 }
 
 .container {
-    padding: 210px 56px 120px 56px;
+    padding: 174px 56px 120px 56px;
+    &__main {
+        padding-top: 210px;
+        @media (max-width: 1640px) {
+            padding-top: 164px;
+        }
+        @media (max-width: 1270px) {
+            padding-top: 164px;
+        }
+        @media (max-width: 680px) {
+            padding-top: 140px;
+        }
+        @media (max-width: 492px) {
+            padding-top: 118px;
+        }
+    }
     @media (max-width: 1640px) {
-        padding: 164px 40px 80px 40px;
+        padding: 132px 40px 80px 40px;
     }
     @media (max-width: 1270px) {
-        padding: 164px 40px 60px 40px;
+        padding: 132px 40px 60px 40px;
     }
     @media (max-width: 680px) {
-        padding: 140px 20px 50px 20px;
+        padding: 120px 20px 50px 20px;
     }
     @media (max-width: 492px) {
-        padding: 118px 20px 50px 20px;
+        padding: 102px 20px 50px 20px;
     }
 }
 

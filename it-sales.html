@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/styles/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body data-theme="dark">
@@ -110,13 +109,23 @@
         </div>
         <div id="header-overlay" class="header__overlay"></div>
     </header>
+
+
     <main>
-        <div class="container container__main">
-            <div class="main-page">
-                <h1>Развивай технологии<br/>в Нижегородской области</h1>
+        <div class="container">
+            <div class="sales-page">
+                <div class="site-path">
+                    <a class="site-path__link" href="/">Главная</a>
+                    <div class="site-path__arrow"></div>
+                    <a class="site-path__link">ИТ-Продажи</a>
+                </div>
+                <h1>ИТ-Продажи</h1>
                 <section class="main__tags">
-                    <input id="search-main-tags" class="search-in-page" placeholder="Поиск"/>
-                    <div id="main-tags" class="tags">
+                    <input id="search-sales-tags" class="search-in-page" placeholder="Поиск"/>
+                    <div id="sales-tags" class="tags">
+                        <p id="catalog-sales" class="tags__tag">Каталог решений</p>
+                        <p id="virtual-showroom" class="tags__tag">Виртуальный шоурум</p>
+                        <p id="promotion-consultation" class="tags__tag">Консультация</p>
                         <p class="tags__tag">Открыть ИТ-бизнес</p>
                         <a href="#" class="tags__tag">Узнать про меры поддержки</a>
                         <a href="#" class="tags__tag">Получить консультацию</a>
@@ -132,7 +141,6 @@
                         <p class="tags__tag">Открыть ИТ-бизнес</p>
                         <a href="#" class="tags__tag">Узнать про меры поддержки</a>
                         <a href="#" class="tags__tag">Получить консультацию</a>
-
 
                         <p class="tags__tag">Пример 0</p>
                         <a href="#" class="tags__tag">Пример 1</a>
@@ -167,151 +175,172 @@
                         <a href="#" class="tags__tag">Пример 29</a>
                     </div>
                     <div class="navigation-prew-next">
-                        <button id="main-tags-page-prew" class="navigation-prew-next__prew"></button>
-                        <button id="main-tags-page-next" class="navigation-prew-next__next"></button>
+                        <button id="sales-tags-page-prew" class="navigation-prew-next__prew"></button>
+                        <button id="sales-tags-page-next" class="navigation-prew-next__next"></button>
                     </div>
                 </section>
 
-                <section class="wrapper-main-slider">
-                    <div class="main-slider-container">
-                        <div class="main-slider">
+          
+                <section class="sales-info">
+                    <h2 class="sales-info__title">Мы помогаем найти клиентов</h2>
+                    <p class="sales-info__desc">
+                        Горький Тех - связующее звено заказчиков и разработчиков ПО в 
+                        Нижегородской области. Мы поможем вам в продвижении ПО и поиске
+                        клиентов, а также выводе продуктов на новые рынки.
+                    </p>
+                    <div class="sales-info__list">
+                        <div class="sales-info__block">
+                            <h3 class="sales-info__block-title">Каталог нижегородских ИТ-решений</h3>
+                            <div class="sales-info__block-text">
+                                <p class="sales-info__block-second-title">Экспертиза нижегородских компаний</p>
+                                <p class="sales-info__block-second-title">Решения, основанные на ML и AI</p>
+                                <p class="sales-info__block-second-title">
+                                    Mattler, SOTA+, Lad, Effective Technologies 
+                                    и другие компании-разработчики
+                                </p>
+                            </div>
+                        </div>
 
-                            <div class="main-slider__slide-wrapper">
-                                <a class="main-slider__slide">
-                                    <div class="main-slider__slide-content">
-                                        <img class="main-slider__slide-img" src="https://cdna.artstation.com/p/assets/images/images/015/563/422/large/helio-lima-relampago-mcqueen.jpg"/>
-                                        <div class="main-slider__slide-text">
-                                            <h2 class="main-slider__slide-title">40 тысяч человек посетили стенд Нижегородской области на «TIBO»</h2>
-                                            <p class="main-slider__slide-desc">
-                                                Рассказали огромному количеству заинтересованных людей о 
-                                                нижегородских ИТ-компаниях
-                                            </p>
-                                            <p class="main-slider__slide-detailed">Подробнее</p>
-                                        </div>
-                                    </div>
-                                </a>
+                        <div class="sales-info__block">
+                            <h3 class="sales-info__block-title">ИТ-маркетплейс.рф</h3>
+                            <div class="sales-info__block-text">
+                                <p class="sales-info__block-second-title">Найти заказчика</p>
+                                <p class="sales-info__block-second-title">Найти разработчика</p>
+                                <p class="sales-info__block-second-title">
+                                    Аутстафф
+                                </p>
                             </div>
-                           
-                            
-                            <div class="main-slider__slide-wrapper">
-                                <a class="main-slider__slide">
-                                    <div class="main-slider__slide-content">
-                                        <img class="main-slider__slide-img" src="https://maximumwallhd.com/wp-content/uploads/2015/08/fonds-ecran-cars-15.jpg"/>
-                                        <div class="main-slider__slide-text">
-                                            <h2 class="main-slider__slide-title">Тренд-сессия прошла в рамках Международного фестиваля «ТехноСтрелка»</h2>
-                                            <p class="main-slider__slide-desc">
-                                                Рассказали огромному количеству заинтересованных людей о 
-                                                нижегородских ИТ-компаниях
-                                            </p>
-                                            <p class="main-slider__slide-detailed">Подробнее</p>
-                                        </div>
-                                    </div>
-                                </a>
+                        </div>
+
+                        <div class="sales-info__block">
+                            <h3 class="sales-info__block-title">Виртуальный шоурум</h3>
+                            <div class="sales-info__block-text">
+                                <p class="sales-info__block-desc">
+                                    Горьких Тех участвует во всероссийских и международных форумах и 
+                                    выставках, презентуя нижегородские решения на интерактивной панели.
+                                </p>
                             </div>
-    
-                            <div class="main-slider__slide-wrapper">
-                                <a class="main-slider__slide">
-                                    <div class="main-slider__slide-content">
-                                        <img class="main-slider__slide-img" src="https://sportishka.com/uploads/posts/2022-11/1667494512_33-sportishka-com-p-tachki-dok-khadson-pinterest-33.jpg"/>
-                                        <div class="main-slider__slide-text">
-                                            <h2 class="main-slider__slide-title">40 тысяч человек посетили стенд Нижегородской области на «TIBO»</h2>
-                                            <p class="main-slider__slide-desc">
-                                                Рассказали огромному количеству заинтересованных людей о 
-                                                нижегородских ИТ-компаниях
-                                            </p>
-                                            <p class="main-slider__slide-detailed">Подробнее</p>
-                                        </div>
-                                    </div>
-                                </a>
+                        </div>
+
+                        <div class="sales-info__block">
+                            <h3 class="sales-info__block-title">Цифровой аудит</h3>
+                            <div class="sales-info__block-text">
+                                <p class="sales-info__block-desc">
+                                    Горький тех проводит цифровой аудит
+                                    на предприятиях региона, чтобы помочь
+                                    им совершенствовать свои бизнес-модели
+                                </p>
                             </div>
-    
-                            <div class="main-slider__slide-wrapper">
-                                <a class="main-slider__slide">
-                                    <div class="main-slider__slide-content">
-                                        <img class="main-slider__slide-img" src="https://mobimg.b-cdn.net/v3/fetch/d9/d9117172252d93314ff26fbc65a62ece.jpeg"/>
-                                        <div class="main-slider__slide-text">
-                                            <h2 class="main-slider__slide-title">40 тысяч человек посетили стенд Нижегородской области на «TIBO»</h2>
-                                            <p class="main-slider__slide-desc">
-                                                Рассказали огромному количеству заинтересованных людей о 
-                                                нижегородских ИТ-компаниях
-                                            </p>
-                                            <p class="main-slider__slide-detailed">Подробнее</p>
-                                        </div>
-                                    </div>
-                                </a>
+                        </div>
+
+                        <div class="sales-info__block">
+                            <h3 class="sales-info__block-title">День поставщика</h3>
+                            <div class="sales-info__block-text">
+                                <p class="sales-info__block-desc">
+                                    Горьких Тех организует дни поставщика
+                                    по направлению «Информационные технологии»
+                                </p>
                             </div>
-    
                         </div>
                     </div>
-                    
-                    <div class="navigation-prew-next">
-                        <button id="main-slider-prew" class="navigation-prew-next__prew"></button>
-                        <button id="main-slider-next" class="navigation-prew-next__next"></button>
-                    </div>
                 </section>
 
-                <section class="areas-activity">
-                    <h2 class="areas-activity__title">Направления деятельности</h2>
-                    <div class="areas-activity__list">
-
-                        <a href="./it-analytics.html" class="areas-activity__block it-analytics">
-                            <h2 class="areas-activity__block-title">ИТ-аналитика</h2>
-                            <div class="areas-activity__block-text">
-                                <p>Аналитический отчет 2022</p>
-                                <p>Задать вопрос аналитикам</p>
-                                <p>Участвовать в исследовании</p>
-                            </div>
-                        </a>
-
-                        <a class="areas-activity__block it-support">
-                            <h2 class="areas-activity__block-title">ИТ-поддержка</h2>
-                            <div class="areas-activity__block-text">
-                                <p>Список мер и как их получить</p>
-                                <p>Помощь в получении мер</p>
-                                <p>Задать уточняющий вопрос</p>
-                            </div>
-                        </a>
-
-                        <a href="./it-sales.html" class="areas-activity__block it-sales">
-                            <h2 class="areas-activity__block-title">ИТ-продажи</h2>
-                            <div class="areas-activity__block-text">
-                                <p>Маркетплейс ИТ-решений</p>
-                                <p>Консультация по размещению</p>
-                                <p>Стать партнером мероприятия</p>
-                            </div>
-                        </a>
-
-                        <a class="areas-activity__block it-person">
-                            <h2 class="areas-activity__block-title">ИТ-кадры</h2>
-                            <div class="areas-activity__block-text">
-                                <p>ИТ-программы в регионе</p>
-                                <p>Подобрать программу</p>
-                            </div>
-                        </a>
-
-                        <a href="./it-solutions.html" class="areas-activity__block it-solutions">
-                            <h2 class="areas-activity__block-title">ИТ-решения</h2>
-                            <div class="areas-activity__block-text">
-                                <p>Наш стек, экспертиза и кейсы</p>
-                                <p>Нанять команду как интегратора</p>
-                                <p>Присоединиться к команде</p>
-                            </div>
-                        </a>
-
-                        <a class="areas-activity__block it-popularization">
-                            <h2 class="areas-activity__block-title">ИТ-популяризация</h2>
-                            <div class="areas-activity__block-text">
-                                <p>Список ИТ-сообществ</p>
-                                <p>Фото и видео с мероприятий</p>
-                                <p>Подписаться на новости</p>
-                            </div>
-                        </a>
-
-                    </div>
+             
+               
+                <section class="order-consultation">
+                    <h2 class="order-consultation__title">Заказать консультацию по продвижению от ГорькийТех</h2>
+                    <p class="order-consultation__desc">Краткое описание услуги</p>
+                    <button id="btn-promotion-consultation" class="btn-blue">Заполнить форму</button>
                 </section>
+       
+               
+
+                <div id="sales-page-popups" class="bg-popup">
+
+                    <div id="popup-catalog-solutions" class="popup catalog-solutions">
+                        <button id="catalog-solutions-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Каталог нижегородских ИТ-решений</h2>
+                        <p class="tags__tag">Каталог нижегородских ИТ-решений</p>
+                        <p class="catalog-solutions__desc">
+                            <span>
+                                В каталоге вы найдете подробную информацию о компетенциях, 
+                                кейсах внедрения и
+                            </span>
+                            ИТ-решениях созданных в Нижегородской области.
+                        </p>
+                        <button class="btn-blue btn-download">Скачать Word</button>
+                    </div>
+
+                    <div id="popup-virtual-showroom" class="popup virtual-showroom">
+                        <button id="virtual-showroom-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Каталог нижегородских ИТ-решений</h2>
+                        <p class="tags__tag">Виртуальный шоурум</p>
+                        <p class="virtual-showroom__desc">
+                            <span>
+                                Горький Тех принимает активное участие в форумах и выставках. 
+                                Вы можете участвовать вместе с нами на групповых стендах и
+                                мы можем добавить информацию о Вашей компании на нашу
+                            </span>
+                            интерактивную панель.
+                        </p>
+                        <div class="virtual-showroom__buttons">
+                            <button class="btn-blue">Участвовать</button>
+                            <p class="virtual-showroom__buttons-decs">
+                                Если хотите участвовать в виртуальном шоуруме, 
+                                укажите это в форме подачи заявок на консультацию 
+                                по продвижению.</p>
+                        </div>
+                    </div>
+
+                    <div id="popup-promotion-consultation" class="popup promotion-consultation">
+                        <button id="promotion-consultation-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Задать вопрос аналитикам</h2>
+                        <p class="tags__tag">Консультация по продвижению</p>
+                        <form class="popup-form">
+                            <div class="popup-form__two-input">
+                                <div class="popup-form__for-input">
+                                    <input id="promotion-consultation-name" class="popup-form__input" placeholder="Имя"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="promotion-consultation-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                            </div>
+                            <div class="popup-form__two-input">
+                                <div class="popup-form__for-input">
+                                    <input id="promotion-consultation-company" class="popup-form__input" placeholder="Компания"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+
+                                <div class="popup-form__for-input">
+                                    <input id="promotion-consultation-post" class="popup-form__input" placeholder="Должность"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                            </div>
+                            <div class="popup-form__for-input">
+                                <textarea id="promotion-consultation-desc" class="popup-form__input promotion-consultation__textarea" placeholder="Подробно опишите задачу"></textarea>
+                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                            </div>
+                            <button id="send-promotion-consultation" class="popup-form__btn promotion-consultation__btn">Отправить</button>       
+                            <p class="promotion-consultation__desc">
+                                <span>
+                                    Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
+                                    вопроса. Приложить материалы (изображения, видео) вы можете, 
+                                    отправив нам письмо по эл. почте на адрес:
+                                </span>
+                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
+                            </p>     
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+
     </main>
+
+
+
     <footer>
         <div class="footer">
             <div class="footer__logo"></div>
@@ -333,7 +362,7 @@
         <div class="shadow-back__purple"></div>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/mainPage.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module" src="./assets/js/salesPage.js"></script>
+    <script src="https://unpkg.com/imask"></script>
 </body>
 </html>

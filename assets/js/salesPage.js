@@ -72,14 +72,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
         const popupCatalog = e.target.closest('#catalog-sales');
         const popupShowroom = e.target.closest('#virtual-showroom');
         const popupPromotion = e.target.closest('#promotion-consultation');
-        const btnPopupPromotion = e.target.closest('#btn-promotion-consultation');
         if (popupCatalog) 
         openPopup('popup-catalog-solutions', '#sales-page-popups');
         if (popupShowroom) 
         openPopup('popup-virtual-showroom', '#sales-page-popups');
         if (popupPromotion)
-        openPopup('popup-promotion-consultation', '#sales-page-popups');
-        if (btnPopupPromotion)
         openPopup('popup-promotion-consultation', '#sales-page-popups');
     })
 

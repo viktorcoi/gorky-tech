@@ -2028,6 +2028,15 @@ body[data-theme=dark] {
   border-radius: 32px;
   min-height: 338.5px;
 }
+.sales-info__block:last-child {
+  grid-column-end: -1;
+  grid-column-start: 2;
+}
+@media (max-width: 1200px) {
+  .sales-info__block:last-child {
+    grid-column-start: 1;
+  }
+}
 @media (min-width: 1025px) {
   .sales-info__block:not(:nth-child(4), :nth-child(5)) {
     cursor: pointer;
@@ -2134,6 +2143,7 @@ body[data-theme=dark] {
   font-size: 20px;
   line-height: 150%;
   opacity: 0.8;
+  max-width: 50ch;
 }
 @media (max-width: 1640px) {
   .sales-info__block-desc {
@@ -2143,6 +2153,38 @@ body[data-theme=dark] {
 @media (max-width: 800px) {
   .sales-info__block-desc {
     font-size: 14px;
+  }
+}
+.sales-info__block-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+@media (max-width: 1640px) {
+  .sales-info__block-buttons {
+    gap: 12px;
+  }
+}
+@media (max-width: 640px) {
+  .sales-info__block-buttons {
+    gap: 8px;
+  }
+}
+@media (max-width: 1640px) {
+  .sales-info__block-buttons button {
+    min-width: 310px;
+  }
+}
+@media (max-width: 640px) {
+  .sales-info__block-buttons button {
+    min-width: 279px;
+  }
+}
+@media (max-width: 492px) {
+  .sales-info__block-buttons button {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 100%;
   }
 }
 
@@ -3678,6 +3720,7 @@ body[data-theme=light] {
   color: var(--text-main-color-light);
   border-radius: 14px;
   padding: 24px 42px 25px 42px;
+  text-align: center;
 }
 @media (max-width: 1640px) {
   .btn-blue, .btn-use-form {

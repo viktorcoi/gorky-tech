@@ -95,6 +95,13 @@ body {
         border: 1px solid var(--border-sales-info-block);
         border-radius: 32px;
         min-height: 338.5px;
+        &:last-child {
+            grid-column-end: -1;
+            grid-column-start: 2;
+            @media (max-width: 1200px) {
+                grid-column-start: 1;
+            }
+        }
         @media (min-width: 1025px) {
             &:not(:nth-child(4), :nth-child(5)) {
                 cursor: pointer;
@@ -180,11 +187,36 @@ body {
         font-size: 20px;
         line-height: 150%;
         opacity: .8;
+        max-width: 50ch;
         @media (max-width: 1640px) {
             font-size: 15px;
         }
         @media (max-width: 800px) {
             font-size: 14px;
+        }
+    }
+    &__block-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        @media (max-width: 1640px) {
+            gap: 12px;
+        }
+        @media (max-width: 640px) {
+            gap: 8px;
+        }
+        button {
+            @media (max-width: 1640px) {
+                min-width: 310px;
+            }
+            @media (max-width: 640px) {
+                min-width: 279px;
+            }
+            @media (max-width: 492px) {
+                padding-left: 10px;
+                padding-right: 10px;
+                min-width: 100%;
+            }
         }
     }
 }

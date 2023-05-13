@@ -197,7 +197,7 @@
                             </p>
                             <div class="solutions-info__block-buttons">
                                 <button id="question-gostekh" class="btn-blue">Задать вопрос</button>
-                                <button class="btn-gray">Стать разработчиком на ГосТех</button>
+                                <a href="https://platform.gov.ru/study/" class="btn-gray">Стать разработчиком на ГосТех</a>
                             </div>
                         </div>
                         <div class="solutions-info__block">
@@ -208,7 +208,7 @@
                                 работ, подбор подрядчиков и команды проекта. 
                             </p>
                             <div class="solutions-info__block-buttons">
-                                <button class="btn-blue">Оставить заявку</button>
+                                <button id="btn-application-support-project" class="btn-blue">Оставить заявку</button>
                             </div>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
                 <section class="application-support">
                     <h2 class="application-support__title">Оставить заявку на сопровождение ИТ-проектов</h2>
                     <p class="application-support__desc">С командой Горький Тех</p>
-                    <button class="btn-blue">Заполнить форму</button>
+                    <button id="form-application-support-project" class="btn-blue">Заполнить форму</button>
                 </section>
 
        
@@ -254,7 +254,7 @@
 
                     <div id="popup-question-gostekh" class="popup question-gostekh">
                         <button id="question-gostekh-close" class="popup__cross"></button>
-                        <h2 class="popup__title">Задать вопрос аналитикам</h2>
+                        <h2 class="popup__title">Задать вопрос про ГосТех</h2>
                         <p class="tags__tag">ГосТех</p>
                         <form class="popup-form">
                             <div class="popup-form__two-input">
@@ -272,7 +272,7 @@
                                 <p class="popup-form__input-error">Не заполнено обязательное поле</p>
                             </div>
                             <div class="popup-form__for-input">
-                                <textarea id="question-gostekh-desc" class="popup-form__input question-gostekh__textarea" placeholder="Вопрос"></textarea>
+                                <textarea id="question-gostekh-quest" class="popup-form__input question-gostekh__textarea" placeholder="Вопрос"></textarea>
                                 <p class="popup-form__input-error">Не заполнено обязательное поле</p>
                             </div>
                             <button id="send-question-gostekh" class="popup-form__btn question-gostekh__btn">Отправить</button>       
@@ -286,10 +286,57 @@
                             </p>     
                         </form>
                     </div>
+
+
+
+                    <div id="popup-application-support-project" class="popup application-support-project">
+                        <button id="application-support-project-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Оставить заявку<br/>на сопровождение ИТ-проектов</h2>
+                        <form class="popup-form">
+
+                            <div class="popup-form__six-input">
+                                <div class="popup-form__for-input">
+                                    <input id="application-support-project-name" class="popup-form__input" placeholder="Имя"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="application-support-project-last-name" class="popup-form__input" placeholder="Фамилия"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="application-support-project-second-name" class="popup-form__input" placeholder="Отчество"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="application-support-project-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="application-support-project-mail" class="popup-form__input" placeholder="E-mail"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="application-support-project-company" class="popup-form__input" placeholder="Компания"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                            </div>
+                            <div class="popup-form__for-input">
+                                <textarea id="application-support-project-quest" class="popup-form__input application-support-project__textarea" placeholder="Вопрос"></textarea>
+                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                            </div>
+                            <button id="send-application-support-project" class="popup-form__btn application-support-project__btn">Отправить</button>       
+                            <p class="application-support-project__desc">
+                                <span>
+                                    Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
+                                    вопроса. Приложить материалы (изображения, видео) вы можете, 
+                                    отправив нам письмо по эл. почте на адрес:
+                                </span>
+                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
+                            </p>     
+                        </form>
+                    </div>
+
                 </div>
-
-
-
 
 
                

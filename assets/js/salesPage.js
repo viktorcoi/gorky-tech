@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
     
     inputPhone.addEventListener('focus', function() {
         focusPhoneInput(this, phoneMask);
-  
     })
 
     inputPhone.addEventListener('blur', function() {

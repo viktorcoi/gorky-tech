@@ -266,7 +266,7 @@ body {
     pointer-events: none;
     &.popup-catalog-solutions, &.popup-ask-question,
     &.popup-virtual-showroom, &.popup-promotion-consultation,
-    &.popup-question-gostekh {
+    &.popup-question-gostekh, &.popup-application-support-project {
         opacity: 1;
         visibility: visible;
         pointer-events: unset;
@@ -275,7 +275,8 @@ body {
     &.popup-catalog-solutions .catalog-solutions,
     &.popup-virtual-showroom .virtual-showroom,
     &.popup-promotion-consultation .promotion-consultation,
-    &.popup-question-gostekh .question-gostekh {
+    &.popup-question-gostekh .question-gostekh,
+    &.popup-application-support-project .application-support-project {
         opacity: 1;
         transform: translateY(0);
     }
@@ -334,11 +335,14 @@ body {
             background-size: 24px;
         }
     }
-
+    &.application-support-project {
+        width: min(1020px, 90%);
+    }
 
     &.ask-question, .ask-question,
     &.promotion-consultation .promotion-consultation,
-    &.question-gostekh .question-gostekh {
+    &.question-gostekh .question-gostekh,
+    &.application-support-project .application-support-project {
         &__textarea {
             min-height: 180px;
             @media (max-width: 1280px) {
@@ -470,6 +474,25 @@ body {
             }
         }
     }
+    &.application-support-project  {
+        @media (max-height: 815px) {
+            height: 90%;
+            .popup-form {
+                height: calc(100% - 140px);
+                overflow-y: auto;
+                overflow-x: hidden;
+                @media (max-width: 1280px) {
+                    height: calc(100% - 120px);
+                }
+                @media (max-width: 640px) {
+                    height: calc(100% - 100px);
+                }
+                @media (max-width: 420px) {
+                    height: calc(100% - 110px);
+                }
+            }
+        }
+    }
 }
 
 .popup-form {
@@ -482,6 +505,19 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 18px;
+        @media (max-width: 640px) {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+    }
+    &__six-input {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        @media (max-width: 840px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
         @media (max-width: 640px) {
             grid-template-columns: 1fr;
             gap: 12px;

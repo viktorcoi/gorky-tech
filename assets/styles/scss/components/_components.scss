@@ -22,8 +22,8 @@ body {
         --img-btn-download: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath d='M16.6667 14.6673V16.334C16.6667 16.776 16.4912 17.1999 16.1786 17.5125C15.866 17.8251 15.4421 18.0007 15.0001 18.0007H5.00008C4.55805 18.0007 4.13413 17.8251 3.82157 17.5125C3.50901 17.1999 3.33342 16.776 3.33342 16.334V14.6673M14.1667 9.66732L10.0001 13.834M10.0001 13.834L5.83342 9.66732M10.0001 13.834L10.0001 3.83398' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
         --bg-btn-blue-hover: #315FF6;
 
-        --bg-btn-use-form: rgba(255, 255, 255, 0.08);
-        --bg-btn-use-form-hover: rgba(255, 255, 255, 0.14);
+        --bg-btn-gray: rgba(255, 255, 255, 0.08);
+        --bg-btn-gray-hover: rgba(255, 255, 255, 0.14);
 
         --border-popup: rgba(255, 255, 255, 0.12);
         --bg-popup: #1D203A;
@@ -199,7 +199,7 @@ body {
     }
 }
 
-.btn-blue, .btn-use-form {
+.btn-blue, .btn-gray {
     font-weight: 500;
     font-size: 18px;
     color: var(--text-main-color-light);
@@ -227,11 +227,11 @@ body {
     }
 }
 
-.btn-use-form {
-    background-color: var(--bg-btn-use-form);
+.btn-gray {
+    background-color: var(--bg-btn-gray);
     @media (min-width: 1025px) {
         &:hover {
-            background-color: var(--bg-btn-use-form-hover);
+            background-color: var(--bg-btn-gray-hover);
         }
     }
 }
@@ -265,7 +265,8 @@ body {
     visibility: hidden;
     pointer-events: none;
     &.popup-catalog-solutions, &.popup-ask-question,
-    &.popup-virtual-showroom, &.popup-promotion-consultation {
+    &.popup-virtual-showroom, &.popup-promotion-consultation,
+    &.popup-question-gostekh {
         opacity: 1;
         visibility: visible;
         pointer-events: unset;
@@ -273,7 +274,8 @@ body {
     &.popup-ask-question .ask-question, 
     &.popup-catalog-solutions .catalog-solutions,
     &.popup-virtual-showroom .virtual-showroom,
-    &.popup-promotion-consultation .promotion-consultation {
+    &.popup-promotion-consultation .promotion-consultation,
+    &.popup-question-gostekh .question-gostekh {
         opacity: 1;
         transform: translateY(0);
     }
@@ -335,7 +337,8 @@ body {
 
 
     &.ask-question, .ask-question,
-    &.promotion-consultation .promotion-consultation {
+    &.promotion-consultation .promotion-consultation,
+    &.question-gostekh .question-gostekh {
         &__textarea {
             min-height: 180px;
             @media (max-width: 1280px) {
@@ -372,7 +375,8 @@ body {
             }
         }
     }
-    &.catalog-solutions, &.virtual-showroom, &.promotion-consultation {
+    &.catalog-solutions, &.virtual-showroom, &.promotion-consultation, 
+    &.question-gostekh {
         .tags__tag {
             cursor: default;
             &:hover {
@@ -438,7 +442,7 @@ body {
             }
         }
     }
-    &.promotion-consultation {
+    &.promotion-consultation, &.question-gostekh {
         .tags__tag {
             margin-bottom: 36px;
             @media (max-width: 1280px) {

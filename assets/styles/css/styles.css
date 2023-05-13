@@ -1862,6 +1862,7 @@ body[data-theme=dark] {
   --img-portal-do-russia: url("https://viktorcoi.github.io/gorky-tech/assets/img/portal-do-russia.png");
   --img-portal-marketplace: url("https://viktorcoi.github.io/gorky-tech/assets/img/portal-marketplace.png");
   --img-neymark-metaverse: url("https://viktorcoi.github.io/gorky-tech/assets/img/neymark-metaverse.png");
+  --bg-cases-block-hover: linear-gradient(56.66deg, rgba(73, 105, 219, 0.6) -17.94%, rgba(73, 105, 219, 0) 50%), linear-gradient(303.34deg, rgba(218, 64, 182, 0.6) -18.02%, rgba(218, 64, 182, 0) 50%), linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.8) 100%);
   --img-our-cases-block-arrow: url("data:image/svg+xml,%3Csvg width='86' height='86' viewBox='0 0 86 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='43' cy='43' r='43' fill='%231A1B1D'/%3E%3Cpath d='M32.5 43H53.5M53.5 43L44.5 52M53.5 43L44.5 34' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 .solutions-page {
@@ -2140,6 +2141,8 @@ body[data-theme=dark] {
 @media (min-width: 1025px) {
   .our-cases__block:hover .our-cases__block-image::after {
     transform: translateX(0);
+  }
+  .our-cases__block:hover .our-cases__block-image::before, .our-cases__block:hover .our-cases__block-image::after {
     opacity: 1;
   }
 }
@@ -2165,6 +2168,16 @@ body[data-theme=dark] {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
+  overflow: hidden;
+}
+.our-cases__block-image::before {
+  transition: var(--trans);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--bg-cases-block-hover);
+  opacity: 0;
 }
 .our-cases__block-image::after {
   transition: var(--trans);

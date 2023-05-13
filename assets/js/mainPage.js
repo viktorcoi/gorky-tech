@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', ()  => {
             prevButton: '#main-slider-prew',
             nextButton: '#main-slider-next',
             slideBy: 1,
+            preventScrollOnTouch: 'auto',
+            mouseDrag: true,
             responsive: {
                 1641: {
                     edgePadding: 190,
@@ -30,7 +32,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
                     edgePadding: 20,
                     fixedWidth: 268,
                     gutter: 10,
-                    mouseDrag: true,
                 }
             }
         });

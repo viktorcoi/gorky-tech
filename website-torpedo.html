@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/styles/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body data-theme="dark">
     <header>
@@ -113,234 +114,129 @@
 
     <main>
         <div class="container">
-            <div class="solutions-page">
+            <div class="solutions-content">
                 <div class="site-path">
                     <a class="site-path__link" href="/">Главная</a>
                     <div class="site-path__arrow"></div>
-                    <a class="site-path__link">ИТ-Решения</a>
+                    <a href="./it-solutions.html" class="site-path__link">ИТ-Решения</a>
+                    <div class="site-path__arrow"></div>
+                    <a class="site-path__link">Сайт ХК «Торпедо»</a>
                 </div>
-                <h1>ИТ-Решения</h1>
-                <section class="main__tags">
-                    <input id="search-solutions-tags" class="search-in-page" placeholder="Поиск"/>
-                    <div id="solutions-tags" class="tags">
-                        <p class="tags__tag">Открыть ИТ-бизнес</p>
-                        <a href="#" class="tags__tag">Узнать про меры поддержки</a>
-                        <a href="#" class="tags__tag">Получить консультацию</a>
-                        <a href="#" class="tags__tag">Получить грант</a>
-                        <a href="#" class="tags__tag">Посмотреть отчет</a>
-                        <p class="tags__tag">Участвовать в исследовании</p>
-                        <a href="#" class="tags__tag">Найти клиентов</a>
-                        <p class="tags__tag">Стать партнёром события</p>
-                        <p class="tags__tag">Смотреть фото и видео с мероприятия</p>
-                        <p class="tags__tag">Задать вопрос аналитикам</p>
-                        <p class="tags__tag">Развиваться как ИТ-специалист</p>
-                        <p class="tags__tag">ИТ-образование</p>
-                        <p class="tags__tag">Открыть ИТ-бизнес</p>
-                        <a href="#" class="tags__tag">Узнать про меры поддержки</a>
-                        <a href="#" class="tags__tag">Получить консультацию</a>
+                <h1>Сайт ХК «Торпедо»</h1>
+                <p class="solutions-content__title">Новый сайт для болельщиков хоккейного клуба «Торпедо».</p>
+                <img src="./assets/img/website-torpedo-1.png" class="solutions-content__image"/>
 
-                        <p class="tags__tag">Пример 0</p>
-                        <a href="#" class="tags__tag">Пример 1</a>
-                        <a href="#" class="tags__tag">Пример 2</a>
-                        <a href="#" class="tags__tag">Пример 3</a>
-                        <a href="#" class="tags__tag">Пример 4</a>
-                        <p class="tags__tag">Пример 5</p>
-                        <a href="#" class="tags__tag">Пример 6</a>
-                        <p class="tags__tag">Пример 7</p>
-                        <p class="tags__tag">Пример 8</p>
-                        <p class="tags__tag">Пример 9</p>
-                        <p class="tags__tag">Пример 10</p>
-                        <p class="tags__tag">Пример 11</p>
-                        <p class="tags__tag">Пример 12</p>
-                        <a href="#" class="tags__tag">Пример 13</a>
-                        <a href="#" class="tags__tag">Пример 14</a>
-
-                        <p class="tags__tag">Пример 15</p>
-                        <a href="#" class="tags__tag">Пример 16</a>
-                        <a href="#" class="tags__tag">Пример 17</a>
-                        <a href="#" class="tags__tag">Пример 18</a>
-                        <a href="#" class="tags__tag">Пример 19</a>
-                        <p class="tags__tag">Пример 20</p>
-                        <a href="#" class="tags__tag">Пример 21</a>
-                        <p class="tags__tag">Пример 22</p>
-                        <p class="tags__tag">Пример 23</p>
-                        <p class="tags__tag">Пример 24</p>
-                        <p class="tags__tag">Пример 25</p>
-                        <p class="tags__tag">Пример 26</p>
-                        <p class="tags__tag">Пример 27</p>
-                        <a href="#" class="tags__tag">Пример 28</a>
-                        <a href="#" class="tags__tag">Пример 29</a>
+                <section class="solutions-content__info-project">
+                    <div class="solutions-content__info-project-block">
+                        <p class="solutions-content__info-project-title">О проекте</p>
+                        <p class="solutions-content__info-project-desc">Новый сайт для болельщиков хоккейного клуба «Торпедо».</p>
                     </div>
-                    <div class="navigation-prew-next">
-                        <button id="solutions-tags-page-prew" class="navigation-prew-next__prew"></button>
-                        <button id="solutions-tags-page-next" class="navigation-prew-next__next"></button>
+                    <div class="solutions-content__info-project-block">
+                        <p class="solutions-content__info-project-title">Задача</p>
+                        <p class="solutions-content__info-project-desc">
+                            Создать удобный портал, где болельщики будут узнавать новости, покупать билеты и 
+                            смотреть матчи без необходимости переходить на другие ресурсы.
+                        </p>
                     </div>
                 </section>
 
-          
-               
-
-                <section class="solutions-info">
-                    <h2 class="solutions-info__title">Мы помогаем разрабатывать технологии</h2>
-                    <p class="solutions-info__desc">
-                        Горький Тех сопровождает проектирование информационных систем, а также 
-                        помогает собрать команду ИТ-разработчиков.
+                <section class="solutions-content__textblock">
+                    <h2 class="solutions-content__main-text">
+                        В июле 2022 года нижегородский хоккейный клуб «Торпедо» вступил в новый сезон с 
+                        обновленным сайтом, подготовленным Центром «Горький» и нижегородскими разработчиками.
+                    </h2>
+                    <p class="solutions-content__text">
+                        <span>
+                            Теперь  болельщики смогут узнавать все новости, подробную информацию о жизни клуба 
+                            и каждом члене команды, а также просматривать фотографии, видео и исторические 
+                            материалы и покупать билеты по упрощенной программе
+                        </span> на единой обновленной платформе.
                     </p>
-                    <div class="solutions-info__list">
-                        <div class="solutions-info__block">
-                            <h3 class="solutions-info__block-title">ГосТех</h3>
-                            <p class="solutions-info__block-desc">
-                                На базе Регионального центра поддержки и координации отечественных 
-                                цифровых технологий и разработчиков «Горький Тех» сформирован центр 
-                                компетенций по переводу информационных систем на Единую цифровую платформу 
-                                «ГосТех».
-                            </p>
-                            <div class="solutions-info__block-buttons">
-                                <button id="question-gostekh" class="btn-blue">Задать вопрос</button>
-                                <a target="_blank" href="https://platform.gov.ru/study/" class="btn-gray">Стать разработчиком на ГосТех</a>
+                    <iframe class="solutions-content__video" src="https://player.vimeo.com/video/795195136?h=034ae31adc"></iframe>
+                    <p class="solutions-content__text">
+                        <span>Новая экосистема объединяет в себе все главные для болельщика ресурсы клуба:</span> 
+                        основной сайт, интернет-магазин, билетный портал и программу лояльности.
+                        <span>Теперь, войдя в личный кабинет под единым логином и паролем, болельщики могут 
+                            приобрести атрибутику, билеты и абонементы, следить за балансом бонусных баллов, 
+                            а также использовать
+                        </span>другие сервисы. 
+                        <span>
+                            Вход для действующих пользователей — по регистрационным данным от билетного портала,
+                            для новых — после прохождения регистрации.
+                        </span>
+                    </p>
+
+                    <ul class="solutions-content__textblock-list">
+                        <h3 class="solutions-content__second-text">Новый сайт позволяет:</h3>
+                        <li class="solutions-content__text"><span>смотреть прямые трансляции матчей,</span></li>
+                        <li class="solutions-content__text"><span>
+                            записаться в группу активных болельщиков на выездные игры, в максимально удобной и 
+                            информативной форме ознакомиться с новостями и событиями из жизни клуба, статистикой, 
+                            фотографиями и видеоматериалами.
+                        </span></li>
+                    </ul>
+                </section>
+
+              
+                
+               <section class="solutions-content__slider-wrapper">
+                    <div class="solutions-content__slider-container">
+                        <div class="solutions-content__slider">
+                            <div class="solutions-content__slide">
+                                <img src="./assets/img/torpedo-slider-1.png"/>
+                            </div>
+                            <div class="solutions-content__slide">
+                                <img src="./assets/img/torpedo-slider-2.png"/>
+                            </div>
+                            <div class="solutions-content__slide">
+                                <img src="./assets/img/torpedo-slider-3.png"/>
                             </div>
                         </div>
-                        <div class="solutions-info__block">
-                            <h3 class="solutions-info__block-title">Служба внутреннего заказчика</h3>
-                            <p class="solutions-info__block-desc">
-                                Полный спектр работ по сопровождению ИТ проектов. От формирования 
-                                технических требований до этапа сдачи в эксплуатацию. Контроль качества 
-                                работ, подбор подрядчиков и команды проекта. 
-                            </p>
-                            <div class="solutions-info__block-buttons">
-                                <button id="btn-application-support-project" class="btn-blue">Оставить заявку</button>
-                            </div>
-                        </div>
                     </div>
-                </section>
-               
-                <section class="our-cases">
-                    <h2 class="our-cases__title">Наши кейсы</h2>
-                    <div class="our-cases__list--first">
-                        <a href="./website-torpedo.html" class="our-cases__block website-torpedo">
-                            <div class="our-cases__block-image"></div>
-                            <p class="our-cases__block-title">Сайт ХК «Торпедо»</p>
-                        </a>
-                        <a class="our-cases__block portal-do-russia">
-                            <div class="our-cases__block-image"></div>
-                            <p class="our-cases__block-title">Портал «Сделаем в России»</p>
-                        </a>
+                   
+                    <div id="solutions-content-slider-buttons" class="solutions-content__slider-buttons">
+                        <button id="solutions-content-slider-prew" class="solutions-content__slider-prew-next--prew"></button>
+                        <button id="solutions-content-slider-next" class="solutions-content__slider-prew-next--next"></button>
                     </div>
-                    <div class="our-cases__list--two">
-                        <a class="our-cases__block portal-marketplace">
-                            <div class="our-cases__block-image"></div>
-                            <p class="our-cases__block-title">Портал «ИТ-маркетплейс»</p>
-                        </a>
-                        <a class="our-cases__block neymark-metaverse">
-                            <div class="our-cases__block-image"></div>
-                            <p class="our-cases__block-title">Неймарк.Метавселенная</p>
-                        </a>
-                    </div>
-                </section>
-
-                <section class="application-support">
-                    <h2 class="application-support__title">Оставить заявку на сопровождение ИТ-проектов</h2>
-                    <p class="application-support__desc">С командой Горький Тех</p>
-                    <button id="form-application-support-project" class="btn-blue">Заполнить форму</button>
-                </section>
-
-       
-
-
-
-                <div id="solutions-page-popups" class="bg-popup">
-
+               </section>
                 
-
-                    <div id="popup-question-gostekh" class="popup question-gostekh">
-                        <button id="question-gostekh-close" class="popup__cross"></button>
-                        <h2 class="popup__title">Задать вопрос про ГосТех</h2>
-                        <p class="tags__tag">ГосТех</p>
-                        <form class="popup-form">
-                            <div class="popup-form__two-input">
-                                <div class="popup-form__for-input">
-                                    <input id="question-gostekh-name" class="popup-form__input" placeholder="Имя"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="question-gostekh-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                            </div>
-                            <div class="popup-form__for-input">
-                                <input id="question-gostekh-company" class="popup-form__input" placeholder="Компания"/>
-                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                            </div>
-                            <div class="popup-form__for-input">
-                                <textarea id="question-gostekh-quest" class="popup-form__input question-gostekh__textarea" placeholder="Вопрос"></textarea>
-                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                            </div>
-                            <button id="send-question-gostekh" class="popup-form__btn question-gostekh__btn">Отправить</button>       
-                            <p class="question-gostekh__desc">
-                                <span>
-                                    Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
-                                    вопроса. Приложить материалы (изображения, видео) вы можете, 
-                                    отправив нам письмо по эл. почте на адрес:
-                                </span>
-                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
-                            </p>     
-                        </form>
-                    </div>
-
-
-
-                    <div id="popup-application-support-project" class="popup application-support-project">
-                        <button id="application-support-project-close" class="popup__cross"></button>
-                        <h2 class="popup__title">Оставить заявку<br/>на сопровождение ИТ-проектов</h2>
-                        <form class="popup-form">
-
-                            <div class="popup-form__six-input">
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-name" class="popup-form__input" placeholder="Имя"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-last-name" class="popup-form__input" placeholder="Фамилия"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-second-name" class="popup-form__input" placeholder="Отчество"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-mail" class="popup-form__input" placeholder="E-mail"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-company" class="popup-form__input" placeholder="Компания"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                            </div>
-                            <div class="popup-form__for-input">
-                                <textarea id="application-support-project-quest" class="popup-form__input application-support-project__textarea" placeholder="Вопрос"></textarea>
-                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                            </div>
-                            <button id="send-application-support-project" class="popup-form__btn application-support-project__btn">Отправить</button>       
-                            <p class="application-support-project__desc">
-                                <span>
-                                    Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
-                                    вопроса. Приложить материалы (изображения, видео) вы можете, 
-                                    отправив нам письмо по эл. почте на адрес:
-                                </span>
-                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
-                            </p>     
-                        </form>
-                    </div>
-
-                </div>
-
-
-               
                 
+               <section class="solutions-content__textblock lonely-textblock">
+                    <p class="solutions-content__text">
+                        На сайте появились новые функции,
+                        <span>которые открывают больше возможностей для болельщиков.</span> 
+                        Страница матча <span>включает в себя полную информацию о текущем матче: 
+                        составы, статистику, текстовую трансляцию и много другое. Также в 
+                        специальном разделе можно найти</span> видеотрансляцию <span>текущей игры.</span>
+                        Все индивидуальные и командные показатели, турнирные таблицы и лидерские рейтинги игроков 
+                        <span>
+                            собраны в максимально удобном формате в одном месте. Полностью переработан раздел, 
+                            посвященный истории «Торпедо» и ветеранам клуба. Также новый облик приобрели билетный 
+                            портал и интернет-магазин, которые сделают ваши покупки билетов и атрибутики максимально 
+                            удобными и комфортными. А
+                        </span> новый формат отображения клубных медиа<span>, ленты событий и других привычных 
+                            страниц подарят болельщикам возможность быть максимально 
+                            близко к любимой команде.
+                        </span>
+                    </p>
+                </section>
+                <img src="./assets/img/website-torpedo-2.png" class="solutions-content__image" />
+                
+                <section class="solutions-content__links">
+                    <div class="solutions-content__link">
+                        <h2 class="solutions-content__link-title">Перейти на сайт ХК «Торпедо»</h2>
+                        <p class="solutions-content__link-desc">Результат работы</p>
+                        <a target="_blank" href="https://hctorpedo.ru/" class="btn-blue btn-link">Перейти на сайт</a>
+                    </div>
+                    <div class="solutions-content__link">
+                        <h2 class="solutions-content__link-title">Описание кейса на goldensite.ru</h2>
+                        <p class="solutions-content__link-desc">Графическая презентация элементов сайта</p>
+                        <a target="_blank" href="https://2022.goldensite.ru/work/the-website-of-sports-organization-club-team/8937/" class="btn-gray btn-link">Перейти на сайт</a>
+                    </div>
+                </section>
+
+
+
             </div>
         </div>
 
@@ -369,7 +265,8 @@
         <div class="shadow-back__purple"></div>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/solutionsPage.js"></script>
+    <script type="module" src="./assets/js/solutionsContent.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://unpkg.com/imask"></script>
 </body>
 </html>

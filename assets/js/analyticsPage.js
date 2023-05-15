@@ -1,4 +1,3 @@
-import { paginationTags } from './paginationTags.js';
 import { fillInput, openPopup, closePopup, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput } from './functions.js';
 
 document.addEventListener('DOMContentLoaded', ()  => {
@@ -81,7 +80,5 @@ document.addEventListener('DOMContentLoaded', ()  => {
             })
         }
     });
-
-    paginationTags('#analytics-tags', '#analytics-tags-page-prew', '#analytics-tags-page-next', '#search-analytics-tags');
 
 });

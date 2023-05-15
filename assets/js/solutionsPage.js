@@ -1,4 +1,3 @@
-import { paginationTags } from './paginationTags.js';
 import { openPopup, closePopup, fillInput, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput } from './functions.js';
 
 document.addEventListener('DOMContentLoaded', ()  => {
@@ -114,7 +113,5 @@ document.addEventListener('DOMContentLoaded', ()  => {
     document.querySelector('#send-application-support-project').addEventListener('click', function(e) {
         checkFieldErrors(e, this, 'phone', inputApplicationPhone);
     })
-
-    paginationTags('#solutions-tags', '#solutions-tags-page-prew', '#solutions-tags-page-next', '#search-solutions-tags');
 
 });

@@ -1,4 +1,3 @@
-import { paginationTags } from './paginationTags.js';
 import { openPopup, closePopup, fillInput, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput } from './functions.js';
 
 document.addEventListener('DOMContentLoaded', ()  => {
@@ -78,7 +77,5 @@ document.addEventListener('DOMContentLoaded', ()  => {
         if (popupPromotion)
         openPopup('popup-promotion-consultation', '#sales-page-popups');
     })
-
-    paginationTags('#sales-tags', '#sales-tags-page-prew', '#sales-tags-page-next', '#search-sales-tags');
 
 });

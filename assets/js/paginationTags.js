@@ -1,8 +1,10 @@
-const paginationTags = (section, btnPrew, btnNext, input) => {
-    const mainTags = document.querySelector(section);
-    const prevButton = document.querySelector(btnPrew);
-    const nextButton = document.querySelector(btnNext);
-    const searchInput = document.querySelector(input);
+document.addEventListener('DOMContentLoaded', ()  => {
+    const mainTags = document.querySelector('#tags');
+    if (mainTags) {
+
+        const prevButton = document.querySelector('#tags-page-prew');
+    const nextButton = document.querySelector('#tags-page-next');
+    const searchInput = document.querySelector('#search-tags');
     const tags = Array.from(mainTags.children);
     const pageSizeOptions = {
         small: 7,
@@ -81,6 +83,7 @@ const paginationTags = (section, btnPrew, btnNext, input) => {
     window.addEventListener("resize", updatePagination);
     
     updatePagination();
-}
 
-export { paginationTags };
+    }
+   
+});

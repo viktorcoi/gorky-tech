@@ -1,5 +1,3 @@
-import { paginationTags } from './paginationTags.js';
-
 document.addEventListener('DOMContentLoaded', ()  => {
 
     if (document.querySelector('.main-slider')) {
@@ -52,7 +50,5 @@ document.addEventListener('DOMContentLoaded', ()  => {
             })
         };
     })
-
-    paginationTags('#main-tags', '#main-tags-page-prew', '#main-tags-page-next', '#search-main-tags');
 
 });

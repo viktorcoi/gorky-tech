@@ -10,6 +10,16 @@ document.addEventListener('DOMContentLoaded', ()  => {
             preventScrollOnTouch: 'auto',
             mouseDrag: true,
             responsive: {
+                2561: {
+                    edgePadding: 1150,
+                    fixedWidth: 880,
+                    gutter: 32,
+                },
+                1921: {
+                    edgePadding: 510,
+                    fixedWidth: 880,
+                    gutter: 32,
+                },
                 1641: {
                     edgePadding: 190,
                     fixedWidth: 880,

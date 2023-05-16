@@ -334,6 +334,9 @@ header {
         height: 32px;
         background-color: #FFFFFF;
         border-radius: 100%;
+        &.load-page {
+            transition: unset;
+        }
         @media (max-width: 1640px) {
             width: 27px;
             height: 27px;

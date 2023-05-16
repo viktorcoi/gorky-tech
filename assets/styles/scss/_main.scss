@@ -80,6 +80,10 @@ body {
     transition: var(--trans);
     background-color: var(--background);
     overflow-x: hidden;
+    &.no-transition,
+    &.no-transition * {
+        transition: none !important;
+    }
     &[data-theme="dark"] {
         .shadow-back {
             > div {

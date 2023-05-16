@@ -3541,6 +3541,9 @@ header.open-search .header__search {
   background-color: #FFFFFF;
   border-radius: 100%;
 }
+.header__theme-switcher.load-page {
+  transition: unset;
+}
 @media (max-width: 1640px) {
   .header__theme-switcher {
     width: 27px;
@@ -5339,6 +5342,9 @@ body {
   transition: var(--trans);
   background-color: var(--background);
   overflow-x: hidden;
+}
+body.no-transition, body.no-transition * {
+  transition: none !important;
 }
 body[data-theme=dark] {
   --background: #12132B;

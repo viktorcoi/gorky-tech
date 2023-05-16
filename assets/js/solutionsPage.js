@@ -1,4 +1,4 @@
-import { openPopup, closePopup, fillInput, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput } from './functions.js';
+import { openPopup, closePopup, fillInput, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput, isValidEmail } from './functions.js';
 
 document.addEventListener('DOMContentLoaded', ()  => {
 
@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     inputApplicationMail.addEventListener('input', function() {
         fillInput(this);
+        isValidEmail(this);
     })
 
     inputApplicationCompany.addEventListener('input', function() {
@@ -112,6 +113,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     document.querySelector('#send-application-support-project').addEventListener('click', function(e) {
         checkFieldErrors(e, this, 'phone', inputApplicationPhone);
+        isValidEmail(inputApplicationMail, e);
     })
 
 });

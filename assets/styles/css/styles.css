@@ -1423,7 +1423,7 @@ body[data-theme=dark] {
     margin: 0 -50vw 0 -50vw;
   }
 }
-.analytics-graph__graph-desc {
+.analytics-graph__graph-desc--ru, .analytics-graph__graph-desc--en, .analytics-graph__graph-desc--cn {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -1434,19 +1434,22 @@ body[data-theme=dark] {
   opacity: 0.8;
 }
 @media (max-width: 1640px) {
-  .analytics-graph__graph-desc {
+  .analytics-graph__graph-desc--ru, .analytics-graph__graph-desc--en, .analytics-graph__graph-desc--cn {
     font-size: 14.5px;
   }
 }
 @media (max-width: 1024px) {
-  .analytics-graph__graph-desc {
+  .analytics-graph__graph-desc--ru, .analytics-graph__graph-desc--en, .analytics-graph__graph-desc--cn {
     font-size: 16.5px;
   }
 }
 @media (max-width: 640px) {
-  .analytics-graph__graph-desc {
+  .analytics-graph__graph-desc--ru, .analytics-graph__graph-desc--en, .analytics-graph__graph-desc--cn {
     font-size: max(2vw, 8.6px);
   }
+}
+.analytics-graph__graph-desc--en, .analytics-graph__graph-desc--cn {
+  display: none;
 }
 
 .analytics-technologies {

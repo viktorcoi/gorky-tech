@@ -517,22 +517,27 @@ body {
         }
     }
     &__graph-desc {
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        bottom: 0;
-        font-weight: 400;
-        font-size: 18px;
-        color: var(--text-main-color-light);
-        opacity: 0.8;
-        @media (max-width: 1640px) {
-            font-size: 14.5px;
+        &--ru, &--en, &--cn {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            bottom: 0;
+            font-weight: 400;
+            font-size: 18px;
+            color: var(--text-main-color-light);
+            opacity: 0.8;
+            @media (max-width: 1640px) {
+                font-size: 14.5px;
+            }
+            @media (max-width: 1024px) {
+                font-size: 16.5px;
+            }
+            @media (max-width: 640px) {
+                font-size: max(2vw, 8.6px);
+            }
         }
-        @media (max-width: 1024px) {
-            font-size: 16.5px;
-        }
-        @media (max-width: 640px) {
-            font-size: max(2vw, 8.6px);
+        &--en, &--cn {
+            display: none;
         }
     }
 }

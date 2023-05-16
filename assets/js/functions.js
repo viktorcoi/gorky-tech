@@ -110,4 +110,22 @@ const changePhoneInput = (el, mask) => {
     mask.updateValue();
 }
 
-export { fillInput, openPopup, clearInputs, closePopup, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput };
+
+function isValidEmail(email, e) {
+    let val = email.value.trim();
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailRegex.test(val)) {
+        email.classList.remove('error-input');
+        email.nextElementSibling.style.display = 'none';
+        email.nextElementSibling.classList.remove('animate__animated', 'animate__fadeIn');
+    } else {
+        email.classList.add('error-input');
+        email.nextElementSibling.style.display = 'block';
+        email.nextElementSibling.classList.add('animate__animated', 'animate__fadeIn');
+        email.nextElementSibling.textContent = `${val.length > 0 ? 'Введите коректный E-mail' : 'Не заполнено обязательное поле'}`
+        if (e)
+        e.preventDefault();
+    }
+}
+
+export { fillInput, openPopup, clearInputs, closePopup, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput, isValidEmail };

@@ -2312,20 +2312,20 @@ body[data-theme=dark] {
 body[data-theme=dark] {
   --border-support-measures-block: rgba(255, 255, 255, 0.12);
   --bg-support-measures-block-hover: linear-gradient(58.73deg, rgba(68, 101, 232, 0.6) -17.17%, rgba(68, 101, 232, 0) 50%), linear-gradient(301.39deg, rgba(218, 64, 182, 0.6) -24.38%, rgba(218, 64, 182, 0) 50%), linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
-  --bg-accreditation-companies: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/accreditation-companies.png");
-  --bg-russian-programs: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/russian-programs.png");
-  --bg-preferential-mortgage: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/preferential-mortgage.png");
-  --bg-grants-physical: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/grants-physical.png");
-  --bg-grants-organizations: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/grants-organizations.png");
-  --bg-competitions-students: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/competitions-students.png");
-  --bg-startup-nn: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/startup-nn.png");
-  --bg-grant-competition: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/grant-competition.png");
-  --bg-preferential-lending: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/preferential-lending.png");
+  --bg-accreditation-companies: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/accreditation-companies.png");
+  --bg-russian-programs: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/russian-programs.png");
+  --bg-preferential-mortgage: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/preferential-mortgage.png");
+  --bg-grants-physical: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/grants-physical.png");
+  --bg-grants-organizations: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/grants-organizations.png");
+  --bg-competitions-students: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/competitions-students.png");
+  --bg-startup-nn: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/startup-nn.png");
+  --bg-grant-competition: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/grant-competition.png");
+  --bg-preferential-lending: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/preferential-lending.png");
   --bg-support-question: rgba(255, 255, 255, 0.08);
   --img-support-question-block: url("data:image/svg+xml,%3Csvg width='238' height='187' viewBox='0 0 238 187' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.1'%3E%3Cpath d='M80.7612 62.5444C85.0651 60.2438 89.6961 59.5099 94.2082 59.5099C99.4244 59.5099 105.493 61.2255 110.392 65.2318C115.519 69.4365 119 75.8823 119 84.2917C119 93.9604 112.167 99.2063 108.32 102.162L107.477 102.816C103.272 106.118 101.646 107.883 101.646 111.563C101.646 113.535 100.862 115.427 99.4673 116.822C98.0725 118.216 96.1808 119 94.2082 119C92.2357 119 90.3439 118.216 88.9491 116.822C87.5543 115.427 86.7707 113.535 86.7707 111.563C86.7707 100.317 93.8215 94.6248 98.2939 91.1143C103.381 87.1179 104.125 86.2254 104.125 84.2917C104.125 80.3548 102.647 78.1235 100.952 76.7451C99.0282 75.2303 96.6564 74.3967 94.2082 74.375C91.2828 74.375 89.2697 74.8609 87.7624 75.6642C86.3443 76.4178 84.8469 77.7467 83.3991 80.4242C82.9335 81.2837 82.3032 82.0431 81.5442 82.659C80.7851 83.2749 79.9122 83.7353 78.9752 84.0138C78.0383 84.2924 77.0556 84.3837 76.0834 84.2824C75.1111 84.1812 74.1684 83.8895 73.3089 83.424C72.4494 82.9584 71.69 82.3281 71.0741 81.5691C70.4581 80.81 69.9978 79.9371 69.7192 79.0001C69.4407 78.0632 69.3494 77.0805 69.4506 76.1083C69.5518 75.136 69.8435 74.1933 70.3091 73.3338C72.9271 68.5143 76.3781 64.8848 80.7612 62.5444ZM94.2082 148.75C96.8383 148.75 99.3606 147.705 101.22 145.845C103.08 143.986 104.125 141.463 104.125 138.833C104.125 136.203 103.08 133.681 101.22 131.821C99.3606 129.961 96.8383 128.917 94.2082 128.917C91.5782 128.917 89.0558 129.961 87.1961 131.821C85.3364 133.681 84.2916 136.203 84.2916 138.833C84.2916 141.463 85.3364 143.986 87.1961 145.845C89.0558 147.705 91.5782 148.75 94.2082 148.75ZM94.2082 29.75C81.6984 29.7479 69.3901 32.9013 58.4223 38.9184C47.4546 44.9354 38.1818 53.6218 31.462 64.1736C24.7421 74.7254 20.7924 86.8017 19.9784 99.2851C19.1643 111.768 21.5121 124.255 26.8046 135.591L19.6151 163.774C19.0874 165.844 19.1037 168.015 19.6624 170.077C20.2211 172.139 21.3033 174.022 22.8039 175.543C24.3046 177.063 26.1727 178.17 28.2272 178.756C30.2817 179.342 32.4527 179.387 34.5297 178.887C41.9672 177.102 53.4011 174.355 63.5856 171.925C73.6974 176.485 84.7011 178.725 95.7908 178.482C106.881 178.239 117.775 175.518 127.677 170.519C137.58 165.52 146.238 158.37 153.019 149.591C159.8 140.813 164.532 130.629 166.867 119.785C169.203 108.942 169.083 97.7127 166.517 86.9212C163.952 76.1296 159.004 66.0486 152.038 57.4165C145.072 48.7844 136.263 41.8197 126.257 37.0327C116.251 32.2456 105.301 29.7573 94.2082 29.75ZM34.7082 104.125C34.7121 91.1867 38.9333 78.6023 46.732 68.2786C54.5307 57.9549 65.482 50.4545 77.9265 46.914C90.3709 43.3736 103.63 43.9859 115.695 48.6583C127.761 53.3307 137.974 61.8085 144.788 72.8071C151.602 83.8057 154.645 96.7256 153.457 109.609C152.268 122.493 146.912 134.638 138.201 144.204C129.49 153.77 117.898 160.236 105.181 162.622C92.4649 165.009 79.3174 163.185 67.7307 157.427L65.321 156.227L62.6931 156.852L35.0454 163.466C37.0287 155.731 39.6269 145.497 41.8879 136.612L42.5821 133.875L41.2929 131.366C36.9498 122.943 34.6916 113.601 34.7082 104.125ZM143.792 208.25C124.256 208.25 106.495 200.723 93.2166 188.417H94.2082C101.328 188.417 108.24 187.534 114.845 185.868C123.413 190.648 133.29 193.375 143.801 193.375C153.321 193.375 162.306 191.144 170.269 187.177L172.679 185.977L175.307 186.602C184.44 188.784 194.793 191.015 202.478 192.651C200.733 185.204 198.363 175.237 196.112 166.362L195.418 163.625L196.707 161.116C201.05 152.693 203.308 143.351 203.292 133.875C203.297 123.927 200.806 114.137 196.046 105.402C191.287 96.6663 184.412 89.2647 176.05 83.8752C174.302 76.7919 171.635 69.9677 168.117 63.5757C177.962 66.9846 186.981 72.4229 194.59 79.5385C202.2 86.6541 208.23 95.2885 212.291 104.883C216.352 114.477 218.353 124.817 218.164 135.233C217.975 145.649 215.601 155.91 211.195 165.351C213.704 175.347 216.253 186.175 217.859 193.147C218.331 195.168 218.285 197.275 217.726 199.273C217.167 201.271 216.114 203.096 214.662 204.579C213.211 206.062 211.409 207.155 209.423 207.757C207.437 208.359 205.332 208.45 203.301 208.022C196.092 206.515 184.757 204.095 174.414 201.675C164.791 206.023 154.351 208.264 143.792 208.25Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
-  --img-support-question-telegramm: url("../../img/support-question-telegramm.png");
   --bg-support-question-telegramm-hover: rgba(255, 255, 255, 1);
   --color-text-support-question-telegramm-hover: #2152F2;
+  --img-support-question-telegramm: url("https://viktorcoi.github.io/gorky-tech/assets/img/support-question-telegramm.png");
 }
 .support-page {
   width: min(1540px, 100%);
@@ -2686,11 +2686,11 @@ body[data-theme=dark] {
 }
 
 body[data-theme=dark] {
-  --bg-accreditation-companies-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("../../img/accreditation-companies-main.png");
-  --bg-russian-programs-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("../../img/russian-programs-main.png");
-  --bg-preferential-mortgage-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("../../img/preferential-mortgage-main.png");
-  --bg-grants-physical-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("../../img/grants-physical-main.png");
-  --bg-grant-competition-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("../../img/grant-competition-main.png");
+  --bg-accreditation-companies-main: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/accreditation-companies-main.png");
+  --bg-russian-programs-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("https://viktorcoi.github.io/gorky-tech/assets/img/russian-programs-main.png");
+  --bg-preferential-mortgage-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("https://viktorcoi.github.io/gorky-tech/assets/img/preferential-mortgage-main.png");
+  --bg-grants-physical-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("https://viktorcoi.github.io/gorky-tech/assets/img/grants-physical-main.png");
+  --bg-grant-competition-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("https://viktorcoi.github.io/gorky-tech/assets/img/grant-competition-main.png");
   --bg-support-precents-block: rgba(255, 255, 255, 0.08);
   --bg-support-precents-dot: #2152F2;
   --color-text-support-textblock: rgba(255, 255, 255, .8);
@@ -5554,6 +5554,8 @@ body[data-theme=dark] {
   --img-popup-cross: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.24'%3E%3Cpath d='M24 24L8 8M24 8L8 24' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
   --border-popup-mail: rgba(255, 255, 255, .12);
   --img-arrow-path: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.4'%3E%3Cpath d='M2.91659 7H11.0833M11.0833 7L7.58325 10.5M11.0833 7L7.58325 3.5' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
+  --color-text-popup-opacity: rgba(255, 255, 255, .8);
+  --img-phone-popup: url("../../img/popup-phone.png");
 }
 body[data-theme=light] {
   --input-bg-search: rgba(239, 242, 246, 1);
@@ -5722,6 +5724,7 @@ body[data-theme=light] {
   text-align: center;
   display: block;
   width: max-content;
+  line-height: 100%;
 }
 @media (max-width: 1640px) {
   .btn-blue, .btn-gray, .btn-transperent {
@@ -5850,12 +5853,12 @@ body[data-theme=light] {
   visibility: hidden;
   pointer-events: none;
 }
-.bg-popup.popup-catalog-solutions, .bg-popup.popup-ask-question, .bg-popup.popup-virtual-showroom, .bg-popup.popup-promotion-consultation, .bg-popup.popup-question-gostekh, .bg-popup.popup-application-support-project {
+.bg-popup.popup-catalog-solutions, .bg-popup.popup-ask-question, .bg-popup.popup-virtual-showroom, .bg-popup.popup-promotion-consultation, .bg-popup.popup-question-gostekh, .bg-popup.popup-application-support-project, .bg-popup.popup-bot-telegram, .bg-popup.popup-out-startup-nn, .bg-popup.popup-out-preferential-lending {
   opacity: 1;
   visibility: visible;
   pointer-events: unset;
 }
-.bg-popup.popup-ask-question .ask-question, .bg-popup.popup-catalog-solutions .catalog-solutions, .bg-popup.popup-virtual-showroom .virtual-showroom, .bg-popup.popup-promotion-consultation .promotion-consultation, .bg-popup.popup-question-gostekh .question-gostekh, .bg-popup.popup-application-support-project .application-support-project {
+.bg-popup.popup-ask-question .ask-question, .bg-popup.popup-catalog-solutions .catalog-solutions, .bg-popup.popup-virtual-showroom .virtual-showroom, .bg-popup.popup-promotion-consultation .promotion-consultation, .bg-popup.popup-question-gostekh .question-gostekh, .bg-popup.popup-application-support-project .application-support-project, .bg-popup.popup-bot-telegram .bot-telegram, .bg-popup.popup-out-startup-nn .out-startup-nn, .bg-popup.popup-out-preferential-lending .out-preferential-lending {
   opacity: 1;
   transform: translateY(0);
 }
@@ -5925,6 +5928,49 @@ body[data-theme=light] {
     width: 24px;
     height: 24px;
     background-size: 24px;
+  }
+}
+.popup__desc-page {
+  display: grid;
+  gap: 18px;
+}
+@media (max-width: 1280px) {
+  .popup__desc-page {
+    gap: 14px;
+  }
+}
+@media (max-width: 640px) {
+  .popup__desc-page {
+    gap: 8px;
+  }
+}
+.popup__desc-page ul {
+  display: grid;
+}
+.popup__desc-page ul li {
+  position: relative;
+  padding-left: 30px;
+}
+.popup__desc-page ul li::after {
+  content: "•";
+  position: absolute;
+  left: 10px;
+  top: 1.5px;
+}
+@media (max-width: 1640px) {
+  .popup__desc-page ul li {
+    padding-left: 24px;
+  }
+  .popup__desc-page ul li::after {
+    left: 8px;
+  }
+}
+@media (max-width: 640px) {
+  .popup__desc-page ul li {
+    padding-left: 20px;
+  }
+  .popup__desc-page ul li::after {
+    left: 6px;
   }
 }
 .popup.application-support-project {
@@ -6035,6 +6081,51 @@ body[data-theme=light] {
     font-size: 12px;
   }
 }
+@media (max-height: 800px) {
+  .popup.out-startup-nn {
+    height: 90%;
+  }
+  .popup.out-startup-nn .popup__desc-page {
+    height: calc(100% - 180px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+@media (max-height: 800px) and (max-width: 1280px) {
+  .popup.out-startup-nn .popup__desc-page {
+    height: calc(100% - 170px);
+  }
+}
+@media (max-height: 800px) and (max-width: 640px) {
+  .popup.out-startup-nn .popup__desc-page {
+    height: calc(100% - 170px);
+  }
+}
+@media (max-height: 800px) and (max-width: 420px) {
+  .popup.out-startup-nn .popup__desc-page {
+    height: calc(100% - 190px);
+  }
+}
+@media (max-height: 800px) {
+  .popup.out-preferential-lending {
+    height: 90%;
+  }
+  .popup.out-preferential-lending .popup__desc-page {
+    height: calc(100% - 140px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+@media (max-height: 800px) and (max-width: 1280px) {
+  .popup.out-preferential-lending .popup__desc-page {
+    height: calc(100% - 95px);
+  }
+}
+@media (max-height: 800px) and (max-width: 640px) {
+  .popup.out-preferential-lending .popup__desc-page {
+    height: calc(100% - 120px);
+  }
+}
 @media (max-height: 900px) {
   .popup.promotion-consultation, .popup.question-gostekh {
     height: 90%;
@@ -6085,33 +6176,185 @@ body[data-theme=light] {
     height: calc(100% - 110px);
   }
 }
+.popup.bot-telegram .bot-telegram__buttons, .popup.out-startup-nn .out-startup-nn__buttons, .popup.out-preferential-lending .out-preferential-lending__buttons {
+  margin-top: 36px;
+}
+@media (max-width: 1280px) {
+  .popup.bot-telegram .bot-telegram__buttons, .popup.out-startup-nn .out-startup-nn__buttons, .popup.out-preferential-lending .out-preferential-lending__buttons {
+    margin-top: 20px;
+  }
+}
+.popup.bot-telegram .bot-telegram__desc ~ div, .popup.out-startup-nn .out-startup-nn__desc ~ div, .popup.out-preferential-lending .out-preferential-lending__desc ~ div {
+  margin-top: 18px;
+}
+@media (max-width: 1280px) {
+  .popup.bot-telegram .bot-telegram__desc ~ div, .popup.out-startup-nn .out-startup-nn__desc ~ div, .popup.out-preferential-lending .out-preferential-lending__desc ~ div {
+    margin-top: 14px;
+  }
+}
+@media (max-width: 640px) {
+  .popup.bot-telegram .bot-telegram__desc ~ div, .popup.out-startup-nn .out-startup-nn__desc ~ div, .popup.out-preferential-lending .out-preferential-lending__desc ~ div {
+    margin-top: 10px;
+  }
+}
+.popup.bot-telegram .bot-telegram__buttons-title, .popup.out-startup-nn .out-startup-nn__buttons-title, .popup.out-preferential-lending .out-preferential-lending__buttons-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 110%;
+  color: var(--text-main-color-light);
+}
+@media (max-width: 640px) {
+  .popup.bot-telegram .bot-telegram__buttons-title, .popup.out-startup-nn .out-startup-nn__buttons-title, .popup.out-preferential-lending .out-preferential-lending__buttons-title {
+    font-size: 20px;
+  }
+}
+.popup.bot-telegram .bot-telegram__buttons-desc, .popup.out-startup-nn .out-startup-nn__buttons-desc, .popup.out-preferential-lending .out-preferential-lending__buttons-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text-main-color-light);
+  opacity: 0.8;
+  margin: 12px 0 20px 0;
+}
+@media (max-width: 640px) {
+  .popup.bot-telegram .bot-telegram__buttons-desc, .popup.out-startup-nn .out-startup-nn__buttons-desc, .popup.out-preferential-lending .out-preferential-lending__buttons-desc {
+    font-size: 14px;
+    margin: 12px 0;
+  }
+}
+.popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
+  color: var(--color-text-popup-opacity);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.popup.bot-telegram .bot-telegram__desc strong, .popup.out-startup-nn .out-startup-nn__desc strong, .popup.out-preferential-lending .out-preferential-lending__desc strong {
+  font-weight: 500;
+  color: var(--text-main-color-light);
+}
+@media (max-width: 1280px) {
+  .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
+    font-size: 15px;
+  }
+}
+.popup.bot-telegram .bot-telegram__buttons-link {
+  text-align: center;
+  width: max-content;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-main-color-light);
+  background-color: #0088CC;
+  border-radius: 12px;
+  padding: 16px 32px 17px 58px;
+  background-position: 30px center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath d='M0.30142 3.96604L2.94205 15.1738C3.14126 15.9649 3.6608 16.1617 4.39908 15.7891L8.42251 13.1207L10.3639 14.8012C10.5788 14.9946 10.7585 15.1563 11.1725 15.1563L10.8835 11.4684L3.42642 5.40393C3.1022 5.14377 3.49673 4.99963 3.93033 5.25979L13.1491 10.484L17.1178 9.36604C17.9811 9.12346 17.9967 8.58908 16.9381 8.21643L1.4147 2.83401C0.695951 2.59143 0.0670452 2.97815 0.30142 3.96604Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+@media (min-width: 1025px) {
+  .popup.bot-telegram .bot-telegram__buttons-link:hover {
+    background-color: #0090D8;
+  }
+}
+@media (max-width: 640px) {
+  .popup.bot-telegram .bot-telegram__buttons-link {
+    font-size: 15px;
+    width: 100%;
+    padding: 14px 32px 15px 58px;
+    background-position: calc(50% - 80px) center;
+  }
+}
+.popup.bot-telegram {
+  width: min(1100px, 90%);
+  overflow: hidden;
+}
+.popup.bot-telegram h2 {
+  max-width: 23ch;
+}
+@media (max-width: 1020px) {
+  .popup.bot-telegram h2 {
+    max-width: unset;
+  }
+}
+.popup.bot-telegram .bot-telegram__desc {
+  max-width: 49.5ch;
+}
+@media (max-width: 1020px) {
+  .popup.bot-telegram .bot-telegram__desc {
+    max-width: unset;
+  }
+}
+.popup.bot-telegram::after, .popup.bot-telegram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+@media (max-width: 1020px) {
+  .popup.bot-telegram::after, .popup.bot-telegram::before {
+    all: unset;
+  }
+}
+.popup.bot-telegram::before {
+  z-index: -1;
+  background-image: var(--img-phone-popup);
+  background-size: auto 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1170px) {
+  .popup.bot-telegram::before {
+    background-size: auto 70%;
+  }
+}
+.popup.bot-telegram::after {
+  background: radial-gradient(32.97% 61.69% at 74.21% 111.77%, rgba(68, 101, 232, 0.4) 0%, rgba(68, 101, 232, 0) 100%), radial-gradient(45.93% 82.26% at 100% 63.43%, rgba(218, 64, 182, 0.4) 0%, rgba(218, 64, 182, 0) 100%);
+  z-index: -2;
+}
+.popup.out-startup-nn, .popup.out-preferential-lending {
+  width: min(940px, 90%);
+}
 
 .popup.catalog-solutions .tags__tag, .popup.virtual-showroom .tags__tag, .popup.promotion-consultation .tags__tag,
-.popup.question-gostekh .tags__tag, #support-page-popups .ask-question .tags__tag {
+.popup.question-gostekh .tags__tag, #support-page-popups .ask-question .tags__tag, .popup.bot-telegram .tags__tag,
+.popup.out-startup-nn .tags__tag, .popup.out-preferential-lending .tags__tag {
   cursor: default;
 }
 .popup.catalog-solutions .tags__tag:hover, .popup.virtual-showroom .tags__tag:hover, .popup.promotion-consultation .tags__tag:hover,
-.popup.question-gostekh .tags__tag:hover, #support-page-popups .ask-question .tags__tag:hover {
+.popup.question-gostekh .tags__tag:hover, #support-page-popups .ask-question .tags__tag:hover, .popup.bot-telegram .tags__tag:hover,
+.popup.out-startup-nn .tags__tag:hover, .popup.out-preferential-lending .tags__tag:hover {
   background-color: var(--tag-bg);
 }
 .popup.catalog-solutions .popup__title, .popup.virtual-showroom .popup__title, .popup.promotion-consultation .popup__title,
-.popup.question-gostekh .popup__title, #support-page-popups .ask-question .popup__title {
+.popup.question-gostekh .popup__title, #support-page-popups .ask-question .popup__title, .popup.bot-telegram .popup__title,
+.popup.out-startup-nn .popup__title, .popup.out-preferential-lending .popup__title {
   margin-bottom: 18px;
 }
 
 .popup.promotion-consultation .tags__tag, .popup.question-gostekh .tags__tag,
-#support-page-popups .ask-question .tags__tag {
+#support-page-popups .ask-question .tags__tag, .popup.bot-telegram .tags__tag,
+.popup.out-startup-nn .tags__tag, .popup.out-preferential-lending .tags__tag {
   margin-bottom: 36px;
 }
 @media (max-width: 1280px) {
   .popup.promotion-consultation .tags__tag, .popup.question-gostekh .tags__tag,
-  #support-page-popups .ask-question .tags__tag {
+  #support-page-popups .ask-question .tags__tag, .popup.bot-telegram .tags__tag,
+  .popup.out-startup-nn .tags__tag, .popup.out-preferential-lending .tags__tag {
     margin-bottom: 28px;
   }
 }
 @media (max-width: 640px) {
   .popup.promotion-consultation .tags__tag, .popup.question-gostekh .tags__tag,
-  #support-page-popups .ask-question .tags__tag {
+  #support-page-popups .ask-question .tags__tag, .popup.bot-telegram .tags__tag,
+  .popup.out-startup-nn .tags__tag, .popup.out-preferential-lending .tags__tag {
     margin-bottom: 20px;
   }
 }

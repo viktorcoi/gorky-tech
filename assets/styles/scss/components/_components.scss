@@ -47,6 +47,9 @@ body {
 
         --img-arrow-path: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.4'%3E%3Cpath d='M2.91659 7H11.0833M11.0833 7L7.58325 10.5M11.0833 7L7.58325 3.5' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
     
+        --color-text-popup-opacity: rgba(255, 255, 255, .8);
+
+        --img-phone-popup: url('../../img/popup-phone.png');
     }
     &[data-theme="light"] {
         --input-bg-search: rgba(239, 242, 246, 1);
@@ -212,6 +215,7 @@ body {
     text-align: center;
     display: block;
     width: max-content;
+    line-height: 100%;
     @media (max-width: 1640px) {
         padding: 20px 32px 21px 32px;
         border-radius: 12px;
@@ -318,7 +322,9 @@ body {
     pointer-events: none;
     &.popup-catalog-solutions, &.popup-ask-question,
     &.popup-virtual-showroom, &.popup-promotion-consultation,
-    &.popup-question-gostekh, &.popup-application-support-project {
+    &.popup-question-gostekh, &.popup-application-support-project,
+    &.popup-bot-telegram, &.popup-out-startup-nn, 
+    &.popup-out-preferential-lending {
         opacity: 1;
         visibility: visible;
         pointer-events: unset;
@@ -328,7 +334,9 @@ body {
     &.popup-virtual-showroom .virtual-showroom,
     &.popup-promotion-consultation .promotion-consultation,
     &.popup-question-gostekh .question-gostekh,
-    &.popup-application-support-project .application-support-project {
+    &.popup-application-support-project .application-support-project,
+    &.popup-bot-telegram .bot-telegram, &.popup-out-startup-nn .out-startup-nn,
+    &.popup-out-preferential-lending .out-preferential-lending {
         opacity: 1;
         transform: translateY(0);
     }
@@ -385,6 +393,40 @@ body {
             width: 24px;
             height: 24px;
             background-size: 24px;
+        }
+    }
+    &__desc-page {
+        display: grid;
+        gap: 18px;
+        @media (max-width: 1280px) {
+            gap: 14px;
+        }
+        @media (max-width: 640px) {
+            gap: 8px;
+        }
+        ul {
+            display: grid;
+            li {
+                position: relative;
+                padding-left: 30px;
+                &::after {
+                    content: '•';
+                    position: absolute;
+                    left: 10px; top: 1.5px;
+                }
+                @media (max-width: 1640px) {
+                    padding-left: 24px;
+                    &::after {
+                        left: 8px;
+                    }
+                }
+                @media (max-width: 640px) {
+                    padding-left: 20px;
+                    &::after {
+                        left: 6px;
+                    }
+                }
+            }  
         }
     }
     &.application-support-project {
@@ -484,6 +526,41 @@ body {
             }
         }
     }
+    &.out-startup-nn {
+        @media (max-height: 800px) {
+            height: 90%;
+            .popup__desc-page {
+                height: calc(100% - 180px);
+                overflow-y: auto;
+                overflow-x: hidden;
+                @media (max-width: 1280px) {
+                    height: calc(100% - 170px);
+                }
+                @media (max-width: 640px) {
+                    height: calc(100% - 170px);
+                }
+                @media (max-width: 420px) {
+                    height: calc(100% - 190px);
+                }
+            }
+        }
+    }
+    &.out-preferential-lending {
+        @media (max-height: 800px) {
+            height: 90%;
+            .popup__desc-page {
+                height: calc(100% - 140px);
+                overflow-y: auto;
+                overflow-x: hidden;
+                @media (max-width: 1280px) {
+                    height: calc(100% - 95px);
+                }
+                @media (max-width: 640px) {
+                    height: calc(100% - 120px);
+                }
+            }
+        }
+    }
     &.promotion-consultation, &.question-gostekh {
         @media (max-height: 900px) {
             height: 90%;
@@ -522,10 +599,136 @@ body {
             }
         }
     }
+    &.bot-telegram .bot-telegram, 
+    &.out-startup-nn .out-startup-nn,
+    &.out-preferential-lending .out-preferential-lending {
+        &__buttons {
+            margin-top: 36px;
+            @media (max-width: 1280px) {
+                margin-top: 20px;
+            }
+        }
+        &__desc ~ div {
+            margin-top: 18px;
+            @media (max-width: 1280px) {
+                margin-top: 14px;
+            }
+            @media (max-width: 640px) {
+                margin-top: 10px;
+            }
+        }
+        &__buttons-title {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 110%;
+            color: var(--text-main-color-light);
+            @media (max-width: 640px) {
+                font-size: 20px;
+            }
+        }
+        &__buttons-desc {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: var(--text-main-color-light);
+            opacity: .8;
+            margin: 12px 0 20px 0;
+            @media (max-width: 640px) {
+                font-size: 14px;
+                margin: 12px 0;
+            }
+        }
+        &__desc {
+            color: var(--color-text-popup-opacity);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            strong {
+                font-weight: 500;
+                color: var(--text-main-color-light);
+            }
+            @media (max-width: 1280px) {
+                font-size: 16px;
+            }
+            @media (max-width: 640px) {
+                font-size: 15px;
+            }
+        }
+    }
+    &.bot-telegram .bot-telegram {
+        &__buttons-link {
+            text-align: center;
+            width: max-content;
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--text-main-color-light);
+            background-color: #0088CC;
+            border-radius: 12px;
+            padding: 16px 32px 17px 58px;
+            background-position: 30px center;
+            background-repeat: no-repeat;
+            background-size: 18px;
+            background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath d='M0.30142 3.96604L2.94205 15.1738C3.14126 15.9649 3.6608 16.1617 4.39908 15.7891L8.42251 13.1207L10.3639 14.8012C10.5788 14.9946 10.7585 15.1563 11.1725 15.1563L10.8835 11.4684L3.42642 5.40393C3.1022 5.14377 3.49673 4.99963 3.93033 5.25979L13.1491 10.484L17.1178 9.36604C17.9811 9.12346 17.9967 8.58908 16.9381 8.21643L1.4147 2.83401C0.695951 2.59143 0.0670452 2.97815 0.30142 3.96604Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+            @media (min-width: 1025px) {
+                &:hover {
+                    background-color: #0090D8;
+                }
+            }
+            @media (max-width: 640px) {
+                font-size: 15px;
+                width: 100%;
+                padding: 14px 32px 15px 58px;
+                background-position: calc((100% / 2) - 80px) center;
+            }
+        }
+    }
+    &.bot-telegram {
+        width: min(1100px, 90%);
+        overflow: hidden;
+        h2 {
+            max-width: 23ch;
+            @media (max-width: 1020px) {
+                max-width: unset;
+            }
+        }
+        .bot-telegram__desc {
+            max-width: 49.5ch;
+            @media (max-width: 1020px) {
+                max-width: unset;
+            }
+        }
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            top: 0; bottom: 0; right: 0; left: 0;
+            @media (max-width: 1020px) {
+                all: unset;
+            }
+        }
+        &::before {
+            z-index: -1;
+            background-image: var(--img-phone-popup);
+            background-size: auto 100%;
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            @media (max-width: 1170px) {
+                background-size: auto 70%;
+            }
+        }
+        &::after {
+            background: radial-gradient(32.97% 61.69% at 74.21% 111.77%, rgba(68, 101, 232, 0.4) 0%, rgba(68, 101, 232, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(45.93% 82.26% at 100% 63.43%, rgba(218, 64, 182, 0.4) 0%, rgba(218, 64, 182, 0) 100%);
+            z-index: -2;
+        }
+    }
+    &.out-startup-nn, &.out-preferential-lending {
+        width: min(940px, 90%);
+    }
 }
 
 .popup.catalog-solutions, .popup.virtual-showroom, .popup.promotion-consultation, 
-.popup.question-gostekh, #support-page-popups .ask-question {
+.popup.question-gostekh, #support-page-popups .ask-question, .popup.bot-telegram, 
+.popup.out-startup-nn, .popup.out-preferential-lending {
     .tags__tag {
         cursor: default;
         &:hover {
@@ -540,7 +743,8 @@ body {
 }
 
 .popup.promotion-consultation, .popup.question-gostekh,
-#support-page-popups .ask-question {
+#support-page-popups .ask-question, .popup.bot-telegram,
+.popup.out-startup-nn, .popup.out-preferential-lending {
     .tags__tag {
         margin-bottom: 36px;
         @media (max-width: 1280px) {

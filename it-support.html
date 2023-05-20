@@ -201,13 +201,13 @@
                         <div class="support-measures__block competitions-students">
                             <h2 class="support-measures__block-title">Конкурсы для школьников и студентов</h2>
                         </div>
-                        <div class="support-measures__block startup-nn">
+                        <div id="btn-startup-nn" class="support-measures__block startup-nn">
                             <h2 class="support-measures__block-title">Реестр ИТ-стартапов Нижегородской области<br/>(в разработке)</h2>
                         </div>
                         <a href="./grant-competition.html" class="support-measures__block grant-competition">
                             <h2 class="support-measures__block-title">Грантовый конкурс Нижегородской области</h2>
                         </a>
-                        <div class="support-measures__block preferential-lending">
+                        <div id="btn-preferential-lending" class="support-measures__block preferential-lending">
                             <h2 class="support-measures__block-title">Льготное кредитование</h2>
                         </div>
                     </div>
@@ -221,7 +221,7 @@
                         <p class="support-question__block-desc">Вы можете задать вопрос по этому разделу в форме справа, указав свое имя </p>
                         <button id="support-question" class="btn-gray">Заполнить форму</button>
                     </div>     
-                    <div class="support-question__telegramm">
+                    <div id="btn-bot-telegram" class="support-question__telegramm">
                         <div class="support-question__telegramm-img"></div>
                         <p class="support-question__telegramm-desc">Чат-бот по мерам поддержки в Telegram</p>
                     </div>    
@@ -230,6 +230,7 @@
 
              
                 <div id="support-page-popups" class="bg-popup">
+
                     <div id="popup-ask-question" class="popup ask-question">
                         <button id="ask-question-close" class="popup__cross"></button>
                         <h2 class="popup__title">Задать вопрос по мерам поддержки</h2>
@@ -264,9 +265,103 @@
                             </p>     
                         </form>
                     </div>
+
+                    <div id="popup-bot-telegram" class="popup bot-telegram">
+                        <button id="bot-telegram-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Чат-бот по мерам поддержки ИТ в Телеграм!</h2>
+                        <p class="tags__tag">Чат-бот по мерам поддержки в Телеграм</p>
+                        <p class="bot-telegram__desc">
+                            Чат-бот «Горький. Поддержка ИТ» содержит информацию не только о федеральных 
+                            мерах поддержки, но 
+                            <strong>
+                                региональных мерах, которые действуют только на территории 
+                                Нижегородской области.
+                            </strong>
+                            Например, ИНТЦ Квантовая долина. Также, можно предложить 
+                            свою меру или улучшение (аргументировав свою точку зрения).
+                        </p>
+                        <div class="bot-telegram__buttons">
+                            <h3 class="bot-telegram__buttons-title">Чат-бот Горький. Поддержка ИТ</h3>
+                            <p class="bot-telegram__buttons-desc">Знает все актуальные льготы для разработчиков ИТ в Нижегородской области</p>
+                            <a href="#" class="bot-telegram__buttons-link">Открыть в Telegram</a>
+                        </div>
+                    </div>
+
+                    <div id="popup-out-startup-nn" class="popup out-startup-nn">
+                        <button id="out-startup-nn-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Реестр ИТ-стартапов Нижегородской области (в разработке)</h2>
+                        <p class="tags__tag">Реестр ИТ-стартапов Нижегородской области</p>
+                        <div class="popup__desc-page">
+                            <p class="out-startup-nn__desc">
+                                АНО «Горький Тех» совместно с минцифры НО ведется работа по созданию Реестра 
+                                <strong>ИТ-стартапов Нижегородской области.</strong>
+                                Оператором выступит АНО «Горький Тех».
+                            </p>
+                            <p class="out-startup-nn__desc">
+                                <strong>
+                                    Нахождение в региональном Реестре – одно из обязательных условий для 
+                                    получения государственной аккредитации по упрощенной схеме для стартапов 
+                                </strong> (молодых ИТ-компаний).
+                            </p>
+                            <ul>
+                                <p class="out-startup-nn__desc">
+                                    В соответствии с разрабатываемым положением о включении ИТ-компаний в Реестр 
+                                    стартапом будет признана организация при соответствии критериям:
+                                </p>
+                                <li class="out-startup-nn__desc">создана менее чем за <strong>3 года</strong> до даты подачи заявления;</li>
+                                <li class="out-startup-nn__desc"><strong>зарегистрирована на территории НО;</strong></li>
+                                <li class="out-startup-nn__desc">
+                                    <strong>осуществляет экономическую деятельность на территории НО в сфере ИТ</strong>
+                                    в соответствии с профильными ИТ-ОКВЭДами;
+                                </li>
+                                <li class="out-startup-nn__desc">
+                                    <strong>предельный доход</strong>
+                                    с момента создания организации
+                                    <strong>составляет менее 1 млн руб.</strong>
+                                </li>
+                            </ul>
+                            <div class="out-startup-nn__buttons">
+                                <h3 class="out-startup-nn__buttons-title">Перечень профильных ИТ-ОКВЭДов</h3>
+                                <p class="out-startup-nn__buttons-desc">Краткое описание действия</p>
+                                <a href="#" class="btn-gray">Изучить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="popup-out-preferential-lending" class="popup out-preferential-lending">
+                        <button id="out-preferential-lending-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Льготное кредитование</h2>
+                        <p class="tags__tag">Льготное кредитование</p>
+                        <div class="popup__desc-page">
+                            <p class="out-preferential-lending__desc">
+                                Льготное кредитование направлено на реализацию проектов по цифровой 
+                                трансформации, реализуемых на основе российских решений в сфере ИТ.
+                            </p>
+                            <ul>
+                                <p class="out-preferential-lending__desc">
+                                    <strong>Варианты льготных ставок:</strong>
+                                </p>
+                                <li class="out-preferential-lending__desc">до 3% – на деятельность аккредитованных ИТ-компаний;</li>
+                                <li class="out-preferential-lending__desc">до 5% – на проекты по цифровой трансформации (ИТ-проекты);</li>
+                            </ul>
+                            <p class="out-preferential-lending__desc">
+                                Минимальный размер льготного кредита – 5 млн руб., максимальный – 5 млрд руб.
+                                Минимальный размер кредита для реализации программы (совокупности проектов) – 
+                                500 млн руб., максимальный – 10 млрд руб.
+                            </p>
+                            <p class="out-preferential-lending__desc">
+                                Предоставляется <strong><a href="#">уполномоченными</a></strong> банками.<br/>
+                                Правовое основание – Постановление Правительства РФ от 5 декабря 2019 г. № 1598.
+                                Софинансирование не требуется – предусмотрено 100% финансирование банком.
+                                Минимальная отчетность.
+                            </p>
+                            <div class="out-preferential-lending__buttons">
+                                <a href="#" class="btn-blue">Условия программы</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-       
-               
                
             </div>
         </div>

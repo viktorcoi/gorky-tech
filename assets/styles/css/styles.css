@@ -3360,6 +3360,18 @@ body[data-theme=dark] {
   margin: auto auto 0 auto;
 }
 
+body[data-theme=dark] {
+  --border-personnel-block: rgba(255, 255, 255, 0.12);
+  --bg-personnel-block-hover: linear-gradient(58.73deg, rgba(68, 101, 232, 0.6) -17.17%, rgba(68, 101, 232, 0) 50%), linear-gradient(301.39deg, rgba(218, 64, 182, 0.6) -24.38%, rgba(218, 64, 182, 0) 50%), linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
+  --bg-it-campus: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/it-campus.png");
+  --bg-it-education: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/it-education.png");
+  --bg-it-employer: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/it-employer.png");
+  --bg-teachers-programming: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/teachers-programming.png");
+  --bg-it-talents: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/it-talents.png");
+  --bg-it-scholarship: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/it-scholarship.png");
+  --bg-advanced-training: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/advanced-training.png");
+  --bg-computer-school: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("../../img/computer-school.png");
+}
 .personnel-page {
   width: min(1540px, 100%);
   margin: 0 auto;
@@ -3368,6 +3380,187 @@ body[data-theme=dark] {
 .personnel-info {
   margin-top: 100px;
 }
+@media (max-width: 1640px) {
+  .personnel-info {
+    margin-top: 64px;
+  }
+}
+@media (max-width: 900px) {
+  .personnel-info {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .personnel-info {
+    margin-top: 50px;
+  }
+}
+.personnel-info__title {
+  font-weight: 500;
+  font-size: 54px;
+  color: var(--text-main-color-light);
+  max-width: 30ch;
+}
+@media (max-width: 1640px) {
+  .personnel-info__title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 900px) {
+  .personnel-info__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .personnel-info__title {
+    font-size: 26px;
+  }
+}
+.personnel-info__desc {
+  color: var(--text-main-color-light);
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  margin: 36px 0 64px 0;
+}
+@media (max-width: 1640px) {
+  .personnel-info__desc {
+    font-size: 16px;
+    margin: 24px 0 46px 0;
+  }
+}
+@media (max-width: 900px) {
+  .personnel-info__desc {
+    margin: 20px 0 36px 0;
+  }
+}
+@media (max-width: 600px) {
+  .personnel-info__desc {
+    font-size: 14px;
+    margin: 16px 0 24px 0;
+  }
+}
+.personnel-info__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 1640px) {
+  .personnel-info__list {
+    gap: 16px;
+  }
+}
+@media (max-width: 1300px) {
+  .personnel-info__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .personnel-info__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .personnel-info__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+}
+.personnel-info__block {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  border-radius: 32px;
+  min-height: 260px;
+  padding: 36px;
+  outline: 1px solid var(--border-personnel-block);
+}
+.personnel-info__block.it-campus {
+  background: var(--bg-it-campus);
+}
+.personnel-info__block.it-education {
+  background: var(--bg-it-education);
+}
+.personnel-info__block.it-employer {
+  background: var(--bg-it-employer);
+}
+.personnel-info__block.teachers-programming {
+  background: var(--bg-teachers-programming);
+}
+.personnel-info__block.it-talents {
+  background: var(--bg-it-talents);
+}
+.personnel-info__block.it-scholarship {
+  background: var(--bg-it-scholarship);
+}
+.personnel-info__block.advanced-training {
+  background: var(--bg-advanced-training);
+}
+.personnel-info__block.computer-school {
+  background: var(--bg-computer-school);
+}
+.personnel-info__block.it-campus, .personnel-info__block.it-education, .personnel-info__block.it-employer, .personnel-info__block.teachers-programming, .personnel-info__block.it-talents, .personnel-info__block.it-scholarship, .personnel-info__block.advanced-training, .personnel-info__block.computer-school {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.personnel-info__block::after {
+  transition: var(--trans);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--bg-support-measures-block-hover);
+  opacity: 0;
+}
+@media (min-width: 1025px) {
+  .personnel-info__block:hover::after {
+    opacity: 1;
+  }
+}
+@media (max-width: 1640px) {
+  .personnel-info__block {
+    border-radius: 24px;
+    min-height: 202px;
+    padding: 28px 32px;
+  }
+}
+@media (max-width: 900px) {
+  .personnel-info__block {
+    border-radius: 18px;
+    min-height: 174px;
+    padding: 20px 24px;
+  }
+}
+@media (max-width: 600px) {
+  .personnel-info__block {
+    border-radius: 16px;
+    min-height: 164px;
+  }
+}
+.personnel-info__block-title {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--text-main-color-light);
+}
+@media (max-width: 1640px) {
+  .personnel-info__block-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .personnel-info__block-title {
+    font-size: 20px;
+  }
+}
+
 body[data-theme=dark] {
   --bg-sales-info-block: rgba(255, 255, 255, 0.08);
   --border-sales-info-block: rgba(255, 255, 255, 0.08);
@@ -5858,12 +6051,12 @@ body[data-theme=light] {
   visibility: hidden;
   pointer-events: none;
 }
-.bg-popup.popup-catalog-solutions, .bg-popup.popup-ask-question, .bg-popup.popup-virtual-showroom, .bg-popup.popup-promotion-consultation, .bg-popup.popup-question-gostekh, .bg-popup.popup-application-support-project, .bg-popup.popup-bot-telegram, .bg-popup.popup-out-startup-nn, .bg-popup.popup-out-preferential-lending {
+.bg-popup.popup-catalog-solutions, .bg-popup.popup-ask-question, .bg-popup.popup-virtual-showroom, .bg-popup.popup-promotion-consultation, .bg-popup.popup-question-gostekh, .bg-popup.popup-application-support-project, .bg-popup.popup-bot-telegram, .bg-popup.popup-out-startup-nn, .bg-popup.popup-out-preferential-lending, .bg-popup.popup-personnel-about {
   opacity: 1;
   visibility: visible;
   pointer-events: unset;
 }
-.bg-popup.popup-ask-question .ask-question, .bg-popup.popup-catalog-solutions .catalog-solutions, .bg-popup.popup-virtual-showroom .virtual-showroom, .bg-popup.popup-promotion-consultation .promotion-consultation, .bg-popup.popup-question-gostekh .question-gostekh, .bg-popup.popup-application-support-project .application-support-project, .bg-popup.popup-bot-telegram .bot-telegram, .bg-popup.popup-out-startup-nn .out-startup-nn, .bg-popup.popup-out-preferential-lending .out-preferential-lending {
+.bg-popup.popup-ask-question .ask-question, .bg-popup.popup-catalog-solutions .catalog-solutions, .bg-popup.popup-virtual-showroom .virtual-showroom, .bg-popup.popup-promotion-consultation .promotion-consultation, .bg-popup.popup-question-gostekh .question-gostekh, .bg-popup.popup-application-support-project .application-support-project, .bg-popup.popup-bot-telegram .bot-telegram, .bg-popup.popup-out-startup-nn .out-startup-nn, .bg-popup.popup-out-preferential-lending .out-preferential-lending, .bg-popup.popup-personnel-about .personnel-about {
   opacity: 1;
   transform: translateY(0);
 }
@@ -5980,6 +6173,19 @@ body[data-theme=light] {
 }
 .popup.application-support-project {
   width: min(1020px, 90%);
+}
+.popup.personnel-about .personnel-about__btn {
+  margin-top: 36px;
+}
+@media (max-width: 1280px) {
+  .popup.personnel-about .personnel-about__btn {
+    margin-top: 28px;
+  }
+}
+@media (max-width: 640px) {
+  .popup.personnel-about .personnel-about__btn {
+    margin-top: 20px;
+  }
 }
 .popup.ask-question__textarea, .popup .ask-question__textarea, .popup.promotion-consultation .promotion-consultation__textarea, .popup.question-gostekh .question-gostekh__textarea, .popup.application-support-project .application-support-project__textarea {
   min-height: 180px;
@@ -6227,31 +6433,35 @@ body[data-theme=light] {
     margin: 12px 0;
   }
 }
-.popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
+.popup.personnel-about .popup__desc-page.overflow {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.popup.personnel-about .personnel-about__desc, .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
   color: var(--color-text-popup-opacity);
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
 }
-.popup.bot-telegram .bot-telegram__desc strong, .popup.out-startup-nn .out-startup-nn__desc strong, .popup.out-preferential-lending .out-preferential-lending__desc strong {
+.popup.personnel-about .personnel-about__desc strong, .popup.bot-telegram .bot-telegram__desc strong, .popup.out-startup-nn .out-startup-nn__desc strong, .popup.out-preferential-lending .out-preferential-lending__desc strong {
   font-weight: 500;
   color: var(--text-main-color-light);
 }
-.popup.bot-telegram .bot-telegram__desc a, .popup.out-startup-nn .out-startup-nn__desc a, .popup.out-preferential-lending .out-preferential-lending__desc a {
+.popup.personnel-about .personnel-about__desc a, .popup.bot-telegram .bot-telegram__desc a, .popup.out-startup-nn .out-startup-nn__desc a, .popup.out-preferential-lending .out-preferential-lending__desc a {
   border-bottom: 2px solid var(--border-link-popup);
 }
 @media (min-width: 1025px) {
-  .popup.bot-telegram .bot-telegram__desc a:hover, .popup.out-startup-nn .out-startup-nn__desc a:hover, .popup.out-preferential-lending .out-preferential-lending__desc a:hover {
+  .popup.personnel-about .personnel-about__desc a:hover, .popup.bot-telegram .bot-telegram__desc a:hover, .popup.out-startup-nn .out-startup-nn__desc a:hover, .popup.out-preferential-lending .out-preferential-lending__desc a:hover {
     opacity: 0.6;
   }
 }
 @media (max-width: 1280px) {
-  .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
+  .popup.personnel-about .personnel-about__desc, .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
     font-size: 16px;
   }
 }
 @media (max-width: 640px) {
-  .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
+  .popup.personnel-about .personnel-about__desc, .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
     font-size: 15px;
   }
 }
@@ -6334,6 +6544,11 @@ body[data-theme=light] {
 }
 .popup.out-startup-nn, .popup.out-preferential-lending {
   width: min(940px, 90%);
+}
+
+.popup-personnel-info {
+  display: none;
+  height: 100%;
 }
 
 .popup.catalog-solutions .tags__tag, .popup.virtual-showroom .tags__tag, .popup.promotion-consultation .tags__tag,

@@ -1,6 +1,26 @@
 body {
     &[data-theme="dark"] {
 
+        --border-personnel-block: rgba(255, 255, 255, 0.12);
+        --bg-personnel-block-hover: linear-gradient(58.73deg, rgba(68, 101, 232, 0.6) -17.17%, rgba(68, 101, 232, 0) 50%), linear-gradient(301.39deg, rgba(218, 64, 182, 0.6) -24.38%, rgba(218, 64, 182, 0) 50%), linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
+
+        --bg-it-campus: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-campus.png');
+        --bg-it-education: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-education.png');
+        --bg-it-employer: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-employer.png');
+        --bg-teachers-programming: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/teachers-programming.png');
+        --bg-it-talents: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-talents.png');
+        --bg-it-scholarship: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-scholarship.png');
+        --bg-advanced-training: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/advanced-training.png');
+        --bg-computer-school: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/computer-school.png');
+        
+        // --bg-it-campus: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-campus.png');
+        // --bg-it-education: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-education.png');
+        // --bg-it-employer: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-employer.png');
+        // --bg-teachers-programming: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/teachers-programming.png');
+        // --bg-it-talents: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-talents.png');
+        // --bg-it-scholarship: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-scholarship.png');
+        // --bg-advanced-training: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/advanced-training.png');
+        // --bg-computer-school: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/computer-school.png');
      
     }
     &[data-theme="light"] {
@@ -15,7 +35,147 @@ body {
 
 .personnel-info {
     margin-top: 100px;
+    @media (max-width: 1640px) {
+        margin-top: 64px;
+    }
+    @media (max-width: 900px) {
+        margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+        margin-top: 50px;
+    }
     &__title {
-        
+        font-weight: 500;
+        font-size: 54px;
+        color: var(--text-main-color-light);
+        max-width: 30ch;
+        @media (max-width: 1640px) {
+            font-size: 42px;
+        }
+        @media (max-width: 900px) {
+            font-size: 36px;
+        }
+        @media (max-width: 600px) {
+            font-size: 26px;
+        }
+    }
+    &__desc {
+        color: var(--text-main-color-light);
+        opacity: .8;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        margin: 36px 0 64px 0;
+        @media (max-width: 1640px) {
+            font-size: 16px;
+            margin: 24px 0 46px 0;
+        }
+        @media (max-width: 900px) {
+            margin: 20px 0 36px 0;
+        }
+        @media (max-width: 600px) {
+            font-size: 14px;
+            margin: 16px 0 24px 0;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        @media (max-width: 1640px) {
+            gap: 16px;
+        }
+        @media (max-width: 1300px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 12px;
+        }
+    }
+    &__block {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        border-radius: 32px;
+        min-height: 260px;
+        padding: 36px;
+        outline: 1px solid var(--border-personnel-block);
+        &.it-campus {
+            background: var(--bg-it-campus);
+        }
+        &.it-education {
+            background: var(--bg-it-education);
+        }
+        &.it-employer {
+            background: var(--bg-it-employer);
+        }
+        &.teachers-programming {
+            background: var(--bg-teachers-programming);
+        }
+        &.it-talents {
+            background: var(--bg-it-talents);
+        }
+        &.it-scholarship {
+            background: var(--bg-it-scholarship);
+        }
+        &.advanced-training {
+            background: var(--bg-advanced-training);
+        }
+        &.computer-school {
+            background: var(--bg-computer-school);
+        }
+        &.it-campus, &.it-education, &.it-employer,
+        &.teachers-programming, &.it-talents, &.it-scholarship,
+        &.advanced-training, &.computer-school {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &::after {
+            transition: var(--trans);
+            content: '';
+            position: absolute;
+            left: 0; right: 0; top: 0; bottom: 0;
+            background: var(--bg-support-measures-block-hover);
+            opacity: 0;
+        }
+        @media (min-width: 1025px) {
+            &:hover::after {
+                opacity: 1;
+            }
+        }
+        @media (max-width: 1640px) {
+            border-radius: 24px;
+            min-height: 202px;
+            padding: 28px 32px;
+        }
+        @media (max-width: 900px) {
+            border-radius: 18px;
+            min-height: 174px;
+            padding: 20px 24px;
+        }
+        @media (max-width: 600px) {
+            border-radius: 16px;
+            min-height: 164px;
+        }
+    }
+    &__block-title {
+        position: relative;
+        z-index: 1;
+        margin-top: auto;
+        font-weight: 500;
+        font-size: 30px;
+        color: var(--text-main-color-light);
+        @media (max-width: 1640px) {
+            font-size: 24px;
+        }
+        @media (max-width: 600px) {
+            font-size: 20px;
+        }
     }
 }

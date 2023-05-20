@@ -181,12 +181,241 @@
                     <h2 class="personnel-info__title">Мы помогаем ИТ-специалистам развиваться</h2>
                     <p class="personnel-info__desc">Подзаголовок в 2 строки</p>
                     <div class="personnel-info__list">
-                        <div class="personnel-info__block">
-                            <p class="personnel-info__block-title"></p>
+                        <div data-popup="it-campus" class="personnel-info__block it-campus">
+                            <p class="personnel-info__block-title">ИТ-кампус</p>
+                        </div>
+
+                        <div data-popup="it-education" class="personnel-info__block it-education">
+                            <p class="personnel-info__block-title">ИТ-образование</p>
+                        </div>
+
+                        <div data-popup="it-employer" class="personnel-info__block it-employer">
+                            <p class="personnel-info__block-title">ИТ-работодатель<br/>и вакансии</p>
+                        </div>
+
+                        <div data-popup="teachers-programming" class="personnel-info__block teachers-programming">
+                            <p class="personnel-info__block-title">Преподавателям программировния</p>
+                        </div>
+
+                        <div data-popup="it-talents" class="personnel-info__block it-talents">
+                            <p class="personnel-info__block-title">ИТ-таланты</p>
+                        </div>
+
+                        <div data-popup="it-scholarship" class="personnel-info__block it-scholarship">
+                            <p class="personnel-info__block-title">ИТ-стипендия</p>
+                        </div>
+
+                        <div data-popup="advanced-training" class="personnel-info__block advanced-training">
+                            <p class="personnel-info__block-title">ДПО и повышение квалификации</p>
+                        </div>
+
+                        <div data-popup="computer-school" class="personnel-info__block computer-school">
+                            <p class="personnel-info__block-title">Компьютерная школа</p>
                         </div>
                     </div>
                 </section>
                
+
+                <div id="personnel-page-popups" class="bg-popup">
+                    <div id="popup-personnel-about" class="popup personnel-about">
+                        <button id="personnel-about-close" class="popup__cross"></button>
+                        <div class="popup-personnel-info" data-popup="it-campus">
+                            <h2 class="popup__title">ИТ-кампус НЕЙМАРК</h2>
+                            <p class="personnel-about__desc">
+                                Межвузовский кампус мирового уровня в Нижнем Новгороде является 
+                                прообразом единого вуза, единым брендом нижегородского 
+                                ИТ-образования, где будет осуществляться подготовка полного 
+                                спектра специалистов для ИТ-компаний
+                            </p>
+                            <a target="_blank" href="https://neimark-it.ru/" class="personnel-about__btn btn-blue btn-link">Перейти на сайт</a>
+                        </div>
+                        
+                        <div class="popup-personnel-info" data-popup="it-education">
+                            <h2 class="popup__title">ИТ-образование</h2>
+                            <div class="popup__desc-page">
+                                <ul>
+                                    <p class="personnel-about__desc">
+                                        В файле вы найдете список ИТ-специальностей в нижегородских вузах:
+                                    </p>
+                                    <li class="personnel-about__desc">ННГУ им Н. И. Лобачевского (Университет Лобачевского);</li>
+                                    <li class="personnel-about__desc">НГТУ им Р. Е. Алексеева (Технический университет);</li>
+                                    <li class="personnel-about__desc">НИУ ВШЭ (Нижегородский филиал Высшей школы экономики);</li>
+                                    <li class="personnel-about__desc">НГИЭУ (Княгининский университет, инженерно-экономический);</li>
+                                    <li class="personnel-about__desc">ННГАСУ (Архитектурно-строительный);</li>
+                                    <li class="personnel-about__desc">НГПУ им К. Минина (Педагогический);</li>
+                                    <li class="personnel-about__desc">РАНХиГС (Нижегородский институт управления).</li>
+                                </ul>
+                            </div>
+                            <button data-file="" class="personnel-about__btn btn-blue btn-download">Скачать PDF</button>
+                        </div>
+                        
+                        <div class="popup-personnel-info" data-popup="it-employer">
+                            <h2 class="popup__title">ИТ-работодатель и вакансии</h2>
+                            <p class="personnel-about__desc">
+                                На портале ITGorky можно сравнить работодателей в сфере ИТ, найти список 
+                                наиболее известных компаний на карте Нижнего Новгорода (более 130 шт). А 
+                                также открытые вакансии и условия работы в этих командах.
+                            </p>
+                            <a target="_blank" href="https://itgorky.ru/" class="personnel-about__btn btn-blue btn-link">Перейти на сайт</a>
+                        </div>
+
+                        <div class="popup-personnel-info" data-popup="teachers-programming">
+                            <h2 class="popup__title">Преподавателям программирования</h2>
+                            <div class="popup__desc-page">
+                                <p class="personnel-about__desc">
+                                    В сентябре 2023 года стартует программа поддержки развития профессионального 
+                                    мастерства преподавателей информатики, математики и физики.
+                                </p>
+                                <p class="personnel-about__desc">Основные элементы программы:</p>
+                                <ul>
+                                    <li class="personnel-about__desc">
+                                        Ресурсный центр научно-методического сопровождения преподавателей технического направления;
+                                    </li>
+                                    <li class="personnel-about__desc">Стипендиальная программа;</li>
+                                    <li class="personnel-about__desc">НЕЙМАРК.Класс.</li>
+                                </ul>
+                                <p class="personnel-about__desc">Подробнее - на странице «Неймарк. Для учителей»</p>
+                            </div>
+                            <a target="_blank" href="https://neimark-it.ru/dlya_uchitelei" class="personnel-about__btn btn-blue btn-link">Перейти на сайт</a>
+                        </div>
+                        
+                        <div class="popup-personnel-info" data-popup="it-talents">
+                            <h2 class="popup__title">ИТ-таланты</h2>
+                            <div class="popup__desc-page">
+                                <p class="personnel-about__desc">
+                                    НЕЙМАРК.Таланты - это закрытый клуб экосистемы НЕЙМАРК, объединяющий молодых 
+                                    людей из сферы ИТ и digital из разных точек России.<br/>
+                                    Здесь можно найти сокомандников для проекта (написать в чат), познакомиться с 
+                                    экспертами из мира ИТ (в участниках подписаны должности коллег, можно обратиться 
+                                    к ним в чате, тэгнув по имени), стать участником запоминающихся и полезных ивентов, 
+                                    обмениваться своим опытом, найти единомышленников.
+                                </p>
+                                <ul>
+                                    <p class="personnel-about__desc">Как попасть в комьюнити?</p>
+                                    <li class="personnel-about__desc">получать стипендию им Ю. И. Неймарка;</li>
+                                    <li class="personnel-about__desc">
+                                        участвовать в олимпиадах, наших 
+                                        <strong><a target="_blank" href="https://neimark-it.ru/it_akademiya">ИТ-Академиях</a></strong>,
+                                        <strong><a target="_blank" href="https://neimark-it.ru/intensiv">интенсивах</a></strong>,
+                                        хакатонах и конкурсах;
+                                    </li>
+                                    <li class="personnel-about__desc">по приглашению от друга.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="popup-personnel-info" data-popup="it-scholarship">
+                            <h2 class="popup__title">ИТ-стипендия</h2>
+                            <div class="popup__desc-page">
+                                <p class="personnel-about__desc">
+                                    В 2022 году введена стипендия им. Юрия Неймарка. Это дополнительная финансовая 
+                                    поддержка студентов - первокурсников, выбравших ИТ-специальности в вузах 
+                                    Нижегородской области. 
+                                </p>
+                                <p class="personnel-about__desc">
+                                    Выплаты по стипендии будут осуществляться только 
+                                    студентам - очникам в первый год обучения.
+                                </p>
+                                <ul>
+                                    <p class="personnel-about__desc">Стипендия первого уровня - 30 000 руб (ежемесячно)</p>
+                                    <li class="personnel-about__desc">
+                                        Победителям или призерам заключительных этапов Всероссийской 
+                                        олимпиады школьников по информатике, математике или физике.
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <p class="personnel-about__desc">Стипендия второго уровня - 15 000 руб (ежемесячно)</p>
+                                    <li class="personnel-about__desc">
+                                        Победителям региональных этапов Всероссийской олимпиады школьников 
+                                        по информатике, математике, физике.
+                                    </li>
+                                    <li class="personnel-about__desc">
+                                        Студентам, получившим в год поступления в вуз 100 баллов по 
+                                        результатам ЕГЭ по информатике, математике или физике.
+                                    </li>
+                                </ul>
+                                <p class="personnel-about__desc">
+                                    Как получить ИТ-стипендию:<br/>
+                                    При подаче документов в приемную комиссию нижегородского вуза, 
+                                    приложите еще один – подтверждающий победу в олимпиаде. Студентам, 
+                                    получившим 100 баллов на ЕГЭ выплата начисляется автоматически.
+                                </p>
+                                <p class="personnel-about__desc">
+                                    Также, в 2023 году вводится 
+                                    <strong><a target="_blank" href="https://neimark-it.ru/dlya_uchitelei">ИТ-стипендия для учителей.</a></strong>
+                                </p>
+                            </div>
+                            <button data-file="" class="personnel-about__btn btn-blue btn-download">Скачать PDF</button>
+                        </div>
+
+                        <div class="popup-personnel-info" data-popup="advanced-training">
+                            <h2 class="popup__title">ДПО и повышение квалификации</h2>
+                            <div class="popup__desc-page">
+                                <p class="personnel-about__desc">
+                                    Профессиональная переподготовка и повышение квалификации более, чем по 100 
+                                    специализированным программам различного уровня сложности. 
+                                </p>
+                                <ul>
+                                    <li class="personnel-about__desc">
+                                        <strong><a target="_blank" href="https://www.nntu.ru/structure/view/podrazdeleniya/ips">
+                                        Институт переподготовки специалистов</a></strong>
+                                        НГТУ им Р. Е. Алексеева
+                                    </li>
+                                    <li class="personnel-about__desc">
+                                        <strong><a target="_blank" href="https://fpk.unn.ru/">
+                                        Факультет повышения квалификации и профессиональной переподготовки</a></strong>
+                                        ННГУ им Н. И. Лобачевского
+                                    </li>
+                                    <li class="personnel-about__desc">
+                                        <strong><a target="_blank" href="https://nnov.hse.ru/dpo">
+                                        Дополнительное образование</a></strong>
+                                        в НИУ ВШЭ – Нижний Новгород 
+                                    </li>
+                                    <li class="personnel-about__desc">
+                                        <strong><a target="_blank" href="https://ngieu.ru/institute-of-dpo-home/">
+                                        Институт дополнительного образования</a></strong>
+                                        в Княгининском университете
+                                    </li>
+                                </ul>
+                                <p class="personnel-about__desc">
+                                    Занятия проводят наиболее квалифицированные преподаватели университетов с привлечением по 
+                                    некоторым вопросам экспертов со стороны. 
+                                </p>
+                                <p class="personnel-about__desc">
+                                    При организации учебного процесса учитывается специфика заказчика. По окончании курсов и 
+                                    сдачи контрольных испытаний слушатели получают документ установленного образца.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="popup-personnel-info" data-popup="computer-school">
+                            <h2 class="popup__title">Компьютерная школа</h2>
+                            <div class="popup__desc-page">
+                                <p class="personnel-about__desc">
+                                    Детская компьютерная школа Инфосфера - это дополнительное образование для детей 7-15 лет 
+                                    в области программирования, робототехники и информационных технологий. 
+                                </p>
+                                <p class="personnel-about__desc">
+                                    В Инфосфере ребёнок может получить комплексное образование в сфере ИТ. Помимо знаний по 
+                                    программированию и робототехнике педагоги школы развивают у ребят логическое, системное 
+                                    и абстрактное мышление.
+                                </p>
+                                <ul>
+                                    <p class="personnel-about__desc">Направления подготовки:</p>
+                                    <li class="personnel-about__desc">Информатика</li>
+                                    <li class="personnel-about__desc">Робототехника</li>
+                                    <li class="personnel-about__desc">Компьютерная графика</li>
+                                    <li class="personnel-about__desc">Программирование</li>
+                                    <li class="personnel-about__desc">Информационные технологии</li>
+                                </ul>
+                            </div>
+                            <a target="_blank" href="https://nn.isphera.ru/#form" class="personnel-about__btn btn-blue btn-link">Перейти на сайт</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
@@ -215,7 +444,7 @@
         <div class="shadow-back__purple"></div>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/analyticsPage.js"></script>
+    <script type="module" src="./assets/js/personnelPage.js"></script>
     <script src="https://unpkg.com/imask"></script>
 </body>
 </html>

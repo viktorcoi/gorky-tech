@@ -325,7 +325,7 @@ body {
     &.popup-virtual-showroom, &.popup-promotion-consultation,
     &.popup-question-gostekh, &.popup-application-support-project,
     &.popup-bot-telegram, &.popup-out-startup-nn, 
-    &.popup-out-preferential-lending {
+    &.popup-out-preferential-lending, &.popup-personnel-about {
         opacity: 1;
         visibility: visible;
         pointer-events: unset;
@@ -337,7 +337,8 @@ body {
     &.popup-question-gostekh .question-gostekh,
     &.popup-application-support-project .application-support-project,
     &.popup-bot-telegram .bot-telegram, &.popup-out-startup-nn .out-startup-nn,
-    &.popup-out-preferential-lending .out-preferential-lending {
+    &.popup-out-preferential-lending .out-preferential-lending,
+    &.popup-personnel-about .personnel-about {
         opacity: 1;
         transform: translateY(0);
     }
@@ -433,7 +434,17 @@ body {
     &.application-support-project {
         width: min(1020px, 90%);
     }
-
+    &.personnel-about .personnel-about {
+        &__btn {
+            margin-top: 36px;
+            @media (max-width: 1280px) {
+                margin-top: 28px;
+            }
+            @media (max-width: 640px) {
+                margin-top: 20px;
+            }
+        }
+    }
     &.ask-question, .ask-question,
     &.promotion-consultation .promotion-consultation,
     &.question-gostekh .question-gostekh,
@@ -639,6 +650,17 @@ body {
                 margin: 12px 0;
             }
         }
+    }
+    &.personnel-about {
+        .popup__desc-page.overflow {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    }
+    &.personnel-about .personnel-about,
+    &.bot-telegram .bot-telegram, 
+    &.out-startup-nn .out-startup-nn,
+    &.out-preferential-lending .out-preferential-lending {
         &__desc {
             color: var(--color-text-popup-opacity);
             font-weight: 400;
@@ -733,6 +755,11 @@ body {
     &.out-startup-nn, &.out-preferential-lending {
         width: min(940px, 90%);
     }
+}
+
+.popup-personnel-info {
+    display: none;
+    height: 100%;
 }
 
 .popup.catalog-solutions, .popup.virtual-showroom, .popup.promotion-consultation, 

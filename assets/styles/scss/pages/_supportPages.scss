@@ -92,7 +92,6 @@ body {
 }
 
 .support-textblock {
-    max-width: 1000px;
     display: grid;
     gap: 36px;
     &.more-block {
@@ -123,11 +122,9 @@ body {
         }
     }
     @media (max-width: 1640px) {
-        max-width: 780px;
         gap: 28px;
     }
     @media (max-width: 1024px) {
-        max-width: unset;
         gap: 24px;
     }
     @media (max-width: 600px) {
@@ -341,7 +338,6 @@ body {
         line-height: 140%;
         color: var(--text-main-color-light);
         margin-bottom: 36px;
-        max-width: 50ch;
         @media (max-width: 1640px) {
             font-size: 20px;
             margin-bottom: 24px;

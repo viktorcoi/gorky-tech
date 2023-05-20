@@ -2771,7 +2771,6 @@ body[data-theme=dark] {
 }
 
 .support-textblock {
-  max-width: 1000px;
   display: grid;
   gap: 36px;
 }
@@ -2816,13 +2815,11 @@ body[data-theme=dark] {
 }
 @media (max-width: 1640px) {
   .support-textblock {
-    max-width: 780px;
     gap: 28px;
   }
 }
 @media (max-width: 1024px) {
   .support-textblock {
-    max-width: unset;
     gap: 24px;
   }
 }
@@ -3104,7 +3101,6 @@ body[data-theme=dark] {
   line-height: 140%;
   color: var(--text-main-color-light);
   margin-bottom: 36px;
-  max-width: 50ch;
 }
 @media (max-width: 1640px) {
   .support-precents__title {
@@ -3364,6 +3360,14 @@ body[data-theme=dark] {
   margin: auto auto 0 auto;
 }
 
+.personnel-page {
+  width: min(1540px, 100%);
+  margin: 0 auto;
+}
+
+.personnel-info {
+  margin-top: 100px;
+}
 body[data-theme=dark] {
   --bg-sales-info-block: rgba(255, 255, 255, 0.08);
   --border-sales-info-block: rgba(255, 255, 255, 0.08);

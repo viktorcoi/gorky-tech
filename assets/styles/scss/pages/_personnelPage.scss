@@ -1,0 +1,21 @@
+body {
+    &[data-theme="dark"] {
+
+     
+    }
+    &[data-theme="light"] {
+
+    }
+}
+
+.personnel-page {
+    width: min(1540px, 100%);
+    margin: 0 auto;
+}
+
+.personnel-info {
+    margin-top: 100px;
+    &__title {
+        
+    }
+}

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
     const mainTags = document.querySelector('#tags');
     if (mainTags) {
 
-        const prevButton = document.querySelector('#tags-page-prew');
+    const prevButton = document.querySelector('#tags-page-prew');
     const nextButton = document.querySelector('#tags-page-next');
     const searchInput = document.querySelector('#search-tags');
     const tags = Array.from(mainTags.children);

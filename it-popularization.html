@@ -253,7 +253,7 @@
                             <button id="main-slider-prew" class="navigation-prew-next__prew"></button>
                             <button id="main-slider-next" class="navigation-prew-next__next"></button>
                         </div>
-                        <a href="./news" class="main-slider__link">
+                        <a href="./news.html" class="main-slider__link">
                             <p>Все новости</p>
                         </a>
                     </div>
@@ -267,22 +267,75 @@
                     </p>
                     <div class="info-popularization__list">
                         <div class="info-popularization__list-left">
-                            <div class="info-popularization__list-left-block">
+                            <div class="info-popularization__list-left-block popularization-news">
                                 <p>Новости</p>
                             </div>
-                            <div class="info-popularization__list-left-block">
+                            <div class="info-popularization__list-left-block popularization-poster">
                                 <p>Афиша</p>
                             </div>
-                            <div class="info-popularization__list-left-block">
+                            <div class="info-popularization__list-left-block popularization-communities">
                                 <p>Сообщества</p>
                             </div>
                         </div>
                         <div class="info-popularization__list-right">
-                           
+                            <h2>Разработка мероприятий под ключ</h2>
+                            <div>
+                                <p>Мы поможем вам организовать:</p>
+                                <div class="info-popularization__list-right-list">
+                                    <a class="link--hackathons">Хакатоны</a>
+                                    <a class="link--forums">Форумы</a>
+                                    <a class="link--presentations">Презентации</a>
+                                    <a class="link--lectures">Лекции</a>
+                                    <a class="link--talks">Public talks</a>
+                                    <a class="link--camps">ИТ-лагеря</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
+
+                <section class="popularization-question">
+                    <h2 class="popularization-question__title">Связаться с нами</h2>
+                    <p class="popularization-question__desc">Краткое описание действия</p>
+                    <button id="popularization-question" class="btn-blue">Заполнить форму</button>
+                </section>
                 
+
+                <div id="popularization-page-popups" class="bg-popup">
+                    <div id="popup-ask-question" class="popup ask-question">
+                        <button id="ask-question-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Задать вопрос аналитикам</h2>
+                        <form class="popup-form">
+                            <div class="popup-form__two-input">
+                                <div class="popup-form__for-input">
+                                    <input id="ask-question-name" class="popup-form__input" placeholder="Имя"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="ask-question-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                            </div>
+                            <div class="popup-form__for-input">
+                                <input id="ask-question-company" class="popup-form__input" placeholder="Компания"/>
+                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                            </div>
+                            <div class="popup-form__for-input">
+                                <textarea id="ask-question-quest" class="popup-form__input ask-question__textarea" placeholder="Вопрос"></textarea>
+                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                            </div>
+                            <button id="send-ask-question" class="popup-form__btn ask-question__btn">Отправить</button>       
+                            <p class="ask-question__desc">
+                                <span>
+                                    Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
+                                    вопроса. Приложить материалы (изображения, видео) вы можете, 
+                                    отправив нам письмо по эл. почте на адрес:
+                                </span>
+                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
+                            </p>     
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -307,7 +360,9 @@
         <div class="shadow-back__purple"></div>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/mainSlider.js"></script>
+    <script src="./assets/js/mainSlider.js"></script>
+    <script type="module" src="./assets/js/popularizationPage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/imask"></script>
 </body>
 </html>

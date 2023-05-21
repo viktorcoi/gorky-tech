@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/styles/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
@@ -65,9 +66,9 @@
                     <a href="./it-analytics.html" class="header__menu-main-link">ИТ-аналитика</a>
                     <a href="./it-support.html" class="header__menu-main-link">ИТ-поддержка</a>
                     <a href="./it-sales.html" class="header__menu-main-link">ИТ-продажи</a>
-                     <a href="./it-personnel.html" class="header__menu-main-link">ИТ-кадры</a>
+                    <a href="./it-personnel.html" class="header__menu-main-link">ИТ-кадры</a>
                     <a href="./it-solutions.html" class="header__menu-main-link">ИТ-решения</a>
-                   <a href="./it-popularization.html" class="header__menu-main-link">ИТ-популяризация</a>
+                    <a href="./it-popularization.html" class="header__menu-main-link">ИТ-популяризация</a>
                 </div>
                 <div class="header__menu-right">
                     <hr class="header__menu-line--mobile"/>
@@ -109,17 +110,15 @@
         </div>
         <div id="header-overlay" class="header__overlay"></div>
     </header>
-
-
     <main>
         <div class="container">
-            <div class="analytics-page">
+            <div class="news-page">
                 <div class="site-path">
                     <a class="site-path__link" href="/">Главная</a>
                     <div class="site-path__arrow"></div>
-                    <a class="site-path__link">ИТ-Аналитика</a>
+                    <a class="site-path__link">Все новости</a>
                 </div>
-                <h1>ИТ-Аналитика</h1>
+                <h1>Все новости</h1>
                 <section class="main__tags">
                     <input id="search-tags" class="search-in-page" placeholder="Поиск"/>
                     <div id="tags" class="tags">
@@ -177,316 +176,235 @@
                     </div>
                 </section>
 
-          
-                <section class="analytics-info">
-                    <h2 class="analytics-info__title">Мы анализируем основные показатели ИТ-отрасли</h2>
-                    <p class="analytics-info__desc">
-                        В этом разделе Вы сможете найти основную информацию о развитии сектора ИКТ 
-                        и ИТ-отрасли Нижегородской области, задать вопрос аналитикам или заказать 
-                        исследование.
-                    </p>
-                    <div class="analytics-info__count">
-                        <div class="analytics-info__left">
-                            <div class="analytics-info__left-block ikt-company">
-                                <h3 class="analytics-info__left-title">1,9 тыс.</h3>
-                                <p class="analytics-info__left-desc">ИКТ-компаний</p>
+                <section class="news">
+                    <div class="news__list">
+                        
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://klike.net/uploads/posts/2022-10/1664631085_a-69.jpg" alt="">
+                                <p class="news__tag">Поддержка</p>
                             </div>
+                            <div class="news__head">
+                                <h2 class="news__title">40 тысяч человек посетили стенд Нижегородской области на «TIBO»</h2>
+                                <p class="news__time">Сегодня, 18:48</p>
+                            </div>
+                        </a>
 
-                            <div class="analytics-info__left-block  ikt-specialists">
-                                <h3 class="analytics-info__left-title">34 тыс.</h3>
-                                <p class="analytics-info__left-desc">ИКТ-специалистов</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://klike.net/uploads/posts/2022-10/1664631111_a-46.jpg" alt="">
+                                <p class="news__tag">Информационные технологии</p>
                             </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Тренд-сессия прошла в рамках Международного фестиваля «ТехноСтрелка»</h2>
+                                <p class="news__time">Вчера, 12:30</p>
+                            </div>
+                        </a>
 
-                            <div class="analytics-info__left-block ikt-entrepreneurs">
-                                <h3 class="analytics-info__left-title">2,9 тыс.</h3>
-                                <p class="analytics-info__left-desc">ИКТ-предпринимателей</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://moto-pride.ru/wp-content/uploads/c/3/8/c38872d9baada3a797b8f75bdec0a4d2.jpeg" alt="">
+                                <p class="news__tag">Кадры</p>
                             </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Глеб Никитин принял участие в стратегической сессии по созданию и развитию национальной платформы «Гостех»</h2>
+                                <p class="news__time">10 мая 2023, 10:06</p>
+                            </div>
+                        </a>
 
-                            <div class="analytics-info__left-block ikt-freelancers">
-                                <h3 class="analytics-info__left-title">1,3 тыс.</h3>
-                                <p class="analytics-info__left-desc">ИКТ-фрилансеров</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667531333_16-sportishka-com-p-tachki-oboi-na-telefon-krasivo-16.jpg" alt="">
+                                <p class="news__tag">Кейсы</p>
                             </div>
-                        </div>
-                        <div class="analytics-info__right">
-                            <h3 class="analytics-info__right-title">3 место
-                                <span>в России</span>
-                            </h3>
-                            <ul class="analytics-info__right-list">
-                                <li class="analytics-info__right-decs">по объемам выпускаемого программного обеспечения</li>
-                                <li class="analytics-info__right-decs">по уровню развития индустрии разработки</li>
-                                <li class="analytics-info__right-decs">по  объемам экспорта ИКТ-услуг</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                            <div class="news__head">
+                                <h2 class="news__title">Участие в бесплатном курсе «НЕЙМАРК.OpenSourсe.Интенсив» примут 100 человек из России, Казахстана и Египта</h2>
+                                <p class="news__time">4 мая 2023, 16:22</p>
+                            </div>
+                        </a>
 
-        
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://images.kinorium.com/movie/promo/445247/w1500_49117372.jpg" alt="">
+                                <p class="news__tag">Продажи</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Нижегородцы могут подать онлайн-заявку на выдачу техусловий на присоединение объектов дорожного сервиса</h2>
+                                <p class="news__time">28 апреля 2023, 08:50</p>
+                            </div>
+                        </a>
 
-                <section class="analytics-graphics">
-                    <div class="analytics-graph graph-vrp">
-                        <div class="analytics-graph__info">
-                            <h3 class="analytics-graph__info-title">ВРП Нижегородской области</h3>
-                            <div class="analytics-graph__info-precent">
-                                <p class="analytics-graph__info-precent-title">27,3%</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667494277_62-sportishka-com-p-prototipi-mashin-iz-tachek-krasivo-63.jpg" alt="">
+                                <p class="news__tag">Решения</p>
                             </div>
-                            <p class="analytics-graph__info-desc">При этом  сектор ИКТ растёт более высокими темпами.</p>
-                        </div>
-                        <div id="graph-vrp" class="analytics-graph__graph">
-                            <p class="analytics-graph__graph-desc">ВРП Нижегородской области, млрд. руб.</p>
-                        </div>
-                    </div>
-                    <div class="analytics-graph graph-export-ict">
-                        <div class="analytics-graph__info">
-                            <h3 class="analytics-graph__info-title">Экспорт ИКТ-услуг Нижегородской области</h3>
-                            <div class="analytics-graph__info-precent">
-                                <p class="analytics-graph__info-precent-title">109,2%</p>
-                                <span class="analytics-graph__info-precent-desc">к уровню 2018 года</span>
+                            <div class="news__head">
+                                <h2 class="news__title">Пятеро нижегородских студентов поборются за выход в финал Всероссийского чемпионата высоких технологий</h2>
+                                <p class="news__time">19 апреля 2023, 11:59</p>
                             </div>
-                            <p class="analytics-graph__info-desc">
-                                Значительное преобладание экспорта ИКТ-услуг над импортом свидетельствует о развитии 
-                                в регионе услуг по аутсорсингу разработки ПО.
-                            </p>
-                        </div>
-                        <div id="graph-export-ict" class="analytics-graph__graph">
-                            <p class="analytics-graph__graph-desc">Экспорт ИКТ-услуг Нижегородской области, млн $</p>
-                        </div>
-                    </div>
-                    <div class="analytics-graph graph-turnover-ict">
-                        <div class="analytics-graph__info">
-                            <h3 class="analytics-graph__info-title">Оборот организаций сектора ИКТ Нижегородской области</h3>
-                            <div class="analytics-graph__info-precent">
-                                <p class="analytics-graph__info-precent-title">41,6%</p>
-                                <span class="analytics-graph__info-precent-desc">к уровню 2018 года</span>
-                            </div>
-                            <p class="analytics-graph__info-desc">
-                                Основными составляющими оборота являются телекоммуникации и разработка 
-                                программного обеспечения.
-                            </p>
-                        </div>
-                        <div id="graph-turnover-ict" class="analytics-graph__graph">
-                            <p class="analytics-graph__graph-desc">Оборот организаций сектора ИКТ Нижегородской области, млрд. руб.</p>
-                        </div>
-                    </div>
-                    <div class="analytics-graph graph-average-po">
-                        <div class="analytics-graph__info">
-                            <h3 class="analytics-graph__info-title">Средняя заработная плата занятых в разработке ПО</h3>
-                            <div class="analytics-graph__info-precent">
-                                <p class="analytics-graph__info-precent-title">46,3%</p>
-                                <span class="analytics-graph__info-precent-desc">к уровню 2018 года</span>
-                            </div>
-                            <p class="analytics-graph__info-desc">
-                                В 2,5 раза превышает среднюю зарплату по региону.
-                            </p>
-                        </div>
-                        <div id="graph-average-po" class="analytics-graph__graph">
-                            <p class="analytics-graph__graph-desc">Средняя заработная плата занятых в разработке ПО, рублей</p>
-                        </div>
-                    </div>
-                    <div class="analytics-graph graph-quantity-ict">
-                        <div class="analytics-graph__info">
-                            <h3 class="analytics-graph__info-title">Количество ИКТ-специалистов*</h3>
-                            <div class="analytics-graph__info-precent">
-                                <p class="analytics-graph__info-precent-title">11,8%</p>
-                                <span class="analytics-graph__info-precent-desc">к уровню 2018 года</span>
-                            </div>
-                            <p class="analytics-graph__info-desc">
-                                Нижегородская область входит в топ-5 нестоличных регионов России по количеству 
-                                ИКТ-специалистов на душу населения.<br/><br/>* с учетом ИП
-                            </p>
-                        </div>
-                        <div id="graph-quantity-ict" class="analytics-graph__graph">
-                            <p class="analytics-graph__graph-desc">Количество ИКТ-специалистов, человек</p>
-                        </div>
-                    </div>
-                </section>
+                        </a>
 
-                <section class="analytics-technologies">
-                    <h2 class="analytics-technologies__title">Основные технологии предприятий ИТ-отрасли</h2>
-                    <div class="analytics-technologies__list">
-                        <div class="analytics-technologies__block machine-learning">
-                            <h3 class="analytics-technologies__block-title">Машинное обучение</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block big-data">
-                            <h3 class="analytics-technologies__block-title">Большие данные</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block information-security">
-                            <h3 class="analytics-technologies__block-title">Информационная безопасность</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block computer-vision">
-                            <h3 class="analytics-technologies__block-title">Компьютерное зрение</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block mobile-development">
-                            <h3 class="analytics-technologies__block-title">Мобильная разработка</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block development-communications">
-                            <h3 class="analytics-technologies__block-title">Разработка стандартов связи</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block ar-vr">
-                            <h3 class="analytics-technologies__block-title">AR/VR</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block language-models">
-                            <h3 class="analytics-technologies__block-title">NLP и языковые модели</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block understanding-language">
-                            <h3 class="analytics-technologies__block-title">Понимание естественного языка</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block generative-models">
-                            <h3 class="analytics-technologies__block-title">Генеративные модели</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block predictive-analytics">
-                            <h3 class="analytics-technologies__block-title">Предиктивная аналитика</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                        <div class="analytics-technologies__block img-iot">
-                            <h3 class="analytics-technologies__block-title">IoT</h3>
-                            <div class="analytics-technologies__block-image"></div>
-                        </div>
-                    </div>
-                </section>
-
-
-                <section class="analytics-education">
-                    <h2 class="analytics-education__title">Экосистема высшего образования</h2>
-                    <div class="analytics-education__list">
-
-                        <div class="analytics-education__block">
-                            <div class="analytics-education__block-head">
-                                <p class="analytics-education__block-numb">11</p>
-                                <p class="analytics-education__block-title">государственных<br/>вузов</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667589867_34-sportishka-com-p-sinyaya-mashina-iz-tachek-krasivo-35.png" alt="">
+                                <p class="news__tag">Аккредитация</p>
                             </div>
-                            <p class="analytics-education__block-desc">6 готовят ИТ-сппециалистов</p>
-                        </div>
-
-                        <div class="analytics-education__block">
-                            <div class="analytics-education__block-head">
-                                <p class="analytics-education__block-numb">15</p>
-                                <p class="analytics-education__block-title">филиалов<br/>государственных вузов</p>
+                            <div class="news__head">
+                                <h2 class="news__title">Нижегородские онлайн-платформы для импортозамещения представили в Совете Федерации</h2>
+                                <p class="news__time">15 апреля 2023, 20:11</p>
                             </div>
-                            <p class="analytics-education__block-desc">4 готовят ИТ-специалистов</p>
-                        </div>
+                        </a>
 
-                        <div class="analytics-education__block">
-                            <div class="analytics-education__block-head">
-                                <p class="analytics-education__block-numb">1</p>
-                                <p class="analytics-education__block-title">национальный<br/>исследовательский университет</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667494265_35-sportishka-com-p-prototipi-mashin-iz-tachek-krasivo-35.jpg" alt="">
+                                <p class="news__tag">Аналитика</p>
                             </div>
-                        </div>
+                            <div class="news__head">
+                                <h2 class="news__title">В Нижегородской области будет запущена программа «НЕЙМАРК для учителей» по переподготовке педагогов технических специальностей</h2>
+                                <p class="news__time">4 апреля 2023, 14:55</p>
+                            </div>
+                        </a>
 
-                        <div class="analytics-education__block">
-                            <div class="analytics-education__block-head">
-                                <p class="analytics-education__block-numb">2</p>
-                                <p class="analytics-education__block-title">филиала<br/>негосударственных вузов</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://klike.net/uploads/posts/2022-10/1664631085_a-69.jpg" alt="">
+                                <p class="news__tag">Поддержка</p>
                             </div>
-                        </div>
+                            <div class="news__head">
+                                <h2 class="news__title">40 тысяч человек посетили стенд Нижегородской области на «TIBO»</h2>
+                                <p class="news__time">Сегодня, 18:48</p>
+                            </div>
+                        </a>
 
-                        <div class="analytics-education__block">
-                            <div class="analytics-education__block-head">
-                                <p class="analytics-education__block-numb">85,8</p>
-                                <p class="analytics-education__block-title">тыс.<br/>студентов</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://klike.net/uploads/posts/2022-10/1664631111_a-46.jpg" alt="">
+                                <p class="news__tag">Информационные технологии</p>
                             </div>
-                            <p class="analytics-education__block-desc">в Нижегородской области в 2022-2023 учебном году</p>
-                        </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Тренд-сессия прошла в рамках Международного фестиваля «ТехноСтрелка»</h2>
+                                <p class="news__time">Вчера, 12:30</p>
+                            </div>
+                        </a>
 
-                        <div class="analytics-education__block">
-                            <div class="analytics-education__block-head">
-                                <p class="analytics-education__block-numb">5,3</p>
-                                <p class="analytics-education__block-title">тыс.<br/>иностранных студентов</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://moto-pride.ru/wp-content/uploads/c/3/8/c38872d9baada3a797b8f75bdec0a4d2.jpeg" alt="">
+                                <p class="news__tag">Кадры</p>
                             </div>
-                            <p class="analytics-education__block-desc">в Нижегородской области в 2022-2023 учебном году</p>
-                        </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Глеб Никитин принял участие в стратегической сессии по созданию и развитию национальной платформы «Гостех»</h2>
+                                <p class="news__time">10 мая 2023, 10:06</p>
+                            </div>
+                        </a>
 
-                        <div class="analytics-education__block">
-                            <div class="analytics-education__block-head">
-                                <p class="analytics-education__block-numb">1800+</p>
-                                <p class="analytics-education__block-title">ежегодный выпуск<br/>ИТ-специалистов</p>
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667531333_16-sportishka-com-p-tachki-oboi-na-telefon-krasivo-16.jpg" alt="">
+                                <p class="news__tag">Кейсы</p>
                             </div>
-                        </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Участие в бесплатном курсе «НЕЙМАРК.OpenSourсe.Интенсив» примут 100 человек из России, Казахстана и Египта</h2>
+                                <p class="news__time">4 мая 2023, 16:22</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://images.kinorium.com/movie/promo/445247/w1500_49117372.jpg" alt="">
+                                <p class="news__tag">Продажи</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Нижегородцы могут подать онлайн-заявку на выдачу техусловий на присоединение объектов дорожного сервиса</h2>
+                                <p class="news__time">28 апреля 2023, 08:50</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667494277_62-sportishka-com-p-prototipi-mashin-iz-tachek-krasivo-63.jpg" alt="">
+                                <p class="news__tag">Решения</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Пятеро нижегородских студентов поборются за выход в финал Всероссийского чемпионата высоких технологий</h2>
+                                <p class="news__time">19 апреля 2023, 11:59</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667589867_34-sportishka-com-p-sinyaya-mashina-iz-tachek-krasivo-35.png" alt="">
+                                <p class="news__tag">Аккредитация</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Нижегородские онлайн-платформы для импортозамещения представили в Совете Федерации</h2>
+                                <p class="news__time">15 апреля 2023, 20:11</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667494265_35-sportishka-com-p-prototipi-mashin-iz-tachek-krasivo-35.jpg" alt="">
+                                <p class="news__tag">Аналитика</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">В Нижегородской области будет запущена программа «НЕЙМАРК для учителей» по переподготовке педагогов технических специальностей</h2>
+                                <p class="news__time">4 апреля 2023, 14:55</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://images.kinorium.com/movie/promo/445247/w1500_49117372.jpg" alt="">
+                                <p class="news__tag">Продажи</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Нижегородцы могут подать онлайн-заявку на выдачу техусловий на присоединение объектов дорожного сервиса</h2>
+                                <p class="news__time">28 апреля 2023, 08:50</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667494277_62-sportishka-com-p-prototipi-mashin-iz-tachek-krasivo-63.jpg" alt="">
+                                <p class="news__tag">Решения</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Пятеро нижегородских студентов поборются за выход в финал Всероссийского чемпионата высоких технологий</h2>
+                                <p class="news__time">19 апреля 2023, 11:59</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667589867_34-sportishka-com-p-sinyaya-mashina-iz-tachek-krasivo-35.png" alt="">
+                                <p class="news__tag">Аккредитация</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">Нижегородские онлайн-платформы для импортозамещения представили в Совете Федерации</h2>
+                                <p class="news__time">15 апреля 2023, 20:11</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="news__block">
+                            <div class="news__image">
+                                <img src="https://sportishka.com/uploads/posts/2022-11/1667494265_35-sportishka-com-p-prototipi-mashin-iz-tachek-krasivo-35.jpg" alt="">
+                                <p class="news__tag">Аналитика</p>
+                            </div>
+                            <div class="news__head">
+                                <h2 class="news__title">В Нижегородской области будет запущена программа «НЕЙМАРК для учителей» по переподготовке педагогов технических специальностей</h2>
+                                <p class="news__time">4 апреля 2023, 14:55</p>
+                            </div>
+                        </a>
 
                     </div>
                 </section>
 
-       
-                <section class="analytics-more-info">
-                    <div class="analytics-more-info__block">
-                        <h2 class="analytics-more-info__title">Годовой обзор сектора ИКТ</h2>
-                        <p class="analytics-more-info__desc">
-                            Содержит описание сектора ИКТ за 2021-2022 годы, а также изменения, произошедшие 
-                            в нем в 2022 году. Исследование состоит из 6 разделов: экономические показатели 
-                            сектора ИКТ, ситуация на рынке труда, сфера образования и ведущие нижегородские 
-                            вузы, которые готовят ИТ-кадры, а также меры поддержки ИТ-отрасли и мероприятия, 
-                            проводимые в регионе ИТ-сообществом.
-                        </p>
-                        <button data-file="" class="btn-blue btn-download">Скачать PDF</button>
-                    </div>
-
-                    <div class="analytics-more-info__block">
-                        <h2 class="analytics-more-info__title">Задать вопрос аналитикам</h2>
-                        <p class="analytics-more-info__desc">
-                            Если у вас возникли вопросы или предложения, напишите нам об этом.
-                        </p>
-                        <button id="analysts-question" class="btn-gray">Заполнить форму</button>
-                    </div>
-
-                    <div class="analytics-more-info__block">
-                        <h2 class="analytics-more-info__title">Заказать исследование или справку</h2>
-                        <p class="analytics-more-info__desc">
-                            Аналитики Горький Тех найдут и обработают нужную информацию для вас.
-                        </p>
-                        <button id="order-certificate" class="btn-gray">Заполнить форму</button>
-                    </div>
-                </section>
-                <div id="analytics-page-popups" class="bg-popup">
-                    <div id="popup-ask-question" class="popup ask-question">
-                        <button id="ask-question-close" class="popup__cross"></button>
-                        <h2 class="popup__title">Задать вопрос аналитикам</h2>
-                        <form class="popup-form">
-                            <div class="popup-form__two-input">
-                                <div class="popup-form__for-input">
-                                    <input id="ask-question-name" class="popup-form__input" placeholder="Имя"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="ask-question-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                            </div>
-                            <div class="popup-form__for-input">
-                                <input id="ask-question-company" class="popup-form__input" placeholder="Компания"/>
-                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                            </div>
-                            <div class="popup-form__for-input">
-                                <textarea id="ask-question-quest" class="popup-form__input ask-question__textarea" placeholder="Вопрос"></textarea>
-                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                            </div>
-                            <button id="send-ask-question" class="popup-form__btn ask-question__btn">Отправить</button>       
-                            <p class="ask-question__desc">
-                                <span>
-                                    Мы свяжемся с вами в течение трёх рабочих дней с момента поступления 
-                                    вопроса. Приложить материалы (изображения, видео) вы можете, 
-                                    отправив нам письмо по эл. почте на адрес:
-                                </span>
-                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
-                            </p>     
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
-
     </main>
-
-
-
     <footer>
         <div class="footer">
             <div class="footer__logo"></div>
@@ -508,7 +426,5 @@
         <div class="shadow-back__purple"></div>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/analyticsPage.js"></script>
-    <script src="https://unpkg.com/imask"></script>
 </body>
 </html>

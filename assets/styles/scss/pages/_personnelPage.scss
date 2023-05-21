@@ -2,25 +2,8 @@ body {
     &[data-theme="dark"] {
 
         --border-personnel-block: rgba(255, 255, 255, 0.12);
+        --bg-personnel-block: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
         --bg-personnel-block-hover: linear-gradient(58.73deg, rgba(68, 101, 232, 0.6) -17.17%, rgba(68, 101, 232, 0) 50%), linear-gradient(301.39deg, rgba(218, 64, 182, 0.6) -24.38%, rgba(218, 64, 182, 0) 50%), linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
-
-        // --bg-it-campus: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-campus.png');
-        // --bg-it-education: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-education.png');
-        // --bg-it-employer: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-employer.png');
-        // --bg-teachers-programming: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/teachers-programming.png');
-        // --bg-it-talents: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-talents.png');
-        // --bg-it-scholarship: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/it-scholarship.png');
-        // --bg-advanced-training: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/advanced-training.png');
-        // --bg-computer-school: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('../../img/computer-school.png');
-        
-        --bg-it-campus: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-campus.png');
-        --bg-it-education: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-education.png');
-        --bg-it-employer: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-employer.png');
-        --bg-teachers-programming: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/teachers-programming.png');
-        --bg-it-talents: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-talents.png');
-        --bg-it-scholarship: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/it-scholarship.png');
-        --bg-advanced-training: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/advanced-training.png');
-        --bg-computer-school: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/computer-school.png');
      
     }
     &[data-theme="light"] {
@@ -105,36 +88,13 @@ body {
         min-height: 260px;
         padding: 36px;
         outline: 1px solid var(--border-personnel-block);
-        &.it-campus {
-            background: var(--bg-it-campus);
-        }
-        &.it-education {
-            background: var(--bg-it-education);
-        }
-        &.it-employer {
-            background: var(--bg-it-employer);
-        }
-        &.teachers-programming {
-            background: var(--bg-teachers-programming);
-        }
-        &.it-talents {
-            background: var(--bg-it-talents);
-        }
-        &.it-scholarship {
-            background: var(--bg-it-scholarship);
-        }
-        &.advanced-training {
-            background: var(--bg-advanced-training);
-        }
-        &.computer-school {
-            background: var(--bg-computer-school);
-        }
-        &.it-campus, &.it-education, &.it-employer,
-        &.teachers-programming, &.it-talents, &.it-scholarship,
-        &.advanced-training, &.computer-school {
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+        background: var(--bg-support-measures-block);
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
         }
         &::after {
             transition: var(--trans);

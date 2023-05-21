@@ -7403,6 +7403,40 @@ body[data-theme=light] {
   }
 }
 
+.paginagion {
+  display: flex;
+}
+.paginagion__list {
+  display: flex;
+  gap: 8px;
+  text-align: center;
+}
+.paginagion__page, .paginagion__dots {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 67px;
+  height: 67px;
+  border-radius: 14px;
+}
+.paginagion__page p, .paginagion__dots p {
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--text-main-color-light);
+}
+.paginagion__page {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.paginagion__page.select-page {
+  background-color: #2152F2;
+  color: rgb(255, 255, 255);
+}
+.paginagion__dots {
+  cursor: default;
+}
+
 :root {
   --trans: .3s;
 }

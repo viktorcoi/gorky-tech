@@ -6441,6 +6441,34 @@ body[data-theme=light] {
     gap: 8px;
   }
 }
+.popup__desc-page p, .popup__desc-page li {
+  color: var(--color-text-popup-opacity);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.popup__desc-page p strong, .popup__desc-page li strong {
+  font-weight: 500;
+  color: var(--text-main-color-light);
+}
+.popup__desc-page p a, .popup__desc-page li a {
+  border-bottom: 2px solid var(--border-link-popup);
+}
+@media (min-width: 1025px) {
+  .popup__desc-page p a:hover, .popup__desc-page li a:hover {
+    opacity: 0.6;
+  }
+}
+@media (max-width: 1280px) {
+  .popup__desc-page p, .popup__desc-page li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .popup__desc-page p, .popup__desc-page li {
+    font-size: 15px;
+  }
+}
 .popup__desc-page ul {
   display: grid;
 }
@@ -6735,34 +6763,6 @@ body[data-theme=light] {
 .popup.personnel-about .popup__desc-page.overflow {
   overflow-x: hidden;
   overflow-y: scroll;
-}
-.popup.personnel-about .personnel-about__desc, .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
-  color: var(--color-text-popup-opacity);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-}
-.popup.personnel-about .personnel-about__desc strong, .popup.bot-telegram .bot-telegram__desc strong, .popup.out-startup-nn .out-startup-nn__desc strong, .popup.out-preferential-lending .out-preferential-lending__desc strong {
-  font-weight: 500;
-  color: var(--text-main-color-light);
-}
-.popup.personnel-about .personnel-about__desc a, .popup.bot-telegram .bot-telegram__desc a, .popup.out-startup-nn .out-startup-nn__desc a, .popup.out-preferential-lending .out-preferential-lending__desc a {
-  border-bottom: 2px solid var(--border-link-popup);
-}
-@media (min-width: 1025px) {
-  .popup.personnel-about .personnel-about__desc a:hover, .popup.bot-telegram .bot-telegram__desc a:hover, .popup.out-startup-nn .out-startup-nn__desc a:hover, .popup.out-preferential-lending .out-preferential-lending__desc a:hover {
-    opacity: 0.6;
-  }
-}
-@media (max-width: 1280px) {
-  .popup.personnel-about .personnel-about__desc, .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
-    font-size: 16px;
-  }
-}
-@media (max-width: 640px) {
-  .popup.personnel-about .personnel-about__desc, .popup.bot-telegram .bot-telegram__desc, .popup.out-startup-nn .out-startup-nn__desc, .popup.out-preferential-lending .out-preferential-lending__desc {
-    font-size: 15px;
-  }
 }
 .popup.bot-telegram .bot-telegram__buttons-link {
   text-align: center;

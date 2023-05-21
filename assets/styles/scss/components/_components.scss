@@ -439,6 +439,30 @@ body {
         @media (max-width: 640px) {
             gap: 8px;
         }
+        p, li {
+            color: var(--color-text-popup-opacity);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            strong {
+                font-weight: 500;
+                color: var(--text-main-color-light);
+            }
+            a {
+                border-bottom: 2px solid var(--border-link-popup);
+                @media (min-width: 1025px) {
+                    &:hover {
+                        opacity: .6;
+                    }
+                }
+            }
+            @media (max-width: 1280px) {
+                font-size: 16px;
+            }
+            @media (max-width: 640px) {
+                font-size: 15px;
+            }
+        }
         ul {
             display: grid;
             li {
@@ -688,35 +712,6 @@ body {
         .popup__desc-page.overflow {
             overflow-x: hidden;
             overflow-y: scroll;
-        }
-    }
-    &.personnel-about .personnel-about,
-    &.bot-telegram .bot-telegram, 
-    &.out-startup-nn .out-startup-nn,
-    &.out-preferential-lending .out-preferential-lending {
-        &__desc {
-            color: var(--color-text-popup-opacity);
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 140%;
-            strong {
-                font-weight: 500;
-                color: var(--text-main-color-light);
-            }
-            a {
-                border-bottom: 2px solid var(--border-link-popup);
-                @media (min-width: 1025px) {
-                    &:hover {
-                        opacity: .6;
-                    }
-                }
-            }
-            @media (max-width: 1280px) {
-                font-size: 16px;
-            }
-            @media (max-width: 640px) {
-                font-size: 15px;
-            }
         }
     }
     &.bot-telegram .bot-telegram {

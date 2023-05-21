@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const listNumbers = document.querySelector('#paginagion-list');
     if (listNumbers) {
 
-        let countNumbers = 19;
+        let countNumbers = 10;
         let renderListNumbers;
     
         const resetPagination = () => {

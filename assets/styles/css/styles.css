@@ -6036,6 +6036,7 @@ body[data-theme=dark] {
   --color-text-popup-opacity: rgba(255, 255, 255, .8);
   --border-link-popup: rgba(255, 255, 255, .2);
   --img-phone-popup: url("../../img/popup-phone.png");
+  --bg-page-pagination: rgba(255, 255, 255, 0.08);
 }
 body[data-theme=light] {
   --input-bg-search: rgba(239, 242, 246, 1);
@@ -7404,12 +7405,34 @@ body[data-theme=light] {
 }
 
 .paginagion {
+  margin-top: 46px;
   display: flex;
+}
+@media (max-width: 1640px) {
+  .paginagion {
+    margin-top: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .paginagion {
+    margin-top: 24px;
+  }
 }
 .paginagion__list {
   display: flex;
   gap: 8px;
   text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 1640px) {
+  .paginagion__list {
+    gap: 4px;
+  }
+}
+@media (max-width: 600px) {
+  .paginagion__list {
+    gap: 5px;
+  }
 }
 .paginagion__page, .paginagion__dots {
   user-select: none;
@@ -7425,13 +7448,42 @@ body[data-theme=light] {
   font-size: 22px;
   color: var(--text-main-color-light);
 }
+@media (max-width: 1640px) {
+  .paginagion__page p, .paginagion__dots p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .paginagion__page p, .paginagion__dots p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1640px) {
+  .paginagion__page, .paginagion__dots {
+    width: 57px;
+    height: 57px;
+  }
+}
+@media (max-width: 600px) {
+  .paginagion__page, .paginagion__dots {
+    width: 47px;
+    height: 47px;
+  }
+}
 .paginagion__page {
+  transition: var(--trans);
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: var(--bg-page-pagination);
+}
+@media (min-width: 1025px) {
+  .paginagion__page:hover {
+    transform: scale(0.9);
+  }
 }
 .paginagion__page.select-page {
   background-color: #2152F2;
   color: rgb(255, 255, 255);
+  transform: scale(1);
 }
 .paginagion__dots {
   cursor: default;

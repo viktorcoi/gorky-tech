@@ -68,6 +68,9 @@ body {
         --border-link-popup: rgba(255, 255, 255, .2);
 
         --img-phone-popup: url('../../img/popup-phone.png');
+
+        --bg-page-pagination: rgba(255, 255, 255, 0.08);
+       
     }
     &[data-theme="light"] {
         --input-bg-search: rgba(239, 242, 246, 1);
@@ -1265,11 +1268,25 @@ body[data-theme="light"] {
 }
 
 .paginagion {
+    margin-top: 46px;
     display: flex;
+    @media (max-width: 1640px) {
+        margin-top: 36px;   
+    }
+    @media (max-width: 600px) {
+        margin-top: 24px;
+    }
     &__list {
         display: flex;
         gap: 8px;
         text-align: center;
+        margin: 0 auto;
+        @media (max-width: 1640px) {
+            gap: 4px;
+        }
+        @media (max-width: 600px) {
+            gap: 5px;
+        }
     }
     &__page, &__dots {
         user-select: none;
@@ -1283,14 +1300,35 @@ body[data-theme="light"] {
             font-weight: 500;
             font-size: 22px;
             color: var(--text-main-color-light);
+            @media (max-width: 1640px) {
+                font-size: 16px;
+            }
+            @media (max-width: 600px) {
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 1640px) {
+            width: 57px;
+            height: 57px;
+        }
+        @media (max-width: 600px) {
+            width: 47px;
+            height: 47px;
         }
     }
     &__page {
+        transition: var(--trans);
         cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.08);
+        background-color: var(--bg-page-pagination);
+        @media (min-width: 1025px) {
+            &:hover {
+                transform: scale(.9);
+            }
+        }
         &.select-page {
             background-color: #2152F2;
             color: rgba(255, 255, 255, 1);
+            transform: scale(1);
         }
     }
     &__dots {

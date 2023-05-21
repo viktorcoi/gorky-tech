@@ -59,6 +59,7 @@ const checkFieldErrors = (e, button, param, phone) => {
     const validFills = ['input, textarea'];
     validFills.forEach(el => {
         button.closest('form').querySelectorAll(el).forEach(item => {
+            if (!item.getAttribute('name'))
             fillInput(item);
             if (item.classList.contains('error-input'))
             errors++;

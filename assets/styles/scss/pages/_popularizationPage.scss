@@ -1,0 +1,92 @@
+body {
+    &[data-theme="dark"] {
+        --border-block-popularization: rgba(255, 255, 255, 0.08);
+        --bg-block-popularization: rgba(255, 255, 255, 0.08);
+        --bg-popularization-block-hover: linear-gradient(58.73deg, rgba(68, 101, 232, 0.6) -17.17%, rgba(68, 101, 232, 0) 50%), linear-gradient(301.39deg, rgba(218, 64, 182, 0.6) -24.38%, rgba(218, 64, 182, 0) 50%), linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
+    }
+    &[data-theme="light"] {
+
+    }
+}
+
+.popularization-page {
+    width: min(1540px, 100%);
+    margin: 0 auto;
+}
+
+.info-popularization {
+    &__title {
+        color: var(--text-main-color-light);
+        max-width: 25ch;
+        font-weight: 500;
+        font-size: 54px;
+        @media (max-width: 1640px) {
+            font-size: 42px;
+            max-width: unset;
+        }
+        @media (max-width: 900px) {
+            font-size: 36px;
+        }
+        @media (max-width: 600px) {
+            font-size: 26px;
+        }
+    }
+    &__desc {
+        color: var(--text-main-color-light);
+        opacity: .8;
+        margin: 36px 0 64px 0;
+        max-width: 70ch;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        @media (max-width: 1640px) {
+            margin: 24px 0 56px 0;
+            font-size: 16px;
+        }
+        @media (max-width: 900px) {
+            margin: 20px 0 36px 0;   
+        }
+        @media (max-width: 600px) {
+            font-size: 14px;
+            margin: 16px 0 27px 0;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 630px;
+        gap: 20px;
+    }
+    &__list-left {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    &__list-left-block {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        padding: 36px 42px;
+        background-color: var(--bg-block-popularization);
+        border-radius: 32px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background: var(--bg-popularization-block-hover);
+        }
+        &:last-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        p {
+            position: relative;
+            z-index: 1;
+            font-weight: 500;
+            font-size: 36px;
+            color: var(--text-main-color-light);
+        }
+    }
+    &__list-right {
+        min-height: 420px;
+    }
+}

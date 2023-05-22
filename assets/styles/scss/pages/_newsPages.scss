@@ -17,6 +17,14 @@ body {
         margin-bottom: 24px;
         @media (max-width: 1640px) {
             margin-bottom: 16px;
+            font-size: 32px;
+        }
+        @media (max-width: 850px) {
+            max-width: unset;
+            font-size: 28px;
+        }
+        @media (max-width: 640px) {
+            font-size: 24px;
         }
     }
     &__time {
@@ -59,7 +67,84 @@ body {
 .news-textblock {
     display: grid;
     gap: 24px;
+    @media (max-width: 1640px) {
+        gap: 18px;
+    }
+    @media (max-width: 900px) {
+        gap: 14px;
+    }
+    @media (max-width: 600px) {
+        gap: 12px;
+    }
     p {
-        
+        color: var(--text-main-color-light);
+        opacity: .8;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        @media (max-width: 1640px) {
+            font-size: 16px;
+        }
+        @media (max-width: 600px) {
+            font-size: 15px;
+        }
+    }
+}
+
+.news-repost {
+    display: grid;
+    grid-template-columns: repeat(2, .415fr);
+    margin-top: 64px;
+    gap: 15px;
+    margin-top: 42px;
+    @media (max-width: 1640px) {
+        grid-template-columns: repeat(2, .45fr);
+    }
+    @media (max-width: 900px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 15px;
+        color: var(--text-main-color-light);
+        opacity: .5;
+        text-transform: uppercase;
+    }
+    .news__tag {
+        position: unset;
+    }
+    &__list {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    &__right, &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @media (max-width: 600px) {
+            gap: 12px;
+        }
+    }
+    &__right {
+        .communities__block-socail {
+            margin-top: unset;
+            a {
+                width: 40px;
+                height: 40px;
+                background-size: 24px;
+                @media (max-width: 1640px) {
+                    width: 34px;
+                    height: 34px;
+                    background-size: 18px;
+                }
+            }
+        }
     }
 }

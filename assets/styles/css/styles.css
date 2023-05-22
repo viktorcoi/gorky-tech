@@ -4972,6 +4972,179 @@ body[data-theme=dark] {
   }
 }
 body[data-theme=dark] {
+  --bg-support-uav-img: linear-gradient(180deg, rgba(38, 74, 124, 0) 38.39%, rgba(38, 74, 124, 0.4) 89.09%);
+  --bg-support-uav-block: rgba(255, 255, 255, 0.08);
+}
+body[data-theme=light] {
+  --bg-support-uav-img: linear-gradient(180deg, rgba(38, 74, 124, 0) 38.39%, rgba(38, 74, 124, 0.6) 89.09%);
+  --bg-support-uav-block: #E8EDF3;
+}
+
+.support-uav-page {
+  width: min(1540px, 100%);
+  margin: 0 auto;
+}
+.support-uav-page h1 {
+  max-width: 22ch;
+}
+
+.support-uav-img {
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  border-radius: 24px;
+  margin: 56px 0;
+  background: var(--bg-support-uav-img);
+}
+.support-uav-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+@media (max-width: 1640px) {
+  .support-uav-img {
+    min-height: 436px;
+    border-radius: 18px;
+    margin: 42px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .support-uav-img {
+    min-height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .support-uav-img {
+    min-height: 186px;
+    margin: 24px 0;
+  }
+}
+
+.support-uav__list {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 1640px) {
+  .support-uav__list {
+    margin-top: 46px;
+  }
+}
+@media (max-width: 1200px) {
+  .support-uav__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .support-uav__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    margin-top: 32px;
+  }
+}
+.support-uav__block {
+  padding: 32px 36px;
+  border-radius: 28px;
+  background-color: var(--bg-support-uav-block);
+  min-height: 280px;
+}
+@media (max-width: 1640px) {
+  .support-uav__block {
+    padding: 24px 28px;
+    border-radius: 20px;
+    min-height: 214px;
+  }
+}
+@media (max-width: 1200px) {
+  .support-uav__block {
+    border-radius: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .support-uav__block {
+    padding: 20px;
+  }
+}
+.support-uav__block-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--text-main-color-light);
+}
+@media (max-width: 1640px) {
+  .support-uav__block-title {
+    font-size: 20px;
+  }
+}
+.support-uav__question {
+  margin-top: 100px;
+}
+@media (max-width: 1640px) {
+  .support-uav__question {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .support-uav__question {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .support-uav__question {
+    margin-top: 50px;
+  }
+}
+.support-uav__question-title {
+  font-weight: 500;
+  font-size: 42px;
+  color: var(--text-main-color-light);
+}
+@media (max-width: 1640px) {
+  .support-uav__question-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .support-uav__question-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .support-uav__question-title {
+    font-size: 24px;
+  }
+}
+.support-uav__question-desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--text-main-color-light);
+  opacity: 0.8;
+  margin: 24px 0 42px 0;
+}
+@media (max-width: 1640px) {
+  .support-uav__question-desc {
+    margin: 16px 0 32px 0;
+    font-size: 18px;
+  }
+}
+@media (max-width: 900px) {
+  .support-uav__question-desc {
+    margin: 12px 0 28px 0;
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .support-uav__question-desc {
+    margin: 10px 0 18px 0;
+    font-size: 15px;
+  }
+}
+
+body[data-theme=dark] {
   --header-border: rgba(255, 255, 255, .08);
   --header-bg-btn-menu-color: rgba(239, 242, 246, .12);
   --header-img-btn-menu: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 10H27' stroke='white' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3Cpath d='M5 16.2222H27' stroke='white' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3Cpath d='M5 22.4444H27' stroke='white' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3C/svg%3E%0A");

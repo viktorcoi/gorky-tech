@@ -2,10 +2,12 @@ body {
     &[data-theme="dark"] {
         --bg-support-uav-img: linear-gradient(180deg, rgba(38, 74, 124, 0) 38.39%, rgba(38, 74, 124, 0.4) 89.09%);
         --bg-support-uav-block: rgba(255, 255, 255, 0.08);
+        --bg-support-uav-block-hover: rgba(255, 255, 255, 1);
     }
     &[data-theme="light"] {
         --bg-support-uav-img: linear-gradient(180deg, rgba(38, 74, 124, 0) 38.39%, rgba(38, 74, 124, 0.6) 89.09%);
         --bg-support-uav-block: #E8EDF3;
+        --bg-support-uav-block-hover: linear-gradient(241.54deg, #014DA5 -54.06%, rgba(1, 77, 165, 0) 105.46%), linear-gradient(62.71deg, #DA40B6 -87.35%, rgba(218, 64, 182, 0) 100%), #12132A;
     }
 }
 
@@ -66,8 +68,16 @@ body {
     &__block {
         padding: 32px 36px;
         border-radius: 28px;
-        background-color: var(--bg-support-uav-block);
+        background: var(--bg-support-uav-block);
         min-height: 280px;
+        @media (min-width: 1025px) {
+            &:hover {
+                background: var(--bg-support-uav-block-hover);
+                .support-uav__block-title {
+                    color: var(--text-main-color-dark);
+                }
+            }
+        }
         @media (max-width: 1640px) {
             padding: 24px 28px;
             border-radius: 20px;
@@ -81,6 +91,7 @@ body {
         }
     }
     &__block-title {
+        transition: var(--trans);
         font-weight: 500;
         font-size: 24px;
         line-height: 140%;

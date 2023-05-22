@@ -2398,11 +2398,7 @@ body[data-theme=dark] {
 }
 
 body[data-theme=dark] {
-  --bg-accreditation-companies-main: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url("https://viktorcoi.github.io/gorky-tech/assets/img/accreditation-companies-main.png");
-  --bg-russian-programs-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("https://viktorcoi.github.io/gorky-tech/assets/img/russian-programs-main.png");
-  --bg-preferential-mortgage-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("https://viktorcoi.github.io/gorky-tech/assets/img/preferential-mortgage-main.png");
-  --bg-grants-physical-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("https://viktorcoi.github.io/gorky-tech/assets/img/grants-physical-main.png");
-  --bg-grant-competition-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url("https://viktorcoi.github.io/gorky-tech/assets/img/grant-competition-main.png");
+  --bg-support-img-block: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
   --bg-support-precents-block: rgba(255, 255, 255, 0.08);
   --bg-support-precents-dot: #2152F2;
   --color-text-support-textblock: rgba(255, 255, 255, .8);
@@ -2414,29 +2410,21 @@ body[data-theme=dark] {
 }
 
 .support-main-img {
+  position: relative;
+  overflow: hidden;
   display: grid;
   min-height: 560px;
   border-radius: 24px;
   margin: 100px 0 56px 0;
   padding: 56px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right top;
+  background: var(--bg-support-img-block);
 }
-.support-main-img.accreditation-companies {
-  background-image: var(--bg-accreditation-companies-main);
-}
-.support-main-img.russian-programs {
-  background-image: var(--bg-russian-programs-main);
-}
-.support-main-img.preferential-mortgage {
-  background-image: var(--bg-preferential-mortgage-main);
-}
-.support-main-img.grants-physical {
-  background-image: var(--bg-grants-physical-main);
-}
-.support-main-img.grant-competition {
-  background-image: var(--bg-grant-competition-main);
+.support-main-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 @media (max-width: 1640px) {
   .support-main-img {
@@ -5993,6 +5981,11 @@ header.open-search .header__search {
 }
 .header__contacts-socials a.social-tg {
   background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.4336 6.36586L20.9124 22.2064C20.6468 23.3243 19.954 23.6026 18.9696 23.0759L13.6045 19.3046L11.0157 21.6797C10.7292 21.953 10.4896 22.1815 9.93751 22.1815L10.323 16.9693L20.2666 8.3981C20.6989 8.03041 20.1728 7.82669 19.5946 8.19438L7.30186 15.578L2.00972 13.9979C0.858578 13.6551 0.837743 12.8998 2.24933 12.3731L22.9491 4.76591C23.9075 4.42306 24.7461 4.96963 24.4336 6.36586Z' fill='%233DA2FF'/%3E%3C/svg%3E%0A");
+}
+@media (min-width: 1025px) {
+  .header__contacts-socials a:hover {
+    transform: scale(1.1);
+  }
 }
 @media (max-width: 1640px) {
   .header__contacts-socials a {

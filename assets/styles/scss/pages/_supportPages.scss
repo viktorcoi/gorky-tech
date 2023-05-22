@@ -1,19 +1,7 @@
 body {
     &[data-theme="dark"] {
 
-
-
-        // --bg-accreditation-companies-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('../../img/accreditation-companies-main.png');
-        // --bg-russian-programs-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('../../img/russian-programs-main.png');
-        // --bg-preferential-mortgage-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('../../img/preferential-mortgage-main.png');
-        // --bg-grants-physical-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('../../img/grants-physical-main.png');
-        // --bg-grant-competition-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('../../img/grant-competition-main.png');
-        --bg-accreditation-companies-main: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%), url('https://viktorcoi.github.io/gorky-tech/assets/img/accreditation-companies-main.png');
-        --bg-russian-programs-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('https://viktorcoi.github.io/gorky-tech/assets/img/russian-programs-main.png');
-        --bg-preferential-mortgage-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('https://viktorcoi.github.io/gorky-tech/assets/img/preferential-mortgage-main.png');
-        --bg-grants-physical-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('https://viktorcoi.github.io/gorky-tech/assets/img/grants-physical-main.png');
-        --bg-grant-competition-main: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%), url('https://viktorcoi.github.io/gorky-tech/assets/img/grant-competition-main.png');
-        
+        --bg-support-img-block: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
         
         --bg-support-precents-block: rgba(255, 255, 255, 0.08);
 
@@ -35,28 +23,20 @@ body {
 }
 
 .support-main-img {
+    position: relative;
+    overflow: hidden;
     display: grid;
     min-height: 560px;
     border-radius: 24px;
     margin: 100px 0 56px 0;
     padding: 56px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right top;
-    &.accreditation-companies {
-        background-image: var(--bg-accreditation-companies-main);
-    }
-    &.russian-programs {
-        background-image: var(--bg-russian-programs-main);
-    }
-    &.preferential-mortgage {
-        background-image: var(--bg-preferential-mortgage-main);
-    }
-    &.grants-physical {
-        background-image: var(--bg-grants-physical-main);
-    }
-    &.grant-competition {
-        background-image: var(--bg-grant-competition-main);
+    background: var(--bg-support-img-block);
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
     }
     @media (max-width: 1640px) {
         min-height: 436px;

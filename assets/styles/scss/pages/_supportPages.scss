@@ -233,6 +233,20 @@ body {
     margin: 100px 0;
     display: grid;
     gap: 80px;
+    button, a {
+        &:not(:last-child) {
+            margin-bottom: 42px;
+            @media (max-width: 1640px) {
+                margin-bottom: 34px;
+            }
+            @media (max-width: 1024px) {
+                margin-bottom: 26px;
+            }
+            @media (max-width: 600px) {
+                margin-bottom: 18px;
+            }
+        }
+    }
     &.in-content {
         margin-top: 80px;
         @media (max-width: 1640px) {
@@ -434,6 +448,42 @@ a.support-precents__block {
                 grid-column-start: unset;
             }
         }
+        &.pm-third, &.pm-twice {
+            min-height: 160px;
+        }
+        &.pm-twice {
+            grid-column-end: 3;
+            grid-column-start: 1;
+            @media (max-width: 1200px) {
+                grid-column-end: 4;
+                grid-column-start: 2;
+            }
+            @media (max-width: 850px) {
+                grid-column-end: 3;
+                grid-column-start: 1;
+            }
+            @media (max-width: 600px) {
+                grid-column-end: unset;
+                grid-column-start: unset;
+            }
+        }
+        &.pm-third {
+            grid-column-end: 5;
+            grid-column-start: 3;
+            @media (max-width: 1200px) {
+                grid-column-end: 4;
+                grid-column-start: 1;
+            }
+            @media (max-width: 850px) {
+                grid-column-end: 3;
+                grid-column-start: 1;
+            }
+            @media (max-width: 600px) {
+                grid-column-end: unset;
+                grid-column-start: unset;
+            }
+        }
+
         @media (max-width: 1640px) {
             border-radius: 22px;
             padding: 18px 24px;

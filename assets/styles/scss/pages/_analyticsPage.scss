@@ -26,12 +26,6 @@ body {
         --bg-analytics-info-right: rgba(255, 255, 255, 0.08);
         --border-analytics-info-right: rgba(255, 255, 255, 0.08);
 
-        // --graph-vrp: url('../../img/graph-vrp.svg');
-        // --graph-export-ict: url('../../img/graph-export-ict.svg');
-        // --graph-turnover-ict: url('../../img/graph-turnover-ict.svg');
-        // --graph-average-po: url('../../img/graph-average-po.svg');
-        // --graph-quantity-ict: url('../../img/graph-quantity-ict.svg');
-
         --graph-vrp: url('https://viktorcoi.github.io/gorky-tech/assets/img/graph-vrp.svg');
         --graph-export-ict: url('https://viktorcoi.github.io/gorky-tech/assets/img/graph-export-ict.svg');
         --graph-turnover-ict: url('https://viktorcoi.github.io/gorky-tech/assets/img/graph-turnover-ict.svg');
@@ -50,12 +44,11 @@ body {
         --img-ikt-entrepreneurs: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='36' cy='36' r='36' fill='%23E8EDF3'/%3E%3Cpath d='M51 31C50.9988 29.9395 50.577 28.9227 49.8271 28.1729C49.0773 27.423 48.0605 27.0012 47 27H44V26C43.9992 25.2046 43.6828 24.442 43.1204 23.8796C42.558 23.3172 41.7954 23.0008 41 23H31C30.2046 23.0008 29.442 23.3172 28.8796 23.8796C28.3172 24.442 28.0008 25.2046 28 26V27H25C23.9395 27.0012 22.9227 27.423 22.1729 28.1729C21.423 28.9227 21.0012 29.9395 21 31V34H51V31ZM42 27H30V26C30 25.7348 30.1054 25.4804 30.2929 25.2929C30.4804 25.1054 30.7348 25 31 25H41C41.2652 25 41.5196 25.1054 41.7071 25.2929C41.8946 25.4804 42 25.7348 42 26V27Z' fill='%232152F2'/%3E%3Cpath d='M41 36.5C41 36.8978 40.842 37.2794 40.5607 37.5607C40.2794 37.842 39.8978 38 39.5 38H32.5C32.1022 38 31.7206 37.842 31.4393 37.5607C31.158 37.2794 31 36.8978 31 36.5V36.25C31 36.1837 30.9737 36.1201 30.9268 36.0732C30.8799 36.0263 30.8163 36 30.75 36H21V45C21 46.0609 21.4214 47.0783 22.1716 47.8284C22.9217 48.5786 23.9391 49 25 49H47C48.0609 49 49.0783 48.5786 49.8284 47.8284C50.5786 47.0783 51 46.0609 51 45V36H41.25C41.1837 36 41.1201 36.0263 41.0732 36.0732C41.0263 36.1201 41 36.1837 41 36.25V36.5Z' fill='%232152F2'/%3E%3C/svg%3E%0A");
         --img-ikt-freelancers: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='36' cy='36' r='36' fill='%23E8EDF3'/%3E%3Cpath d='M33.9056 22.7605C34.4917 22.2694 35.2335 22 36 22C36.7665 22 37.5083 22.2694 38.0944 22.7605L47.8444 30.9394C48.5782 31.5526 49 32.456 49 33.4096V47.4867C49 48.1533 48.7337 48.7926 48.2596 49.2639C47.7856 49.7352 47.1426 50 46.4722 50H42.1389C41.4685 50 40.8255 49.7352 40.3515 49.2639C39.8774 48.7926 39.6111 48.1533 39.6111 47.4867V40.306C39.6111 40.0203 39.497 39.7463 39.2938 39.5443C39.0906 39.3423 38.8151 39.2289 38.5278 39.2289H33.4722C33.1849 39.2289 32.9094 39.3423 32.7062 39.5443C32.503 39.7463 32.3889 40.0203 32.3889 40.306V47.4867C32.3889 48.1533 32.1226 48.7926 31.6485 49.2639C31.1745 49.7352 30.5315 50 29.8611 50H25.5278C25.1958 50 24.8671 49.935 24.5604 49.8087C24.2538 49.6824 23.9751 49.4973 23.7404 49.2639C23.5056 49.0305 23.3194 48.7534 23.1924 48.4485C23.0654 48.1436 23 47.8168 23 47.4867V33.4081C23 32.456 23.4218 31.5526 24.1556 30.9379L33.9056 22.7605Z' fill='%232152F2'/%3E%3C/svg%3E%0A");
 
-        --graph-vrp: url('../../img/graph-vrp-light.svg');
-        --graph-export-ict: url('../../img/graph-export-ict-light.svg');
-        --graph-turnover-ict: url('../../img/graph-turnover-ict-light.svg');
-        --graph-average-po: url('../../img/graph-average-po-light.svg');
-        --graph-quantity-ict: url('../../img/graph-quantity-ict-light.svg');
-
+        --graph-vrp: url('https://viktorcoi.github.io/gorky-tech/assets/img/graph-vrp-light.svg');
+        --graph-export-ict: url('https://viktorcoi.github.io/gorky-tech/assets/img/graph-export-ict-light.svg');
+        --graph-turnover-ict: url('https://viktorcoi.github.io/gorky-tech/assets/img/graph-turnover-ict-light.svg');
+        --graph-average-po: url('https://viktorcoi.github.io/gorky-tech/assets/img/graph-average-po-light.svg');
+        --graph-quantity-ict: url('https://viktorcoi.github.io/gorky-tech/assets/img/graph-quantity-ict-light.svg');
 
         --bg-analytics-info-right: rgba(232, 237, 243, 1);
         --border-analytics-info-right: rgba(232, 237, 243, 1);

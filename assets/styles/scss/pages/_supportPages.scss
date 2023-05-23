@@ -299,8 +299,11 @@ body {
 a.support-precents__block {
     overflow: hidden;
     position: relative;
+    & > * {
+        position: relative;
+        z-index: 1;
+    }
     &::after {
-        z-index: -1;
         transition: var(--trans);
         content: '';
         position: absolute;
@@ -309,8 +312,19 @@ a.support-precents__block {
         opacity: 0;
     }
     @media (min-width: 1025px) {
-        &:hover::after {
-            opacity: 1;
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+            .support-precents__block-title {
+                color: rgba(255, 255, 255, .8);
+                strong {
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+            .support-precents__block-precent-precent {
+                color: var(--color-white);
+            }
         }
     }
 }
@@ -336,22 +350,6 @@ a.support-precents__block {
         }
         @media (max-width: 600px) {
             margin-bottom: 50px;
-        }
-    }
-    &.russian-programs .support-precents__block:nth-child(5) {
-        grid-column-end: 3;
-        grid-column-start: 1;
-        @media (max-width: 1200px) {
-            grid-column-end: 4;
-            grid-column-start: 2;
-        }
-        @media (max-width: 850px) {
-            grid-column-end: 3;
-            grid-column-start: 1;
-        }
-        @media (max-width: 600px) {
-            grid-column-end: unset;
-            grid-column-start: unset;
         }
     }
     @media (max-width: 1640px) {
@@ -420,6 +418,22 @@ a.support-precents__block {
         min-height: 337px;
         gap: 32px;
         background-color: var(--bg-support-precents-block);
+        &.rp-twice {
+            grid-column-end: 3;
+            grid-column-start: 1;
+            @media (max-width: 1200px) {
+                grid-column-end: 4;
+                grid-column-start: 2;
+            }
+            @media (max-width: 850px) {
+                grid-column-end: 3;
+                grid-column-start: 1;
+            }
+            @media (max-width: 600px) {
+                grid-column-end: unset;
+                grid-column-start: unset;
+            }
+        }
         @media (max-width: 1640px) {
             border-radius: 22px;
             padding: 18px 24px;
@@ -436,14 +450,56 @@ a.support-precents__block {
             min-height: 160px;
             gap: 18px;
         }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            li {
+                padding-left: 20px;
+                position: relative;
+                color: var(--color-text-support-textblock);
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                strong {
+                    font-weight: 500;
+                    color: var(--text-main-color-light);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    left: 0; top: 12px;
+                    border-radius: 100%;
+                    background-color: var(--bg-support-precents-dot);
+                }
+                @media (max-width: 1640px) {
+                    font-size: 15px;
+                    padding-left: 16px;
+                    &::after {
+                        width: 6px;
+                        height: 6px;
+                        top: 10px;
+                    }
+                }
+            }
+        }
     }
     &__block-title {
+        transition: var(--trans);
         font-weight: 400;
         font-size: 18px;
         line-height: 150%;
-        color: var(--text-main-color-light);
-        opacity: .8;
+        color: var(--color-text-support-textblock);
+        strong {
+            transition: var(--trans);
+            font-weight: 500;
+            color: var(--text-main-color-light);
+        }
         span {
+            transition: var(--trans);
             white-space: nowrap;
         }
         @media (max-width: 1640px) {
@@ -488,6 +544,7 @@ a.support-precents__block {
         }
     }
     &__block-precent-precent {
+        transition: var(--trans);
         position: relative;
         font-weight: 500;
         font-size: 32px;
@@ -505,6 +562,7 @@ a.support-precents__block {
         }
         @media (max-width: 1640px) {
             font-size: 24px;
+            padding-left: 16px;
             &::after {
                 width: 6px;
                 height: 6px;
@@ -569,7 +627,6 @@ a.support-precents__block {
             left: 0; right: 0; top: 0; bottom: 0;
             background: var(--bg-color-gradient-hover);
             opacity: 0;
-            z-index: -1;
         }
         @media (min-width: 1025px) {
             &:hover::after {
@@ -586,6 +643,8 @@ a.support-precents__block {
             border-radius: 12px;
         }
         img {
+            position: relative;
+            z-index: 1;
             width: 258px;
             height: auto;
             margin: 1px auto 0 auto;
@@ -598,6 +657,8 @@ a.support-precents__block {
             }
         }
         p {
+            position: relative;
+            z-index: 1;
             margin: auto;
             font-weight: 400;
             font-size: 18px;

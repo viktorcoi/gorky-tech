@@ -2,7 +2,14 @@
     --trans: .3s;
     --bg-btn-blue: #2152F2;
     --bg-btn-blue-hover: #315FF6;
-    --img-btn-link: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.5'%3E%3Cpath d='M15 5.5L5 15.5M15 5.5L6 5.5M15 5.5V14.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E%0A");
+    
+    --bg-color-gradient-block: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
+    --bg-color-gradient-hover: linear-gradient(58.73deg, rgba(68, 101, 232, 0.6) -17.17%, rgba(68, 101, 232, 0) 50%), linear-gradient(301.39deg, rgba(218, 64, 182, 0.6) -24.38%, rgba(218, 64, 182, 0) 50%), linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
+   
+    --border-focus-input: #315FF6;
+    --border-error-input: #CB3B5E;
+   
+    --color-white: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -134,6 +141,12 @@ body {
             }
         }
         --background: #12132B;
+
+        --border-color-block-alpha1: rgba(255, 255, 255, 0.1);
+        --bg-color-block-alpha1: rgba(255, 255, 255, 0.1);
+
+        --border-color-block-alpha08: rgba(255, 255, 255, 0.08);
+        --bg-color-block-alpha08: rgba(255, 255, 255, 0.08);
 
         --text-main-color-light: rgba(255, 255, 255, 1);
         --text-main-color-dark: rgba(24, 24, 24, 1);

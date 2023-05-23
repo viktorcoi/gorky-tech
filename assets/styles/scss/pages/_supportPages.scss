@@ -1,19 +1,22 @@
+:root {
+    --bg-support-precents-dot: #2152F2;
+}
+
 body {
     &[data-theme="dark"] {
-
         --bg-support-img-block: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
-        
         --bg-support-precents-block: rgba(255, 255, 255, 0.08);
-
-        --bg-support-precents-dot: #2152F2;
-
         --color-text-support-textblock: rgba(255, 255, 255, .8);
-
         --bg-winners-grant-block: rgba(255, 255, 255, 0.1);
-        --bg-winners-grant-block-hover: linear-gradient(58.73deg, rgba(68, 101, 232, 0.6) -17.17%, rgba(68, 101, 232, 0) 50%), linear-gradient(301.39deg, rgba(218, 64, 182, 0.6) -24.38%, rgba(218, 64, 182, 0) 50%), linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
     }
     &[data-theme="light"] {
-
+        --bg-support-img-block: linear-gradient(180deg, rgba(38, 74, 124, 0) 0%, rgba(38, 74, 124, 0.6) 82.29%);
+        --bg-support-precents-block: rgba(232, 237, 243, 1);
+        --color-text-support-textblock: rgba(24, 24, 24, .8);
+        --bg-winners-grant-block: rgba(232, 237, 243, 1);
+        .winners-grant__block img {
+            filter: brightness(.15);
+        }
     }
 }
 
@@ -58,7 +61,7 @@ body {
         margin-top: auto;
         font-weight: 500;
         font-size: 54px;
-        color: var(--text-main-color-light);
+        color: var(--color-white);
         @media (max-width: 1640px) {
             font-size: 42px;
         }
@@ -293,8 +296,48 @@ body {
     }
 }
 
+a.support-precents__block {
+    overflow: hidden;
+    position: relative;
+    &::after {
+        z-index: -1;
+        transition: var(--trans);
+        content: '';
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
+        background: var(--bg-color-gradient-hover);
+        opacity: 0;
+    }
+    @media (min-width: 1025px) {
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+}
+
 .support-precents {
+    a:not(.support-precents__block) {
+        width: fit-content;
+        border-bottom: 2px solid var(--border-link-popup);
+        @media (min-width: 1025px) {
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
     margin-top: 56px;
+    &.last-block {
+        margin-bottom: 100px;
+        @media (max-width: 1640px) {
+            margin-bottom: 80px;
+        }
+        @media (max-width: 1024px) {
+            margin-bottom: 60px;
+        }
+        @media (max-width: 600px) {
+            margin-bottom: 50px;
+        }
+    }
     &.russian-programs .support-precents__block:nth-child(5) {
         grid-column-end: 3;
         grid-column-start: 1;
@@ -326,6 +369,23 @@ body {
         line-height: 140%;
         color: var(--text-main-color-light);
         margin-bottom: 36px;
+        span {
+            display: block;
+            margin-top: 18px;
+            font-size: 22px;
+            @media (max-width: 1640px) {
+                font-size: 18px;
+            }
+            @media (max-width: 600px) {
+                font-size: 16px;
+            }
+            @media (max-width: 1640px) {
+                margin-top: 14px;
+            }
+            @media (max-width: 600px) {
+                margin-top: 12px;
+            }
+        }
         @media (max-width: 1640px) {
             font-size: 20px;
             margin-bottom: 24px;
@@ -507,7 +567,7 @@ body {
             content: '';
             position: absolute;
             left: 0; right: 0; top: 0; bottom: 0;
-            background: var(--bg-winners-grant-block-hover);
+            background: var(--bg-color-gradient-hover);
             opacity: 0;
             z-index: -1;
         }

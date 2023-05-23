@@ -1,13 +1,9 @@
 body {
     &[data-theme="dark"] {
-
         --border-personnel-block: rgba(255, 255, 255, 0.12);
-        --bg-personnel-block: linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
-        --bg-personnel-block-hover: linear-gradient(58.73deg, rgba(68, 101, 232, 0.6) -17.17%, rgba(68, 101, 232, 0) 50%), linear-gradient(301.39deg, rgba(218, 64, 182, 0.6) -24.38%, rgba(218, 64, 182, 0) 50%), linear-gradient(0.18deg, rgba(38, 74, 124, 0.8) 0.16%, rgba(11, 18, 28, 0) 152.36%);
-     
     }
     &[data-theme="light"] {
-
+        --border-personnel-block: rgba(255, 255, 255, 0.12);
     }
 }
 
@@ -88,7 +84,7 @@ body {
         min-height: 260px;
         padding: 36px;
         outline: 1px solid var(--border-personnel-block);
-        background: var(--bg-support-measures-block);
+        background: var(--bg-color-gradient-block);
         img {
             position: absolute;
             width: 100%;
@@ -101,7 +97,7 @@ body {
             content: '';
             position: absolute;
             left: 0; right: 0; top: 0; bottom: 0;
-            background: var(--bg-support-measures-block-hover);
+            background: var(--bg-color-gradient-hover);
             opacity: 0;
         }
         @media (min-width: 1025px) {
@@ -130,7 +126,8 @@ body {
         margin-top: auto;
         font-weight: 500;
         font-size: 30px;
-        color: var(--text-main-color-light);
+        color: grba(255);
+        color: var(--color-white);
         @media (max-width: 1640px) {
             font-size: 24px;
         }

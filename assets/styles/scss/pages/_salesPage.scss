@@ -1,6 +1,5 @@
 body {
     &[data-theme="dark"] {
-
         --bg-sales-info-block: rgba(255, 255, 255, 0.08);
         --border-sales-info-block: rgba(255, 255, 255, 0.08);
         --bg-sales-info-block-hover:rgba(255, 255, 255, 1);
@@ -8,10 +7,13 @@ body {
         --text-sales-info-block-title: rgba(33, 82, 242, 1);
     }
     &[data-theme="light"] {
-
+        --bg-sales-info-block:  rgba(232, 237, 243, 1);
+        --border-sales-info-block:  rgba(232, 237, 243, 1);
+        --bg-sales-info-block-hover: linear-gradient(241.54deg, #014DA5 -54.06%, rgba(1, 77, 165, 0) 105.46%), linear-gradient(62.71deg, #DA40B6 -87.35%, rgba(218, 64, 182, 0) 100%), #12132A;
+        --border-sales-info-block-hover: rgba(255, 255, 255, 1);
+        --text-sales-info-block-title: rgba(255, 255, 255, 1);
     }
 }
-
 
 .sales-page {
     width: min(1540px, 100%);
@@ -106,7 +108,7 @@ body {
             &:not(:nth-child(4), :nth-child(5)) {
                 cursor: pointer;
                 &:hover {
-                    background-color: var(--bg-sales-info-block-hover);
+                    background: var(--bg-sales-info-block-hover);
                     border: 1px solid var(--border-sales-info-block-hover);
                     .sales-info {
                         &__block-title {

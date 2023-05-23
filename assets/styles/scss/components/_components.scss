@@ -1083,6 +1083,7 @@ body {
 
 .main-slider { 
     &__slide-content {
+        position: relative;
         transition: var(--trans);
         padding: 12px 55px 12px 12px;
         display: flex;
@@ -1104,6 +1105,23 @@ body {
             gap: 16px;
             border-radius: 24px;
             flex-direction: column;
+        }
+        .news__tag {
+            left: 28px;
+            bottom: 28px;
+            @media (max-width: 1640px) {
+                left: 23px;
+                bottom: 23px;
+            }
+            @media (max-width: 1024px) {
+                left: 22px;
+                bottom: 22px;
+            }
+            @media (max-width: 680px) {
+                top: 150px;
+                left: 22px;
+                bottom: unset;
+            }
         }
     }
     &__slide {

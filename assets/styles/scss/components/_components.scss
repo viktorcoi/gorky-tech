@@ -383,7 +383,8 @@ body {
     &.popup-virtual-showroom, &.popup-promotion-consultation,
     &.popup-question-gostekh, &.popup-application-support-project,
     &.popup-bot-telegram, &.popup-out-startup-nn, 
-    &.popup-out-preferential-lending, &.popup-personnel-about {
+    &.popup-out-preferential-lending, &.popup-personnel-about,
+    &.popup-poster-about {
         opacity: 1;
         visibility: visible;
         pointer-events: unset;
@@ -396,7 +397,7 @@ body {
     &.popup-application-support-project .application-support-project,
     &.popup-bot-telegram .bot-telegram, &.popup-out-startup-nn .out-startup-nn,
     &.popup-out-preferential-lending .out-preferential-lending,
-    &.popup-personnel-about .personnel-about {
+    &.popup-personnel-about .personnel-about, &.popup-poster-about .poster-about {
         opacity: 1;
         transform: translateY(0);
     }
@@ -525,6 +526,13 @@ body {
             @media (max-width: 640px) {
                 margin-top: 20px;
             }
+        }
+    }
+    &.poster-about {
+        width: min(1125px, 90%);
+        height: 75%;
+        @media (max-width: 900px) {
+            height: 90%;
         }
     }
     &.ask-question, .ask-question,
@@ -820,6 +828,26 @@ body {
 }
 
 #list-popups-form .ask-question {
+    @media (max-height: 900px) {
+        height: 90%;
+        .popup-form {
+            height: calc(100% - 80px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            @media (max-width: 1280px) {
+                height: calc(100% - 90px);
+            }
+            @media (max-width: 640px) {
+                height: calc(100% - 60px);
+            }
+            @media (max-width: 420px) {
+                height: calc(100% - 80px);
+            }
+        }
+    }
+}
+
+#list-popups-form .ask-question.with-tag {
     @media (max-height: 900px) {
         height: 90%;
         .popup-form {

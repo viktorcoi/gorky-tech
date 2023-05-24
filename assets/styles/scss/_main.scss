@@ -86,10 +86,24 @@ h1 {
     }
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-track {
+background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-scroll-button);
+    border-radius: 24px;
+}
+
 body {
     transition: var(--trans);
     background-color: var(--background);
     overflow-x: hidden;
+    overflow-y: overlay;
     &.no-transition,
     &.no-transition * {
         transition: none !important;
@@ -141,12 +155,7 @@ body {
             }
         }
         --background: #12132B;
-
-        --border-color-block-alpha1: rgba(255, 255, 255, 0.1);
-        --bg-color-block-alpha1: rgba(255, 255, 255, 0.1);
-
-        --border-color-block-alpha08: rgba(255, 255, 255, 0.08);
-        --bg-color-block-alpha08: rgba(255, 255, 255, 0.08);
+        --bg-scroll-button: rgba(255, 255, 255, .08);
 
         --text-main-color-light: rgba(255, 255, 255, 1);
         --text-main-color-dark: rgba(24, 24, 24, 1);
@@ -154,7 +163,8 @@ body {
 
     &[data-theme="light"] {
         --background: #F9FAFC;
-      
+        --bg-scroll-button: rgba(24, 24, 24, .15);
+
         --text-main-color-light: rgba(24, 24, 24, 1);
         --text-main-color-dark: rgba(255, 255, 255, 1);
     }

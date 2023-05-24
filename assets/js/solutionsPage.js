@@ -2,11 +2,6 @@ import { openPopup, closePopup, fillInput, checkFieldErrors, focusPhoneInput, ch
 
 document.addEventListener('DOMContentLoaded', ()  => {
 
-    const inputGostekhName = document.querySelector('#question-gostekh-name');
-    const inputGostekhPhone = document.querySelector('#question-gostekh-phone');
-    const inputGostekhCompany = document.querySelector('#question-gostekh-company');
-    const inputGostekhQuest = document.querySelector('#question-gostekh-quest');
-
     const inputApplicationName = document.querySelector('#application-support-project-name');
     const inputApplicationLastName = document.querySelector('#application-support-project-last-name');
     const inputApplicationSecondName = document.querySelector('#application-support-project-second-name');
@@ -15,59 +10,25 @@ document.addEventListener('DOMContentLoaded', ()  => {
     const inputApplicationCompany = document.querySelector('#application-support-project-company');
     const inputApplicationQuest = document.querySelector('#application-support-project-quest');
 
-    let phoneMaskGostekh, phoneMaskApplicationh, maskOptions = { mask: '+{7} (000) 000-00-00' };
-    phoneMaskGostekh = IMask(inputGostekhPhone, maskOptions);
+    let phoneMaskApplicationh, maskOptions = { mask: '+{7} (000) 000-00-00' };
     phoneMaskApplicationh = IMask(inputApplicationPhone, maskOptions);
 
-    document.querySelector('#question-gostekh').addEventListener('click', () => {
-        openPopup('popup-question-gostekh', '#solutions-page-popups');
-    })
-
     document.querySelector('#form-application-support-project').addEventListener('click', () => {
-        openPopup('popup-application-support-project', '#solutions-page-popups');
+        openPopup('popup-application-support-project', '#list-popups-form');
     })
 
     document.querySelector('#btn-application-support-project').addEventListener('click', () => {
-        openPopup('popup-application-support-project', '#solutions-page-popups');
+        openPopup('popup-application-support-project', '#list-popups-form');
     })
 
-    document.querySelector('#solutions-page-popups').addEventListener('mousedown', (e) => {
+    document.querySelector('#list-popups-form').addEventListener('mousedown', (e) => {
         if (!e.target.closest('.popup')) {
-            closePopup('popup-question-gostekh', '#solutions-page-popups', 'inputs-mask', phoneMaskGostekh);
-            closePopup('popup-application-support-project', '#solutions-page-popups', 'inputs-mask', phoneMaskApplicationh);
+            closePopup('popup-application-support-project', '#list-popups-form', 'inputs-mask', phoneMaskApplicationh);
         }
     })
 
-    document.querySelector('#question-gostekh-close').addEventListener('click', () => {
-        closePopup('popup-question-gostekh', '#solutions-page-popups', 'inputs-mask', phoneMaskGostekh);
-    })
-
     document.querySelector('#application-support-project-close').addEventListener('click', () => {
-        closePopup('popup-application-support-project', '#solutions-page-popups', 'inputs-mask', phoneMaskApplicationh);
-    })
-
-    inputGostekhName.addEventListener('input', function() {
-        fillInput(this);
-    })
-
-    inputGostekhCompany.addEventListener('input', function() {
-        fillInput(this);
-    })
-
-    inputGostekhQuest.addEventListener('input', function() {
-        fillInput(this);
-    })
-
-    inputGostekhPhone.addEventListener('input', function() {
-        changePhoneInput(this, phoneMaskGostekh);
-    })
-    
-    inputGostekhPhone.addEventListener('focus', function() {
-        focusPhoneInput(this, phoneMaskGostekh);
-    })
-
-    inputGostekhPhone.addEventListener('blur', function() {
-        blurPhoneInput(this, phoneMaskGostekh);
+        closePopup('popup-application-support-project', '#list-popups-form', 'inputs-mask', phoneMaskApplicationh);
     })
 
     inputApplicationName.addEventListener('input', function() {
@@ -96,19 +57,15 @@ document.addEventListener('DOMContentLoaded', ()  => {
     })
 
     inputApplicationPhone.addEventListener('input', function() {
-        changePhoneInput(this, phoneMaskGostekh);
+        changePhoneInput(this, phoneMaskApplicationh);
     })
     
     inputApplicationPhone.addEventListener('focus', function() {
-        focusPhoneInput(this, phoneMaskGostekh);
+        focusPhoneInput(this, phoneMaskApplicationh);
     })
 
     inputApplicationPhone.addEventListener('blur', function() {
-        blurPhoneInput(this, phoneMaskGostekh);
-    })
-
-    document.querySelector('#send-question-gostekh').addEventListener('click', function(e) {
-        checkFieldErrors(e, this, 'phone', inputGostekhPhone);
+        blurPhoneInput(this, phoneMaskApplicationh);
     })
 
     document.querySelector('#send-application-support-project').addEventListener('click', function(e) {

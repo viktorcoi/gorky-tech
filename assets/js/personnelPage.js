@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     btnPopups.forEach(item => {
         item.addEventListener('click', function() {
-            openPopup('popup-personnel-about', '#personnel-page-popups');
+            openPopup('popup-personnel-about', '#list-popups');
             infoPopups.forEach(popup => {
                 if (item.dataset.popup === popup.dataset.popup) {
                     popup.style.display = 'block';
@@ -42,20 +42,20 @@ document.addEventListener('DOMContentLoaded', ()  => {
         }, 300)
     }
 
-    document.querySelector('#personnel-page-popups').addEventListener('mousedown', (e) => {
+    document.querySelector('#list-popups').addEventListener('mousedown', (e) => {
         if (!e.target.closest('.popup')) {
-            closePopup('popup-personnel-about', '#personnel-page-popups');
+            closePopup('popup-personnel-about', '#list-popups');
             hideInfoPopup();
         }
     })
 
     document.querySelector('#personnel-about-close').addEventListener('click', () => {
-        closePopup('popup-personnel-about', '#personnel-page-popups');
+        closePopup('popup-personnel-about', '#list-popups');
         hideInfoPopup();
     })
 
     window.addEventListener('resize', () => {
-        closePopup('popup-personnel-about', '#personnel-page-popups');
+        closePopup('popup-personnel-about', '#list-popups');
         hideInfoPopup();
     });
 

@@ -529,7 +529,6 @@ body {
     }
     &.ask-question, .ask-question,
     &.promotion-consultation .promotion-consultation,
-    &.question-gostekh .question-gostekh,
     &.application-support-project .application-support-project {
         &__textarea {
             min-height: 180px;
@@ -651,25 +650,6 @@ body {
                 }
                 @media (max-width: 640px) {
                     height: calc(100% - 120px);
-                }
-            }
-        }
-    }
-    &.promotion-consultation, &.question-gostekh {
-        @media (max-height: 900px) {
-            height: 90%;
-            .popup-form {
-                height: calc(100% - 140px);
-                overflow-y: auto;
-                overflow-x: hidden;
-                @media (max-width: 1280px) {
-                    height: calc(100% - 120px);
-                }
-                @media (max-width: 640px) {
-                    height: calc(100% - 100px);
-                }
-                @media (max-width: 420px) {
-                    height: calc(100% - 140px);
                 }
             }
         }
@@ -815,15 +795,7 @@ body {
     height: 100%;
 }
 
-.popup.catalog-solutions, .popup.virtual-showroom, .popup.promotion-consultation, 
-.popup.question-gostekh, #support-page-popups .ask-question, .popup.bot-telegram, 
-.popup.out-startup-nn, .popup.out-preferential-lending {
-    .tags__tag {
-        cursor: default;
-        &:hover {
-            background-color: var(--tag-bg);
-        }
-    }
+.popup.with-tag {
     .popup {
         &__title {
             margin-bottom: 18px;
@@ -831,10 +803,12 @@ body {
     }
 }
 
-.popup.promotion-consultation, .popup.question-gostekh,
-#support-page-popups .ask-question, .popup.bot-telegram,
-.popup.out-startup-nn, .popup.out-preferential-lending {
+.popup {
     .tags__tag {
+        cursor: default;
+        &:hover {
+            background-color: var(--tag-bg);
+        }
         margin-bottom: 36px;
         @media (max-width: 1280px) {
             margin-bottom: 28px;
@@ -845,7 +819,7 @@ body {
     }
 }
 
-#support-page-popups .ask-question {
+#list-popups-form .ask-question {
     @media (max-height: 900px) {
         height: 90%;
         .popup-form {

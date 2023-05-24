@@ -239,8 +239,8 @@
                                 </p>
                             </div>
                             <div class="sales-info__block-buttons">
-                                <button class="btn-blue">Принять участие как заказчик</button>
-                                <button class="btn-gray">Принять участие как поставщик</button>
+                                <a href="#" class="btn-blue">Принять участие как заказчик</a>
+                                <a href="#" class="btn-gray">Принять участие как поставщик</a>
                             </div>
                         </div>
                     </div>
@@ -256,9 +256,9 @@
        
                
 
-                <div id="sales-page-popups" class="bg-popup">
+                <div id="list-popups-form" class="bg-popup">
 
-                    <div id="popup-catalog-solutions" class="popup catalog-solutions">
+                    <div id="popup-catalog-solutions" class="popup with-tag catalog-solutions">
                         <button id="catalog-solutions-close" class="popup__cross"></button>
                         <h2 class="popup__title">Каталог нижегородских ИТ-решений</h2>
                         <p class="tags__tag">Каталог нижегородских ИТ-решений</p>
@@ -272,7 +272,7 @@
                         <a target="_blank" class="btn-blue btn-download">Скачать Word</a>
                     </div>
 
-                    <div id="popup-virtual-showroom" class="popup virtual-showroom">
+                    <div id="popup-virtual-showroom" class="popup with-tag virtual-showroom">
                         <button id="virtual-showroom-close" class="popup__cross"></button>
                         <h2 class="popup__title">Каталог нижегородских ИТ-решений</h2>
                         <p class="tags__tag">Виртуальный шоурум</p>
@@ -293,38 +293,38 @@
                         </div>
                     </div>
 
-                    <div id="popup-promotion-consultation" class="popup promotion-consultation">
-                        <button id="promotion-consultation-close" class="popup__cross"></button>
+                    <div id="popup-ask-question" class="popup with-tag ask-question">
+                        <button id="ask-question-close" class="popup__cross"></button>
                         <h2 class="popup__title">Заказать консультацию</h2>
                         <p class="tags__tag">Консультация по продвижению</p>
                         <form class="popup-form">
                             <div class="popup-form__two-input">
                                 <div class="popup-form__for-input">
-                                    <input id="promotion-consultation-name" class="popup-form__input" placeholder="Имя"/>
+                                    <input id="ask-question-name" class="popup-form__input" placeholder="Имя"/>
                                     <p class="popup-form__input-error">Не заполнено обязательное поле</p>
                                 </div>
                                 <div class="popup-form__for-input">
-                                    <input id="promotion-consultation-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
+                                    <input id="ask-question-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
                                     <p class="popup-form__input-error">Не заполнено обязательное поле</p>
                                 </div>
                             </div>
                             <div class="popup-form__two-input">
                                 <div class="popup-form__for-input">
-                                    <input id="promotion-consultation-company" class="popup-form__input" placeholder="Компания"/>
+                                    <input id="ask-question-company" class="popup-form__input" placeholder="Компания"/>
                                     <p class="popup-form__input-error">Не заполнено обязательное поле</p>
                                 </div>
 
                                 <div class="popup-form__for-input">
-                                    <input id="promotion-consultation-post" class="popup-form__input" placeholder="Должность"/>
+                                    <input id="ask-question-post" class="popup-form__input" placeholder="Должность"/>
                                     <p class="popup-form__input-error">Не заполнено обязательное поле</p>
                                 </div>
                             </div>
                             <div class="popup-form__for-input">
-                                <textarea id="promotion-consultation-desc" class="popup-form__input promotion-consultation__textarea" placeholder="Подробно опишите задачу"></textarea>
+                                <textarea id="ask-question-quest" class="popup-form__input ask-question__textarea" placeholder="Подробно опишите задачу"></textarea>
                                 <p class="popup-form__input-error">Не заполнено обязательное поле</p>
                             </div>
-                            <button id="send-promotion-consultation" class="popup-form__btn promotion-consultation__btn">Отправить</button>       
-                            <p class="promotion-consultation__desc">
+                            <button id="send-ask-question" class="popup-form__btn ask-question__btn">Отправить</button>       
+                            <p class="ask-question__desc">
                                 <span>
                                     Мы свяжемся с Вами в течение трёх рабочих дней с момента поступления 
                                     вопроса. Приложить материалы (изображения, видео) Вы можете, 

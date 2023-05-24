@@ -54,19 +54,19 @@ document.addEventListener('DOMContentLoaded', ()  => {
         });
     }
 
-    sliderNextButton.addEventListener("mouseover", function() {
+    sliderNextButton?.addEventListener("mouseover", function() {
         blockButtons.classList.add("animation-right");
     });
       
-    sliderNextButton.addEventListener("mouseout", function() {
+    sliderNextButton?.addEventListener("mouseout", function() {
         blockButtons.classList.remove("animation-right");
     });
 
-    sliderPrewButton.addEventListener("mouseover", function() {
+    sliderPrewButton?.addEventListener("mouseover", function() {
         blockButtons.classList.add("animation-left");
     });
       
-    sliderPrewButton.addEventListener("mouseout", function() {
+    sliderPrewButton?.addEventListener("mouseout", function() {
         blockButtons.classList.remove("animation-left");
     });
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/styles/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
@@ -65,9 +66,9 @@
                     <a href="./it-analytics.html" class="header__menu-main-link">ИТ-аналитика</a>
                     <a href="./it-support.html" class="header__menu-main-link">ИТ-поддержка</a>
                     <a href="./it-sales.html" class="header__menu-main-link">ИТ-продажи</a>
-                     <a href="./it-personnel.html" class="header__menu-main-link">ИТ-кадры</a>
+                    <a href="./it-personnel.html" class="header__menu-main-link">ИТ-кадры</a>
                     <a href="./it-solutions.html" class="header__menu-main-link">ИТ-решения</a>
-                   <a href="./it-popularization.html" class="header__menu-main-link">ИТ-популяризация</a>
+                    <a href="./it-popularization.html" class="header__menu-main-link">ИТ-популяризация</a>
                 </div>
                 <div class="header__menu-right">
                     <hr class="header__menu-line--mobile"/>
@@ -109,223 +110,215 @@
         </div>
         <div id="header-overlay" class="header__overlay"></div>
     </header>
-
-
     <main>
         <div class="container">
-            <div class="solutions-page">
+            <div class="poster-page">
                 <div class="site-path">
                     <a class="site-path__link" href="/">Главная</a>
                     <div class="site-path__arrow"></div>
-                    <a class="site-path__link">ИТ-Решения</a>
+                    <a href="./it-popularization.html" class="site-path__link">ИТ-Популяризация</a>
+                    <div class="site-path__arrow"></div>
+                    <a class="site-path__link">Афиша</a>
                 </div>
-                <h1>ИТ-Решения</h1>
-                <section class="main__tags">
-                    <input id="search-tags" class="search-in-page" placeholder="Поиск"/>
-                    <div id="tags" class="tags">
-                        <p class="tags__tag">Открыть ИТ-бизнес</p>
-                        <a href="#" class="tags__tag">Узнать про меры поддержки</a>
-                        <a href="#" class="tags__tag">Получить консультацию</a>
-                        <a href="#" class="tags__tag">Получить грант</a>
-                        <a href="#" class="tags__tag">Посмотреть отчет</a>
-                        <p class="tags__tag">Участвовать в исследовании</p>
-                        <a href="#" class="tags__tag">Найти клиентов</a>
-                        <p class="tags__tag">Стать партнёром события</p>
-                        <p class="tags__tag">Смотреть фото и видео с мероприятия</p>
-                        <p class="tags__tag">Задать вопрос аналитикам</p>
-                        <p class="tags__tag">Развиваться как ИТ-специалист</p>
-                        <p class="tags__tag">ИТ-образование</p>
-                        <p class="tags__tag">Открыть ИТ-бизнес</p>
-                        <a href="#" class="tags__tag">Узнать про меры поддержки</a>
-                        <a href="#" class="tags__tag">Получить консультацию</a>
+                <h1>Афиша</h1>
+              
 
-                        <p class="tags__tag">Пример 0</p>
-                        <a href="#" class="tags__tag">Пример 1</a>
-                        <a href="#" class="tags__tag">Пример 2</a>
-                        <a href="#" class="tags__tag">Пример 3</a>
-                        <a href="#" class="tags__tag">Пример 4</a>
-                        <p class="tags__tag">Пример 5</p>
-                        <a href="#" class="tags__tag">Пример 6</a>
-                        <p class="tags__tag">Пример 7</p>
-                        <p class="tags__tag">Пример 8</p>
-                        <p class="tags__tag">Пример 9</p>
-                        <p class="tags__tag">Пример 10</p>
-                        <p class="tags__tag">Пример 11</p>
-                        <p class="tags__tag">Пример 12</p>
-                        <a href="#" class="tags__tag">Пример 13</a>
-                        <a href="#" class="tags__tag">Пример 14</a>
-
-                        <p class="tags__tag">Пример 15</p>
-                        <a href="#" class="tags__tag">Пример 16</a>
-                        <a href="#" class="tags__tag">Пример 17</a>
-                        <a href="#" class="tags__tag">Пример 18</a>
-                        <a href="#" class="tags__tag">Пример 19</a>
-                        <p class="tags__tag">Пример 20</p>
-                        <a href="#" class="tags__tag">Пример 21</a>
-                        <p class="tags__tag">Пример 22</p>
-                        <p class="tags__tag">Пример 23</p>
-                        <p class="tags__tag">Пример 24</p>
-                        <p class="tags__tag">Пример 25</p>
-                        <p class="tags__tag">Пример 26</p>
-                        <p class="tags__tag">Пример 27</p>
-                        <a href="#" class="tags__tag">Пример 28</a>
-                        <a href="#" class="tags__tag">Пример 29</a>
+                <section class="posters">
+                    <div class="posters__head">
+                        <h2>Все события</h2>
+                        <p>9 событий</p>
                     </div>
-                    <div class="navigation-prew-next">
-                        <button id="tags-page-prew" class="navigation-prew-next__prew"></button>
-                        <button id="tags-page-next" class="navigation-prew-next__next"></button>
-                    </div>
-                </section>
-
-          
-               
-
-                <section class="solutions-info">
-                    <h2 class="solutions-info__title">Мы помогаем разрабатывать технологии</h2>
-                    <p class="solutions-info__desc">
-                        Горький Тех сопровождает проектирование информационных систем, а также 
-                        помогает собрать команду ИТ-разработчиков.
-                    </p>
-                    <div class="solutions-info__list">
-                        <div class="solutions-info__block">
-                            <h3 class="solutions-info__block-title">ГосТех</h3>
-                            <p class="solutions-info__block-desc">
-                                На базе Регионального центра поддержки и координации отечественных 
-                                цифровых технологий и разработчиков «Горький Тех» сформирован центр 
-                                компетенций по переводу информационных систем на Единую цифровую платформу 
-                                «ГосТех».
-                            </p>
-                            <div class="solutions-info__block-buttons">
-                                <button id="question-gostekh" class="btn-blue">Задать вопрос</button>
-                                <a target="_blank" href="https://platform.gov.ru/study/" class="btn-gray">Стать разработчиком на ГосТех</a>
+                    <div class="posters__list">
+                        <div class="posters__block">
+                            <img src="https://wp-s.ru/wallpapers/4/13/468686195306849/akt-r-duejn-dzhonson-na-fotosessii-s-paukami.jpg" alt="">
+                            <div class="posters__block-info">
+                                <div class="posters__block-status--mobile">
+                                    <p>Скоро</p>
+                                </div>
+                                <h3 class="posters__block-title">Аудиты - польза для развития бизнеса</h3>
+                                <div class="posters__block-day--mobile">
+                                    <div class="posters__block-number"> 
+                                        <p>31</p>
+                                        <span>Сентября</span>
+                                    </div>
+                                    <div class="posters__block-time">
+                                        <p>22:33</p>
+                                        <span>воскресенье</span>
+                                    </div>
+                                </div>
+                                <div class="posters__block-desc">
+                                    <p>г. Нижний Новгород, пр-т Гагарина, д. 50 к 9, БЦ Черная Жемчужина, офис ООО «МФИ Софт», к.105</p>
+                                    <span>
+                                        <img src="data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.44504 15.9063C4.35854 9.98212 3.60001 9.37411 3.60001 7.19687C3.60001 4.21453 6.01766 1.79688 9.00001 1.79688C11.9824 1.79688 14.4 4.21453 14.4 7.19687C14.4 9.37411 13.6415 9.98212 9.55497 15.9063C9.2868 16.2937 8.71319 16.2937 8.44504 15.9063ZM9.00001 9.44687C10.2427 9.44687 11.25 8.43952 11.25 7.19687C11.25 5.95423 10.2427 4.94687 9.00001 4.94687C7.75736 4.94687 6.75001 5.95423 6.75001 7.19687C6.75001 8.43952 7.75736 9.44687 9.00001 9.44687Z' fill='white' fill-opacity='0.24'/%3E%3C/svg%3E%0A" alt="img">
+                                        <a href="#">Показать на карте</a>
+                                    </span>
+                                    
+                                </div>
+                                <button class="btn-gray posters__block-button">Подробнее</button>
+                            </div>
+                            <div class="posters__block-date">
+                                <div class="posters__block-day">
+                                    <div class="posters__block-number"> 
+                                        <p>31</p>
+                                        <span>Сентября</span>
+                                    </div>
+                                    <div class="posters__block-time">
+                                        <p>22:33</p>
+                                        <span>воскресенье</span>
+                                    </div>
+                                </div>
+                                <div class="posters__block-status">
+                                    <p>Скоро</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="solutions-info__block">
-                            <h3 class="solutions-info__block-title">Служба внутреннего заказчика</h3>
-                            <p class="solutions-info__block-desc">
-                                Полный спектр работ по сопровождению ИТ проектов. От формирования 
-                                технических требований до этапа сдачи в эксплуатацию. Контроль качества 
-                                работ, подбор подрядчиков и команды проекта. 
-                            </p>
-                            <div class="solutions-info__block-buttons">
-                                <button id="btn-application-support-project" class="btn-blue">Оставить заявку</button>
+                        
+                        <div class="posters__block">
+                            <img src="https://i.ytimg.com/vi/wpFFKW54xzo/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGHIgQyg4MA8=&rs=AOn4CLBU9fiR3Q1H92H_dCUHQNnn_o6jKg" alt="">
+                            <div class="posters__block-info">
+                                <div class="posters__block-status--mobile">
+                                    <p>Скоро</p>
+                                </div>                                
+                                <h3 class="posters__block-title">Летняя стажировка YADRO Импульс</h3>
+                                <div class="posters__block-day--mobile">
+                                    <div class="posters__block-number"> 
+                                        <p>2</p>
+                                        <span>мая</span>
+                                    </div>
+                                    <div class="posters__block-time">
+                                        <p>01:13</p>
+                                        <span>понедельник</span>
+                                    </div>
+                                </div>
+                                <div class="posters__block-desc">
+                                    <p>Online мероприятие</p>
+                                    <span>
+                                        <img src="data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1002_13826-407961)'%3E%3Cpath d='M12.15 8.54031C12.15 10.3791 9.9 11.7581 9.9 13.1372H8.1C8.1 11.7581 5.85 10.3791 5.85 8.54031C5.85 6.76591 7.263 5.32249 9 5.32249C10.737 5.32249 12.15 6.76591 12.15 8.54031ZM9.9 14.0566H8.1V15.4356H9.9V14.0566ZM18 9C18 6.46252 16.992 4.16407 15.363 2.5L14.409 3.47454C15.1201 4.19955 15.6842 5.06086 16.0687 6.00905C16.4533 6.95724 16.6508 7.97365 16.65 9C16.65 11.1513 15.795 13.1096 14.409 14.5255L15.363 15.5C16.2 14.6474 16.8639 13.6343 17.3164 12.5188C17.769 11.4033 18.0013 10.2075 18 9ZM1.35 9C1.35 6.84866 2.205 4.89038 3.591 3.47454L2.637 2.5C1.79998 3.35259 1.13613 4.36573 0.683586 5.48121C0.231045 6.59669 -0.00126516 7.79252 5.18193e-06 9C5.18193e-06 11.5375 1.008 13.8359 2.637 15.5L3.591 14.5255C2.87986 13.8004 2.31582 12.9391 1.93126 11.991C1.5467 11.0428 1.34917 10.0263 1.35 9ZM13.95 9C13.95 10.3975 13.392 11.657 12.501 12.5764L13.455 13.5509C14.041 12.954 14.5056 12.2446 14.8222 11.4636C15.1389 10.6826 15.3012 9.84534 15.3 9C15.3 7.2256 14.598 5.61669 13.455 4.44908L12.501 5.42362C13.392 6.343 13.95 7.60255 13.95 9ZM4.545 13.5509L5.499 12.5764C4.599 11.657 4.05 10.3975 4.05 9C4.05 7.60255 4.608 6.343 5.499 5.42362L4.545 4.44908C3.95905 5.04601 3.4944 5.75537 3.17776 6.53639C2.86113 7.3174 2.69876 8.15466 2.7 9C2.7 10.7744 3.402 12.3833 4.545 13.5509Z' fill='%23EB5757'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1002_13826-407961'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A" alt="img">
+                                        <a href="#">Ссылка на трансляцию</a>
+                                    </span>
+                                    
+                                </div>
+                                <button class="btn-gray posters__block-button">Подробнее</button>
+                            </div>
+                            <div class="posters__block-date">
+                                <div class="posters__block-day">
+                                    <div class="posters__block-number"> 
+                                        <p>2</p>
+                                        <span>мая</span>
+                                    </div>
+                                    <div class="posters__block-time">
+                                        <p>01:13</p>
+                                        <span>понедельник</span>
+                                    </div>
+                                </div>
+                                <div class="posters__block-status">
+                                    <p>Скоро</p>
+                                </div>
                             </div>
                         </div>
+
+
+                        <div class="posters__block">
+                            <img src="https://mobimg.b-cdn.net/v3/fetch/52/5235d4f594fb6ca77ab4ed95be28ae13.jpeg" alt="">
+                            <div class="posters__block-info">
+                                <div class="posters__block-status--mobile">
+                                    <p>Мероприятие прошло</p>
+                                </div>
+                                <h3 class="posters__block-title">Летняя стажировка YADRO Импульс</h3>
+                                <div class="posters__block-day--mobile">
+                                    <div class="posters__block-number"> 
+                                        <p>28</p>
+                                        <span>декабря</span>
+                                    </div>
+                                    <div class="posters__block-time">
+                                        <p>04:20</p>
+                                        <span>вторник</span>
+                                    </div>
+                                </div>
+                                <div class="posters__block-desc">
+                                    <p>г. Нижний Новгород, пр-т Гагарина, д. 50 к 9, БЦ Черная Жемчужина, офис ООО «МФИ Софт», к.105</p>
+                                    <span>
+                                        <img src="data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.44504 15.9063C4.35854 9.98212 3.60001 9.37411 3.60001 7.19687C3.60001 4.21453 6.01766 1.79688 9.00001 1.79688C11.9824 1.79688 14.4 4.21453 14.4 7.19687C14.4 9.37411 13.6415 9.98212 9.55497 15.9063C9.2868 16.2937 8.71319 16.2937 8.44504 15.9063ZM9.00001 9.44687C10.2427 9.44687 11.25 8.43952 11.25 7.19687C11.25 5.95423 10.2427 4.94687 9.00001 4.94687C7.75736 4.94687 6.75001 5.95423 6.75001 7.19687C6.75001 8.43952 7.75736 9.44687 9.00001 9.44687Z' fill='white' fill-opacity='0.24'/%3E%3C/svg%3E%0A" alt="img">
+                                        <a href="#">Показать на карте</a>
+                                    </span>
+                                    
+                                </div>
+                                <button class="btn-gray posters__block-button">Подробнее</button>
+                            </div>
+                            <div class="posters__block-date">
+                                <div class="posters__block-day">
+                                    <div class="posters__block-number"> 
+                                        <p>30</p>
+                                        <span>августа</span>
+                                    </div>
+                                    <div class="posters__block-time">
+                                        <p>04:19</p>
+                                        <span>среда</span>
+                                    </div>
+                                </div>
+                                <div class="posters__block-status">
+                                    <p>Мероприятие прошло</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="posters__block">
+                            <img src="https://i.pinimg.com/736x/06/da/2b/06da2ba75150ce1cc30e898f3f15e883.jpg" alt="">
+                            <div class="posters__block-info">
+                                <div class="posters__block-status--mobile">
+                                    <p>Мероприятие прошло</p>
+                                </div>
+                                <h3 class="posters__block-title">Летняя стажировка YADRO Импульс</h3>
+                                <div class="posters__block-day--mobile">
+                                    <div class="posters__block-number"> 
+                                        <p>28</p>
+                                        <span>декабря</span>
+                                    </div>
+                                    <div class="posters__block-time">
+                                        <p>04:20</p>
+                                        <span>вторник</span>
+                                    </div>
+                                </div>
+                                <div class="posters__block-desc">
+                                    <p>г. Нижний Новгород, пр-т Гагарина, д. 50 к 9, БЦ Черная Жемчужина, офис ООО «МФИ Софт», к.105</p>
+                                    <span>
+                                        <img src="data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.44504 15.9063C4.35854 9.98212 3.60001 9.37411 3.60001 7.19687C3.60001 4.21453 6.01766 1.79688 9.00001 1.79688C11.9824 1.79688 14.4 4.21453 14.4 7.19687C14.4 9.37411 13.6415 9.98212 9.55497 15.9063C9.2868 16.2937 8.71319 16.2937 8.44504 15.9063ZM9.00001 9.44687C10.2427 9.44687 11.25 8.43952 11.25 7.19687C11.25 5.95423 10.2427 4.94687 9.00001 4.94687C7.75736 4.94687 6.75001 5.95423 6.75001 7.19687C6.75001 8.43952 7.75736 9.44687 9.00001 9.44687Z' fill='white' fill-opacity='0.24'/%3E%3C/svg%3E%0A" alt="img">
+                                        <a href="#">Показать на карте</a>
+                                    </span>
+                                    
+                                </div>
+                                <button class="btn-gray posters__block-button">Подробнее</button>
+                            </div>
+                            <div class="posters__block-date">
+                                <div class="posters__block-day">
+                                    <div class="posters__block-number"> 
+                                        <p>28</p>
+                                        <span>декабря</span>
+                                    </div>
+                                    <div class="posters__block-time">
+                                        <p>04:20</p>
+                                        <span>вторник</span>
+                                    </div>
+                                </div>
+                                <div class="posters__block-status">
+                                    <p>Мероприятие прошло</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
-                </section>
-               
-                <section class="our-cases">
-                    <h2 class="our-cases__title">Наши кейсы</h2>
-                    <div class="our-cases__list--first">
-                        <a href="./website-torpedo.html" class="our-cases__block website-torpedo">
-                            <div class="our-cases__block-image"></div>
-                            <p class="our-cases__block-title">Сайт ХК «Торпедо»</p>
-                        </a>
-                        <a href="./portal-do-russia.html" class="our-cases__block portal-do-russia">
-                            <div class="our-cases__block-image"></div>
-                            <p class="our-cases__block-title">Портал «Сделаем в России»</p>
-                        </a>
-                    </div>
-                    <div class="our-cases__list--two">
-                        <a href="./portal-marketplace.html" class="our-cases__block portal-marketplace">
-                            <div class="our-cases__block-image"></div>
-                            <p class="our-cases__block-title">Портал «ИТ-маркетплейс»</p>
-                        </a>
-                        <a href="./neymark-metaverse.html" class="our-cases__block neymark-metaverse">
-                            <div class="our-cases__block-image"></div>
-                            <p class="our-cases__block-title">Неймарк.Метавселенная</p>
-                        </a>
-                    </div>
+                    
+
+                    <section class="paginagion">
+                        <div id="paginagion-list" class="paginagion__list"></div>
+                    </section>
                 </section>
 
-                <section class="application-support">
-                    <h2 class="application-support__title">Оставить заявку на сопровождение ИТ-проектов</h2>
-                    <p class="application-support__desc">С командой Горький Тех</p>
-                    <button id="form-application-support-project" class="btn-blue">Заполнить форму</button>
-                </section>
+              
 
-                <div id="list-popups-form" class="bg-popup">
-                    <div id="popup-ask-question" class="popup with-tag ask-question">
-                        <button id="ask-question-close" class="popup__cross"></button>
-                        <h2 class="popup__title">Задать вопрос про ГосТех</h2>
-                        <p class="tags__tag">ГосТех</p>
-                        <form class="popup-form">
-                            <div class="popup-form__two-input">
-                                <div class="popup-form__for-input">
-                                    <input id="ask-question-name" class="popup-form__input" placeholder="Имя"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="ask-question-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                            </div>
-                            <div class="popup-form__for-input">
-                                <input id="ask-question-company" class="popup-form__input" placeholder="Компания"/>
-                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                            </div>
-                            <div class="popup-form__for-input">
-                                <textarea id="ask-question-quest" class="popup-form__input ask-question__textarea" placeholder="Вопрос"></textarea>
-                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                            </div>
-                            <button id="send-ask-question" class="popup-form__btn ask-question__btn">Отправить</button>       
-                            <p class="ask-question__desc">
-                                <span>
-                                    Мы свяжемся с Вами в течение трёх рабочих дней с момента поступления 
-                                    вопроса. Приложить материалы (изображения, видео) Вы можете, 
-                                    отправив нам письмо по эл. почте на адрес:
-                                </span>
-                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
-                            </p>     
-                        </form>
-                    </div>
-                    <div id="popup-application-support-project" class="popup application-support-project">
-                        <button id="application-support-project-close" class="popup__cross"></button>
-                        <h2 class="popup__title">Оставить заявку<br/>на сопровождение ИТ-проектов</h2>
-                        <form class="popup-form">
-
-                            <div class="popup-form__six-input">
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-name" class="popup-form__input" placeholder="Имя"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-last-name" class="popup-form__input" placeholder="Фамилия"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-second-name" class="popup-form__input" placeholder="Отчество"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-mail" class="popup-form__input" placeholder="E-mail"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                                <div class="popup-form__for-input">
-                                    <input id="application-support-project-company" class="popup-form__input" placeholder="Компания"/>
-                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                                </div>
-                            </div>
-                            <div class="popup-form__for-input">
-                                <textarea id="application-support-project-quest" class="popup-form__input application-support-project__textarea" placeholder="Вопрос"></textarea>
-                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
-                            </div>
-                            <button id="send-application-support-project" class="popup-form__btn application-support-project__btn">Отправить</button>       
-                            <p class="application-support-project__desc">
-                                <span>
-                                    Мы свяжемся с Вами в течение трёх рабочих дней с момента поступления 
-                                    вопроса. Приложить материалы (изображения, видео) Вы можете, 
-                                    отправив нам письмо по эл. почте на адрес:
-                                </span>
-                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
-                            </p>     
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </main>
@@ -350,7 +343,5 @@
         <div class="shadow-back__purple"></div>
     </div>
     <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/solutionsPage.js"></script>
-    <script src="https://unpkg.com/imask"></script>
 </body>
 </html>

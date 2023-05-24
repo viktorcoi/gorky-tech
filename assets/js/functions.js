@@ -75,6 +75,42 @@ const checkFieldErrors = (e, button, param, phone) => {
     }
     if (errors > 0) 
     e.preventDefault();
+    return errors;
+}
+
+const showAnswer = (answer) => {
+    setTimeout(() => {
+        openPopup('popup-answer-server', '#list-popups-form');
+        let blockAnswer = document.querySelector('#popup-answer-server').querySelectorAll('.answer-server-block')
+        blockAnswer.forEach(block => {
+            block.dataset.answer === answer ?
+            block.style.display = 'flex' :
+            block.style.display = 'none';
+        })
+    }, 400);
+}
+
+const sendForm = (e, popup, overlay) => {
+    e.preventDefault();
+    let form = e.target.closest('form');
+    let formData = $(form).serialize();
+    $.ajax({
+        type: 'POST',
+        url: 'https://example.com/nonexistent', // Фиктивный URL
+        data: formData,
+        success: function(response) {
+            showAnswer('success')
+        },
+        error: function(xhr, status, error) {
+            showAnswer('error')
+        }
+    });
+    $('#back-popup')?.off('click').on('click', () => {
+        closePopup('popup-answer-server', '#list-popups-form');
+        setTimeout(() => {
+            openPopup(popup, overlay);
+        }, 400);
+    })
 }
 
 const focusPhoneInput = (el, mask) => {
@@ -113,8 +149,9 @@ const changePhoneInput = (el, mask) => {
 
 
 function isValidEmail(email, e) {
+    let error = 0;
     let val = email.value.trim();
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailRegex.test(val)) {
         email.classList.remove('error-input');
         email.nextElementSibling.style.display = 'none';
@@ -124,9 +161,11 @@ function isValidEmail(email, e) {
         email.nextElementSibling.style.display = 'block';
         email.nextElementSibling.classList.add('animate__animated', 'animate__fadeIn');
         email.nextElementSibling.textContent = `${val.length > 0 ? 'Введите коректный E-mail' : 'Не заполнено обязательное поле'}`
+        error++;
         if (e)
         e.preventDefault();
     }
+    return error;
 }
 
-export { fillInput, openPopup, clearInputs, closePopup, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput, isValidEmail };
+export { fillInput, openPopup, clearInputs, closePopup, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput, isValidEmail, sendForm };

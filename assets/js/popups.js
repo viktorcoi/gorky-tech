@@ -1,4 +1,4 @@
-import { fillInput, openPopup, closePopup, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput } from './functions.js';
+import { fillInput, openPopup, closePopup, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput, sendForm } from './functions.js';
 
 document.addEventListener('DOMContentLoaded', ()  => {
     
@@ -28,14 +28,27 @@ document.addEventListener('DOMContentLoaded', ()  => {
                 openPopup('popup-ask-question', '#list-popups-form');
             })
         })
-      
+
         document.querySelector('#ask-question-close')?.addEventListener('click', () => {
             closePopup('popup-ask-question', '#list-popups-form', 'inputs-mask', phoneMask);
         })
-    
+
+        const buttonsCLosePopupAnswer = [
+            document.querySelector('#answer-server-close'),
+            document.querySelector('#close-popup-answer'),
+        ]
+
+        buttonsCLosePopupAnswer.forEach(item => {
+            item?.addEventListener('click', () => {
+                closePopup('popup-answer-server', '#list-popups-form');
+            })
+        })
+        
         document.querySelector('#list-popups-form')?.addEventListener('mousedown', (e) => {
             if (!e.target.closest('.popup')) {
                 closePopup('popup-ask-question', '#list-popups-form', 'inputs-mask', phoneMask);
+                if (document.querySelector('#popup-answer-server'))
+                closePopup('popup-answer-server', '#list-popups-form');
             }
         })
     
@@ -68,7 +81,12 @@ document.addEventListener('DOMContentLoaded', ()  => {
         })
     
         document.querySelector('#send-ask-question')?.addEventListener('click', function(e) {
-            checkFieldErrors(e, this, 'phone', inputPhone);
+            let errors = 0;
+            errors = checkFieldErrors(e, this, 'phone', inputPhone);
+            if (errors === 0) {
+                sendForm(e, 'popup-ask-question', '#list-popups-form');
+                closePopup('popup-ask-question', '#list-popups-form', 'inputs-mask', phoneMask);
+            }
         })
     }
 

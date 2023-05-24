@@ -1,4 +1,4 @@
-import { openPopup, closePopup, fillInput, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput, isValidEmail } from './functions.js';
+import { openPopup, closePopup, fillInput, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput, isValidEmail, sendForm } from './functions.js';
 
 document.addEventListener('DOMContentLoaded', ()  => {
 
@@ -69,8 +69,13 @@ document.addEventListener('DOMContentLoaded', ()  => {
     })
 
     document.querySelector('#send-application-support-project').addEventListener('click', function(e) {
-        checkFieldErrors(e, this, 'phone', inputApplicationPhone);
-        isValidEmail(inputApplicationMail, e);
+        let errors = 0;
+        errors = checkFieldErrors(e, this, 'phone', inputApplicationPhone);
+        errors += isValidEmail(inputApplicationMail, e);
+        if (errors === 0) {
+            sendForm(e, 'popup-application-support-project', '#list-popups-form');
+            closePopup('popup-application-support-project', '#list-popups-form', 'inputs-mask', phoneMaskApplicationh);
+        }
     })
 
 });

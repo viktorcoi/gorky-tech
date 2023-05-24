@@ -362,8 +362,23 @@
                              <a target="_blank" href="https://t.me/itconsult52_bot" class="bot-telegram__buttons-link">Открыть в Telegram</a>
                         </div>
                     </div>
+                    <div id="popup-answer-server" class="popup answer-server">
+                        <button id="answer-server-close" class="popup__cross"></button>
+                        <div data-answer="success" class="answer-server-block">
+                            <div></div>
+                            <h2>Заявка успешно отправлена</h2>
+                            <p>Заявка была успешно отправлена</p>
+                            <button id="close-popup-answer" class="btn-gray">Закрыть</button>
+                        </div>
+                        <div data-answer="error" class="answer-server-block">
+                            <div></div>
+                            <h2>Ошибка при отправке</h2>
+                            <p>Произошла ошибка при отправке, повторите позже</p>
+                            <button id="back-popup" class="btn-gray">Вернуться назад</button>
+                        </div>
+                    </div>
                 </div>
-       
+                
                
                
             </div>
@@ -393,6 +408,7 @@
         <div class="shadow-back__purple"></div>
         <div class="shadow-back__purple"></div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="module" src="./assets/js/main.js"></script>
     <script type="module" src="./assets/js/supportPage.js"></script>
     <script src="https://unpkg.com/imask"></script>

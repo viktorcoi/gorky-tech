@@ -96,7 +96,7 @@ const sendForm = (e, popup, overlay) => {
     let formData = $(form).serialize();
     $.ajax({
         type: 'POST',
-        url: 'https://example.com/nonexistent', // Фиктивный URL
+        url: form.getAttribute('action'),
         data: formData,
         success: function(response) {
             showAnswer('success')

@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
         showTags();
     };
     
-    searchInput.addEventListener('input', () => {
+    searchInput?.addEventListener('input', () => {
         filterTags();
     });
     
-    prevButton.addEventListener('click', () => {
+    prevButton?.addEventListener('click', () => {
         if (currentPage > 1) {
             currentPage--;
         } else {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
         showTags();
     });
     
-    nextButton.addEventListener('click', () => {
+    nextButton?.addEventListener('click', () => {
         if (currentPage < pageCount) {
             currentPage++;
         } else {

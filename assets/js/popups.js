@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
         document.querySelector('#send-ask-question')?.addEventListener('click', function(e) {
             let errors = 0;
             errors = checkFieldErrors(e, this, 'phone', inputPhone);
+            console.log(errors)
             if (errors === 0) {
                 sendForm(e, 'popup-ask-question', '#list-popups-form');
                 closePopup('popup-ask-question', '#list-popups-form', 'inputs-mask', phoneMask);

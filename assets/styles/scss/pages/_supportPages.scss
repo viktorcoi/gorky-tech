@@ -508,7 +508,7 @@ a.support-precents__block {
             min-height: 160px;
             gap: 18px;
         }
-        ul {
+        ul, ol {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -520,6 +520,7 @@ a.support-precents__block {
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 150%;
+                word-break: break-word;
                 strong {
                     font-weight: 500;
                     color: var(--text-main-color-light);
@@ -545,6 +546,26 @@ a.support-precents__block {
             }
         }
     }
+    ol {
+        flex-grow: unset;
+        gap: 16px;
+        justify-content: unset;
+        li {
+            font-size: 28px;
+            &::after {
+                top: 20px;
+            }
+            @media (max-width: 1640px) {
+                font-size: 20px;
+                &::after {
+                    top: 13px;
+                }
+            }
+        }
+        @media (max-width: 1640px) {
+            gap: 12px;
+        }
+    }
     &__block-title {
         transition: var(--trans);
         font-weight: 400;
@@ -562,6 +583,9 @@ a.support-precents__block {
         }
         @media (max-width: 1640px) {
             font-size: 15px;
+        }
+        & ~ ol {
+            margin-top: auto;
         }
     }
     &__block-for-precent {
@@ -605,6 +629,7 @@ a.support-precents__block {
         transition: var(--trans);
         position: relative;
         font-weight: 500;
+        word-break: break-word;
         font-size: 32px;
         line-height: 150%;
         color: var(--text-main-color-light);

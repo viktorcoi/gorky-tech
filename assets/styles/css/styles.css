@@ -3100,25 +3100,26 @@ a.support-precents__block::after {
     gap: 18px;
   }
 }
-.support-precents__block ul {
+.support-precents__block ul, .support-precents__block ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
 }
-.support-precents__block ul li {
+.support-precents__block ul li, .support-precents__block ol li {
   padding-left: 20px;
   position: relative;
   color: var(--color-text-support-textblock);
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  word-break: break-word;
 }
-.support-precents__block ul li strong {
+.support-precents__block ul li strong, .support-precents__block ol li strong {
   font-weight: 500;
   color: var(--text-main-color-light);
 }
-.support-precents__block ul li::after {
+.support-precents__block ul li::after, .support-precents__block ol li::after {
   content: "";
   position: absolute;
   width: 8px;
@@ -3129,14 +3130,38 @@ a.support-precents__block::after {
   background-color: var(--bg-support-precents-dot);
 }
 @media (max-width: 1640px) {
-  .support-precents__block ul li {
+  .support-precents__block ul li, .support-precents__block ol li {
     font-size: 15px;
     padding-left: 16px;
   }
-  .support-precents__block ul li::after {
+  .support-precents__block ul li::after, .support-precents__block ol li::after {
     width: 6px;
     height: 6px;
     top: 10px;
+  }
+}
+.support-precents ol {
+  flex-grow: unset;
+  gap: 16px;
+  justify-content: unset;
+}
+.support-precents ol li {
+  font-size: 28px;
+}
+.support-precents ol li::after {
+  top: 20px;
+}
+@media (max-width: 1640px) {
+  .support-precents ol li {
+    font-size: 20px;
+  }
+  .support-precents ol li::after {
+    top: 13px;
+  }
+}
+@media (max-width: 1640px) {
+  .support-precents ol {
+    gap: 12px;
   }
 }
 .support-precents__block-title {
@@ -3159,6 +3184,9 @@ a.support-precents__block::after {
   .support-precents__block-title {
     font-size: 15px;
   }
+}
+.support-precents__block-title ~ ol {
+  margin-top: auto;
 }
 .support-precents__block-for-precent {
   flex-grow: 1;
@@ -3203,6 +3231,7 @@ a.support-precents__block::after {
   transition: var(--trans);
   position: relative;
   font-weight: 500;
+  word-break: break-word;
   font-size: 32px;
   line-height: 150%;
   color: var(--text-main-color-light);

@@ -1,6 +1,20 @@
 import { fillInput, openPopup, closePopup, checkFieldErrors, focusPhoneInput, changePhoneInput, blurPhoneInput, sendForm } from './functions.js';
 
 document.addEventListener('DOMContentLoaded', ()  => {
+
+    if (document.querySelector('.bg-popup')) {
+        const popupsInPage = Array.from(document.querySelector('.bg-popup').children);
+        let urlPage = window.location.href;
+        if (urlPage.includes('popup')) {
+            let indexPopup = urlPage.split('id=')[1] - 1;
+            popupsInPage.forEach((item, id) => {
+                if (indexPopup === id) {
+                    if (item.getAttribute('id') !== 'popup-answer-server')
+                    openPopup(item.getAttribute('id'), `#${item.parentElement.getAttribute('id')}`);
+                }
+            })
+        }
+    }
     
     if (document.querySelector('#list-popups-form')) {
         

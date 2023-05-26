@@ -3021,8 +3021,18 @@ a.support-precents__block::after {
     grid-column-start: unset;
   }
 }
-.support-precents__block.pm-third, .support-precents__block.pm-twice {
+.support-precents__block.pm-third, .support-precents__block.pm-twice, .support-precents__block.pm-only {
   min-height: 160px;
+}
+.support-precents__block.pm-only {
+  grid-column-end: 3;
+  grid-column-start: 1;
+}
+@media (max-width: 1200px) {
+  .support-precents__block.pm-only {
+    grid-column-end: 4;
+    grid-column-start: 1;
+  }
 }
 .support-precents__block.pm-twice {
   grid-column-end: 3;

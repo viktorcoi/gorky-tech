@@ -448,8 +448,16 @@ a.support-precents__block {
                 grid-column-start: unset;
             }
         }
-        &.pm-third, &.pm-twice {
+        &.pm-third, &.pm-twice, &.pm-only {
             min-height: 160px;
+        }
+        &.pm-only {
+            grid-column-end: 3;
+            grid-column-start: 1;
+            @media (max-width: 1200px) {
+                grid-column-end: 4;
+                grid-column-start: 1;
+            }
         }
         &.pm-twice {
             grid-column-end: 3;

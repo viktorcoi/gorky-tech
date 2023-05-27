@@ -108,6 +108,7 @@ const sendForm = (e, popup, overlay) => {
     $('#back-popup')?.off('click').on('click', () => {
         closePopup('popup-answer-server', '#list-popups-form');
         setTimeout(() => {
+            if (!document.querySelector('.contacts-page'))
             openPopup(popup, overlay);
         }, 400);
     })

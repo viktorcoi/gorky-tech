@@ -6675,6 +6675,108 @@ body[data-theme=light] {
 }
 
 body[data-theme=dark] {
+  --bg-contacts-form: rgba(255, 255, 255, 0.08);
+  --border-contacts-form: rgba(255, 255, 255, 0.08);
+  --border-contacts-info: rgba(255, 255, 255, 0.12);
+  --border-contacts-link: rgba(255, 255, 255, 0.1);
+}
+.contacts-page {
+  width: min(1540px, 100%);
+  margin: 0 auto;
+}
+.contacts-page__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.contacts-page__info {
+  border: 2px solid var(--border-contacts-info);
+  border-radius: 24px;
+  padding: 46px 56px 56px 56px;
+}
+@media (max-width: 1280px) {
+  .contacts-page__info {
+    padding: 36px 46px 46px 46px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .contacts-page__info {
+    padding: 20px 20px 24px 20px;
+  }
+}
+.contacts-page__info-title {
+  color: var(--text-main-color-light);
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+@media (max-width: 1280px) {
+  .contacts-page__info-title {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 640px) {
+  .contacts-page__info-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+.contacts-page__info-desc {
+  font-weight: 400;
+  font-size: 21px;
+  color: var(--text-main-color-light);
+  opacity: 0.5;
+}
+.contacts-page__map {
+  overflow: hidden;
+  border-radius: 24px;
+}
+.contacts-page__map iframe {
+  width: 100%;
+  min-height: 400px;
+}
+.contacts-page__contacts {
+  display: grid;
+  gap: 18px;
+  margin: 36px 0 48px 0;
+}
+.contacts-page__link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.contacts-page__link img {
+  width: 28px;
+  height: 28px;
+}
+.contacts-page__link a {
+  color: var(--text-main-color-light);
+  font-weight: 500;
+  font-size: 28px;
+  width: fit-content;
+}
+@media (min-width: 1025px) {
+  .contacts-page__link a:hover {
+    opacity: 0.6;
+  }
+}
+.contacts-page__link a.contacts-mail {
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--border-contacts-link);
+}
+.contacts-page .ask-question {
+  display: block !important;
+  opacity: 1;
+  transform: unset;
+  width: unset;
+  margin: unset;
+  background-color: var(--bg-contacts-form);
+  border: 1px solid var(--border-contacts-form);
+  height: fit-content;
+}
+
+body[data-theme=dark] {
   --header-border: rgba(255, 255, 255, .08);
   --header-bg-btn-menu-color: rgba(239, 242, 246, .12);
   --header-img-btn-menu: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 10H27' stroke='white' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3Cpath d='M5 16.2222H27' stroke='white' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3Cpath d='M5 22.4444H27' stroke='white' stroke-width='2' stroke-miterlimit='10' stroke-linecap='round'/%3E%3C/svg%3E%0A");

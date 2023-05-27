@@ -6844,6 +6844,16 @@ body[data-theme=light] {
   padding-bottom: 6px;
   border-bottom: 2px solid var(--border-contacts-link);
 }
+@media (max-width: 1280px) {
+  .contacts-page__link a.contacts-mail {
+    padding-bottom: 4px;
+  }
+}
+@media (max-width: 640px) {
+  .contacts-page__link a.contacts-mail {
+    padding-bottom: 2px;
+  }
+}
 .contacts-page__socials {
   display: flex;
   gap: 12px;

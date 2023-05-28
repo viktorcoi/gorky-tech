@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', ()  => {
     
-    console.log('lc');
     const languageSelector = document.querySelector('#language-selector');
-    
+
     function getCookie(name) {
         let matches = document.cookie.match(new RegExp( "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)" ));
         return matches ? decodeURIComponent(matches[1]) : undefined;

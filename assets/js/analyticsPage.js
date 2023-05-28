@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', ()  => {
         }
     });
 
-    showGraph(graph);
+    arrGraphs.forEach(graph => {
+        showGraph(graph);
+    })
 
 });

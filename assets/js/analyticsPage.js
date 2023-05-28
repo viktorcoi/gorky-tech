@@ -23,4 +23,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
         }
     });
 
+    showGraph(graph);
+
 });

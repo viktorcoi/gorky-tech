@@ -8,10 +8,29 @@ document.addEventListener('DOMContentLoaded', ()  => {
         if (urlPage.includes('popup')) {
             let indexPopup = urlPage.split('id=')[1] - 1;
             popupsInPage.forEach((item, id) => {
-                if (indexPopup === id) {
-                    if (item.getAttribute('id') !== 'popup-answer-server')
+                if (indexPopup === id && item.getAttribute('id') !== 'popup-answer-server' && item.getAttribute('id') !== 'popup-personnel-about') {
                     openPopup(item.getAttribute('id'), `#${item.parentElement.getAttribute('id')}`);
-                }
+                } else if (item.getAttribute('id') === 'popup-personnel-about') {
+                    if (indexPopup < item.querySelectorAll('.popup-personnel-info').length) {
+                        openPopup('popup-personnel-about', '#list-popups');
+                        item.querySelectorAll('.popup-personnel-info').forEach((popup, popupId) => {
+                            if (indexPopup === popupId)
+                            popup.style.display = 'block';
+                            let blockScroll = popup.querySelector('.popup__desc-page');
+                            let buttonInPopup = popup.querySelector('.personnel-about__btn');
+                            if (item.offsetHeight > (window.innerHeight - 50)) {
+                                let margin = 0;
+                                if (buttonInPopup)
+                                margin = buttonInPopup.offsetHeight
+                                item.style.height = '80%'
+                                if (blockScroll) {
+                                    blockScroll.classList.add('overflow');
+                                    blockScroll.style.height = `calc(100% - ${(blockScroll.offsetTop / 1.2) + margin}px)`
+                                }
+                            }
+                        })
+                    }
+                }   
             })
         }
     }

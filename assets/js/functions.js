@@ -149,7 +149,7 @@ const changePhoneInput = (el, mask) => {
 }
 
 
-function isValidEmail(email, e) {
+const isValidEmail = (email, e) => {
     let error = 0;
     let val = email.value.trim();
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
         const showPopup = e.target.closest('.posters__block-button')
         if (showPopup) {
             if (showPopup.closest('.posters__block').dataset.event) {
-                let data = JSON.parse(showPopup.closest('.posters__block').dataset.event.replace(/'/g, '"'));
+                let data = JSON.parse(showPopup.closest('.posters__block').dataset.event);
                 popupPoster.querySelector('#image-poster').setAttribute('src', data?.image);
                 let blockNumber = popupPoster.querySelector('#number-poster');
                 blockNumber.querySelector('p').textContent = data?.day;

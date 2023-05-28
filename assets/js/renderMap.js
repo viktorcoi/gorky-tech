@@ -1,8 +1,10 @@
+import { getCookie } from './functions.js';
 
-console.log(document.cookie);
-    
+
+const language = getCookie('site_language');
+ 
     let script = document.createElement('script');
-    script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=b535750c-712d-4483-bfd8-68f0dfb1e89a';
+    script.src = `https://api-maps.yandex.ru/2.1/?lang=${language === 'ru' ? 'ru_RU' : 'en_US'}&amp;apikey=b535750c-712d-4483-bfd8-68f0dfb1e89a`;
     document.body.appendChild(script);
 
 document.addEventListener('DOMContentLoaded', ()  => {

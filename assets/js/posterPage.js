@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
                     item.textContent = data?.name;
                 })
                 popupPoster.querySelector('#second-text-poster').innerHTML = data?.desc;
-                popupPoster.querySelector('#button-poster').textContent = data?.nameButton;
                 popupPoster.querySelector('#button-poster').setAttribute('href', data?.external);
                 openPopup('popup-poster-about', '#list-popups');
             }

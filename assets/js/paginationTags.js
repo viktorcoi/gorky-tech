@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
     const pageSizeOptions = {
         small: 7,
         medium: 10,
-        large: 15,
+        large: 16,
     };
     let pageSize = pageSizeOptions.large;
     let pageCount = Math.ceil(tags.length / pageSize);

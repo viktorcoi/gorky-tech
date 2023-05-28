@@ -1,4 +1,5 @@
 const fillInput = (input) => {
+    console.log(input.getAttribute('type'))
     if (input.value.trim().length < 1) {
         input.classList.add('error-input');
         input.nextElementSibling.style.display = 'block';

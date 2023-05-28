@@ -4442,9 +4442,6 @@ body[data-theme=light] {
   --img-clock: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.24'%3E%3Cpath d='M12.7077 11.2474H9.37435C9.20859 11.2474 9.04962 11.1815 8.93241 11.0643C8.8152 10.9471 8.74935 10.7882 8.74935 10.6224V5.6224C8.74935 5.45663 8.8152 5.29766 8.93241 5.18045C9.04962 5.06324 9.20859 4.9974 9.37435 4.9974C9.54011 4.9974 9.69908 5.06324 9.81629 5.18045C9.9335 5.29766 9.99935 5.45663 9.99935 5.6224V9.99739H12.7077C12.8734 9.99739 13.0324 10.0632 13.1496 10.1805C13.2668 10.2977 13.3327 10.4566 13.3327 10.6224C13.3327 10.7882 13.2668 10.9471 13.1496 11.0643C13.0324 11.1815 12.8734 11.2474 12.7077 11.2474ZM9.99935 1.66406C5.39768 1.66406 1.66602 5.39573 1.66602 9.99739C1.66602 14.5991 5.39768 18.3307 9.99935 18.3307C14.601 18.3307 18.3327 14.5991 18.3327 9.99739C18.3327 5.39573 14.601 1.66406 9.99935 1.66406Z' fill='%23181818'/%3E%3C/g%3E%3C/svg%3E%0A");
   --line-poster-block: rgba(69, 75, 100, 0.1);
 }
-body[data-theme=light] .posters__block-desc img {
-  filter: brightness(0.5);
-}
 
 .poster-page {
   width: min(1540px, 100%);
@@ -4622,21 +4619,6 @@ body[data-theme=light] .posters__block-desc img {
 @media (max-width: 1640px) {
   .posters__block-desc {
     gap: 8px;
-  }
-}
-.posters__block-desc span {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.posters__block-desc span img {
-  width: 18px;
-  height: 18px;
-}
-@media (max-width: 1640px) {
-  .posters__block-desc span img {
-    width: 16px;
-    height: 16px;
   }
 }
 .posters__block-desc p, .posters__block-desc a {
@@ -4898,7 +4880,8 @@ body[data-theme=light] .posters__block-desc img {
 }
 @media (max-width: 900px) {
   .poster-more-info {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
     gap: 32px;
   }
@@ -4982,6 +4965,7 @@ body[data-theme=light] .posters__block-desc img {
   .poster-more-info__second {
     overflow: unset;
     gap: 32px;
+    flex-grow: 1;
   }
 }
 @media (max-width: 900px) {
@@ -4994,6 +4978,9 @@ body[data-theme=light] .posters__block-desc img {
   .poster-more-info__second h2 {
     display: none;
   }
+}
+.poster-more-info__second a {
+  margin-top: auto;
 }
 .poster-more-info__second-text {
   display: flex;

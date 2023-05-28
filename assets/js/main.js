@@ -13,4 +13,3 @@ import 'https://viktorcoi.github.io/gorky-tech/assets/js/paginationTags.js';
 import 'https://viktorcoi.github.io/gorky-tech/assets/js/pagination.js'
 import 'https://viktorcoi.github.io/gorky-tech/assets/js/popups.js'
 import 'https://viktorcoi.github.io/gorky-tech/assets/js/languageControl.js'
-import 'https://viktorcoi.github.io/gorky-tech/assets/js/renderMap.js'

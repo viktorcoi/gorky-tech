@@ -18,9 +18,9 @@ const clearInputs = (popup) => {
     const validFills = ['input, textarea'];
     validFills.forEach(el => {
         popup.querySelectorAll(el).forEach(input => {
-            input.value = '';
             input.classList.remove('error-input');
             if (input.getAttribute('type') !== 'hidden') {
+                input.value = '';
                 input.nextElementSibling.style.display = 'none';
                 input.nextElementSibling.classList.remove('animate__animated', 'animate__fadeIn');
             }

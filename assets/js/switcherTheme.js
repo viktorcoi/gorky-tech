@@ -4,6 +4,12 @@ const themeSwitcher = document.querySelector('#switcher-theme');
 const themeDarkBtn = document.querySelector('#switch-theme-dark');
 const themeLightBtn = document.querySelector('#switch-theme-light');
 
+const setCookie = (name, value, days) => {
+    const expires = new Date();
+    expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = name + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
+}
+
 const handleThemeSwitch = () => {
     const isDarkTheme = !themeSwitcher.checked;
     document.body.setAttribute('data-theme', isDarkTheme ? 'dark' : 'light');
@@ -25,12 +31,6 @@ if (savedTheme !== '') {
     themeSwitcher.checked = savedTheme !== 'dark';
 }
 handleThemeSwitch();
-
-const setCookie = (name, value, days) => {
-    const expires = new Date();
-    expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
-    document.cookie = name + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
-}
 
 document.body.classList.add('no-transition');
 

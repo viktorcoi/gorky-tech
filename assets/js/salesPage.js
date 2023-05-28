@@ -26,4 +26,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
         openPopup('popup-virtual-showroom', '#list-popups-form');
     })
 
+    document.querySelector('#btn-participate-showroom').addEventListener('click', () => {
+        closePopup('popup-virtual-showroom', '#list-popups-form');
+        setTimeout(() => {
+            openPopup('popup-ask-question', '#list-popups-form');
+        }, 400);
+    })
+
 });

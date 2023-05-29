@@ -394,7 +394,8 @@ body {
     &.popup-question-gostekh, &.popup-application-support-project,
     &.popup-bot-telegram, &.popup-out-startup-nn, 
     &.popup-out-preferential-lending, &.popup-personnel-about,
-    &.popup-poster-about, &.popup-answer-server {
+    &.popup-poster-about, &.popup-answer-server,
+    &.popup-take-part {
         opacity: 1;
         visibility: visible;
         pointer-events: unset;
@@ -408,7 +409,8 @@ body {
     &.popup-bot-telegram .bot-telegram, &.popup-out-startup-nn .out-startup-nn,
     &.popup-out-preferential-lending .out-preferential-lending,
     &.popup-personnel-about .personnel-about, &.popup-poster-about .poster-about,
-    &.popup-answer-server .answer-server {
+    &.popup-answer-server .answer-server,
+    &.popup-take-part .take-part {
         opacity: 1;
         transform: translateY(0);
     }

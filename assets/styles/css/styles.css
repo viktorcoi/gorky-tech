@@ -8572,12 +8572,12 @@ body[data-theme=light] {
   visibility: hidden;
   pointer-events: none;
 }
-.bg-popup.popup-catalog-solutions, .bg-popup.popup-ask-question, .bg-popup.popup-virtual-showroom, .bg-popup.popup-promotion-consultation, .bg-popup.popup-question-gostekh, .bg-popup.popup-application-support-project, .bg-popup.popup-bot-telegram, .bg-popup.popup-out-startup-nn, .bg-popup.popup-out-preferential-lending, .bg-popup.popup-personnel-about, .bg-popup.popup-poster-about, .bg-popup.popup-answer-server {
+.bg-popup.popup-catalog-solutions, .bg-popup.popup-ask-question, .bg-popup.popup-virtual-showroom, .bg-popup.popup-promotion-consultation, .bg-popup.popup-question-gostekh, .bg-popup.popup-application-support-project, .bg-popup.popup-bot-telegram, .bg-popup.popup-out-startup-nn, .bg-popup.popup-out-preferential-lending, .bg-popup.popup-personnel-about, .bg-popup.popup-poster-about, .bg-popup.popup-answer-server, .bg-popup.popup-take-part {
   opacity: 1;
   visibility: visible;
   pointer-events: unset;
 }
-.bg-popup.popup-ask-question .ask-question, .bg-popup.popup-catalog-solutions .catalog-solutions, .bg-popup.popup-virtual-showroom .virtual-showroom, .bg-popup.popup-promotion-consultation .promotion-consultation, .bg-popup.popup-question-gostekh .question-gostekh, .bg-popup.popup-application-support-project .application-support-project, .bg-popup.popup-bot-telegram .bot-telegram, .bg-popup.popup-out-startup-nn .out-startup-nn, .bg-popup.popup-out-preferential-lending .out-preferential-lending, .bg-popup.popup-personnel-about .personnel-about, .bg-popup.popup-poster-about .poster-about, .bg-popup.popup-answer-server .answer-server {
+.bg-popup.popup-ask-question .ask-question, .bg-popup.popup-catalog-solutions .catalog-solutions, .bg-popup.popup-virtual-showroom .virtual-showroom, .bg-popup.popup-promotion-consultation .promotion-consultation, .bg-popup.popup-question-gostekh .question-gostekh, .bg-popup.popup-application-support-project .application-support-project, .bg-popup.popup-bot-telegram .bot-telegram, .bg-popup.popup-out-startup-nn .out-startup-nn, .bg-popup.popup-out-preferential-lending .out-preferential-lending, .bg-popup.popup-personnel-about .personnel-about, .bg-popup.popup-poster-about .poster-about, .bg-popup.popup-answer-server .answer-server, .bg-popup.popup-take-part .take-part {
   opacity: 1;
   transform: translateY(0);
 }

@@ -239,8 +239,8 @@
                                 </p>
                             </div>
                             <div class="sales-info__block-buttons">
-                                <a href="#" class="btn-blue">Принять участие как заказчик</a>
-                                <a href="#" class="btn-gray">Принять участие как поставщик</a>
+                                <button data-formtitle="Принять участие (заказчик)" id="take-part-customer" class="btn-blue">Принять участие как заказчик</button>
+                                <button data-formtitle="Принять участие (поставщик)" id="take-part-provider" class="btn-gray">Принять участие как поставщик</button>
                             </div>
                         </div>
                     </div>
@@ -334,6 +334,42 @@
                             </p>     
                         </form>
                     </div>
+
+                    <div id="popup-take-part" class="popup take-part">
+                        <button id="take-part-close" class="popup__cross"></button>
+                        <h2 class="popup__title">Заказать консультацию</h2>
+                        <form class="popup-form">
+                            <input type="hidden" name="form-title">
+                            <div class="popup-form__two-input">
+                                <div class="popup-form__for-input">
+                                    <input id="take-part-name" class="popup-form__input" placeholder="Имя"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                                <div class="popup-form__for-input">
+                                    <input id="take-part-phone" inputmode="numeric" class="popup-form__input" placeholder="Номер телефона"/>
+                                    <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                                </div>
+                            </div>
+                            <div class="popup-form__for-input">
+                                <input id="take-part-company" class="popup-form__input" placeholder="Компания"/>
+                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                            </div>
+                            <div class="popup-form__for-input">
+                                <textarea id="take-part-desc" class="popup-form__input ask-question__textarea" placeholder="Описание заявки"></textarea>
+                                <p class="popup-form__input-error">Не заполнено обязательное поле</p>
+                            </div>
+                            <button id="send-take-part" class="popup-form__btn ask-question__btn">Отправить</button>       
+                            <p class="ask-question__desc">
+                                <span>
+                                    Мы свяжемся с Вами в течение трёх рабочих дней с момента поступления 
+                                    вопроса. Приложить материалы (изображения, видео) Вы можете, 
+                                    отправив нам письмо по эл. почте на адрес:
+                                </span>
+                                <a href="mailto:info@gorky.ai">info@gorky.ai</a>
+                            </p>     
+                        </form>
+                    </div>
+
                     <div id="popup-answer-server" class="popup answer-server">
                         <button id="answer-server-close" class="popup__cross"></button>
                         <div data-answer="success" class="answer-server-block">

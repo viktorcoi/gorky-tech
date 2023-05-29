@@ -104,6 +104,7 @@ body {
             height: 250px;
             border-radius: 16px;
             object-fit: cover;
+            object-position: top;
             @media (max-width: 1640px) {
                 border-radius: 10px;
                 height: 195px;

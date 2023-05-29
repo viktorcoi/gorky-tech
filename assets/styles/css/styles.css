@@ -4277,6 +4277,7 @@ body[data-theme=light] {
 }
 
 .news-textblock {
+  display: inline-block;
   margin-top: 42px;
 }
 @media (max-width: 1640px) {
@@ -9903,6 +9904,25 @@ body[data-theme=light] .not-found h1 {
   color: rgb(228, 235, 241);
   mix-blend-mode: unset;
   opacity: 1;
+}
+
+.main__tags + .info-popularization, .main__tags + .areas-activity {
+  margin-top: 100px;
+}
+@media (max-width: 1640px) {
+  .main__tags + .info-popularization, .main__tags + .areas-activity {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 850px) {
+  .main__tags + .info-popularization, .main__tags + .areas-activity {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 640px) {
+  .main__tags + .info-popularization, .main__tags + .areas-activity {
+    margin-top: 50px;
+  }
 }
 
 :root {

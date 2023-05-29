@@ -38,6 +38,7 @@ body {
 }
 
 .news-textblock {
+    display: inline-block;
     margin-top: 42px;
     @media (max-width: 1640px) {
         margin-top: 36px;

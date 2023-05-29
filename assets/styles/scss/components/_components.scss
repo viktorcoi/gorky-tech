@@ -1545,3 +1545,17 @@ body[data-theme="light"] {
     }
 }
     
+.main__tags {
+    & + .info-popularization ,  & + .areas-activity {
+        margin-top: 100px;
+        @media (max-width: 1640px) {
+            margin-top: 80px;
+        }
+        @media (max-width: 850px) {
+            margin-top: 60px;
+        }
+        @media (max-width: 640px) {
+            margin-top: 50px;
+        }
+    }
+}

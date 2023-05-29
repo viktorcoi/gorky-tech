@@ -8024,6 +8024,7 @@ body[data-theme=light] {
 }
 
 footer {
+  margin-top: auto;
   display: flex;
   align-items: center;
   padding: 0 56px;
@@ -10025,6 +10026,9 @@ h1 {
 }
 
 body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: var(--trans);
   background-color: var(--background);
   overflow-x: hidden;

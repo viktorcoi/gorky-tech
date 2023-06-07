@@ -1,13 +1,13 @@
 const fillInput = (input) => {
     if (input.value.trim().length < 1) {
         input.classList.add('error-input');
-        if (input.getAttribute('type') !== 'hidden') {
+        if (input.getAttribute('type') !== 'hidden' && input.parentElement.getAttribute('class') === 'popup-form__for-input') {
             input.nextElementSibling.style.display = 'block';
             input.nextElementSibling.classList.add('animate__animated', 'animate__fadeIn');
         }
     } else {
         input.classList.remove('error-input');
-        if (input.getAttribute('type') !== 'hidden') {
+        if (input.getAttribute('type') !== 'hidden' && input.parentElement.getAttribute('class') === 'popup-form__for-input') {
             input.nextElementSibling.style.display = 'none';
             input.nextElementSibling.classList.remove('animate__animated', 'animate__fadeIn');   
         }
@@ -19,7 +19,7 @@ const clearInputs = (popup) => {
     validFills.forEach(el => {
         popup.querySelectorAll(el).forEach(input => {
             input.classList.remove('error-input');
-            if (input.getAttribute('type') !== 'hidden') {
+            if (input.getAttribute('type') !== 'hidden' && input.parentElement.getAttribute('class') === 'popup-form__for-input') {
                 input.value = '';
                 input.nextElementSibling.style.display = 'none';
                 input.nextElementSibling.classList.remove('animate__animated', 'animate__fadeIn');

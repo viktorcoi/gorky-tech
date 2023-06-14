@@ -9,4 +9,4 @@ This website was developed by order for the company Gorky Tech.
 - BEM methodology was used for layout;
 
 ## ScreenRecord
-<img src='./assets/img/screenshot.png'></img>
+<img src='./assets/img/screensho.png'></img>
